@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Week 15 - A few more Idyll+d3 things | IS445(AOG) - Data Viz</title>
+<title>Week 15 - Scientific Viz &amp; AVL HERE?? | IS445(AOG) - Data Viz</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Week 15 - A few more Idyll+d3 things" />
+<meta property="og:title" content="Week 15 - Scientific Viz &amp; AVL HERE??" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This is the course website for IS445(AOG) in Fall 2020" />
 <meta property="og:description" content="This is the course website for IS445(AOG) in Fall 2020" />
@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://localhost:4001/is445AOG_fall2020/week15/" />
 <meta property="og:site_name" content="IS445(AOG) - Data Viz" />
 <script type="application/ld+json">
-{"description":"This is the course website for IS445(AOG) in Fall 2020","headline":"Week 15 - A few more Idyll+d3 things","@type":"WebPage","url":"http://localhost:4001/is445AOG_fall2020/week15/","@context":"https://schema.org"}</script>
+{"description":"This is the course website for IS445(AOG) in Fall 2020","headline":"Week 15 - Scientific Viz &amp; AVL HERE??","@type":"WebPage","url":"http://localhost:4001/is445AOG_fall2020/week15/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -40,58 +40,17 @@
       </header>
 
       <section>
-                <h1 id="week-15---a-few-more-idylld3-things">Week 15 - A few more Idyll+d3 things</h1>
+                <h1 id="week-15---scientific-viz--avl-here">Week 15 - Scientific Viz &amp; AVL HERE??</h1>
 
-<p>A few more things in Idyll, course wrap up.</p>
+<p>We talked a little bit about publishing, networks, and scientific viz.</p>
 
-<h2 id="downloads--links">Downloads &amp; Links</h2>
-
-<h3 id="data">Data</h3>
+<h1 id="resources">Resources</h1>
 
 <ul>
-  <li>Idyll: <a href="corg/corgs_per_country_over_time_columns_2020.csv" download="">Corgis per country over time (corgs_per_country_over_time_columns_2020.csv)</a></li>
+  <li>We’ll be using the <a href="http://yt-project.org/data/IsolatedGalaxy.tar.gz" download="">Isolated Galaxy dataset (292 Mb)</a> dataset for sci viz today</li>
+  <li>We’ll also be using <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week05/data/single_dicom.h5" download="">this brain scan data (72Mb)</a></li>
 </ul>
 
-<h3 id="links--code">Links &amp; Code</h3>
-
-<ol>
-  <li>We’ll be building toward a webpage like <a href="https://jnaiman.github.io/">this</a> today using <a href="https://idyll-lang.org/">Idyll</a>’s built-in components.</li>
-  <li>Last week, we got to <a href="/is445AOG_fall2020/week14/index.idyll">this Idyll page</a> and <a href="/is445AOG_fall2020/week14/histogram-custom-d3-component.js">this histogram d3 component</a>.</li>
-  <li>Full Markdown code for this week and next week <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week15/corg/index.idyll">available right here</a>.</li>
-  <li>We’ll also build a few histogram components like:
-    <ul>
-      <li>starting with <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week15/corg/histogram-custom-d3-component.js">this one</a></li>
-      <li>then <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week15/corg/histogram-button-custom-d3-component.js">this one</a></li>
-      <li>and finally <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week15/corg/histogram-button-slider-custom-d3-component.js">this one</a></li>
-    </ul>
-  </li>
-  <li>We’ll also look at building a map visualization like <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week15/corg/map-custom-d3-component.js">this one right here</a> which uses <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week15/corg/styles.css">this updated styles.css file</a></li>
-</ol>
-
-<p>Where we got to in class this week:</p>
-<ul>
-  <li><a href="/is445AOG_fall2020/week15/corg/inClass/index.idyll">This index.idyll</a> file</li>
-  <li><a href="/is445AOG_fall2020/week15/corg/inClass/histogram-custom-d3-component.js">This histogram component</a></li>
-  <li>We briefly covered <a href="/is445AOG_fall2020/week15/corg/inClass/map-custom-d3-component.js">this map component</a></li>
-</ul>
-
-<p><strong>Note:</strong> see <a href="../week12/">week 12</a> for the scripts used to generate this dataset.</p>
-
-<h2 id="optional-reading-list">Optional reading list</h2>
-
-<ol>
-  <li><a href="https://yt-project.org/">yt docs</a></li>
-  <li><a href="https://yt-project.org/doc/visualizing/volume_rendering.html">yt Volume Rendering Tutorial</a></li>
-  <li><a href="https://idyll-lang.org/docs"> Idyll Docs</a></li>
-</ol>
-
-<p><strong>d3.js examples (v4)</strong></p>
-<ol>
-  <li><a href="https://bl.ocks.org/vikkya/75bda04cd0c00e49cbda6cfee8d97aba">Simple time-bar chart</a> (we used this one to start with)</li>
-  <li><a href="https://observablehq.com/@d3/grouped-bar-chart">Grouped bar chart</a></li>
-  <li><a href="https://observablehq.com/@d3/bar-chart-race">Animated side-bar chart</a></li>
-  <li><a href="https://www.d3-graph-gallery.com/graph/histogram_basic.html">Histogram, binning of data</a></li>
-</ol>
 
 
         <h3>Materials</h3>
@@ -163,8 +122,8 @@
         
         
 	
-        <li>Lecture 15: (<a href="/is445AOG_fall2020/week15/lecture15.html">view</a>,
-          <a href="https://github.com/UIUC-iSchool-DataViz/fall2020online/blob/master/week15/lecture15.md">source</a>, <a href="/is445AOG_fall2020/week15/lecture15.html?showNotes=false">present</a>)</li>
+        <li>Lecture 13: (<a href="/is445AOG_fall2020/week15/lecture13.html">view</a>,
+          <a href="https://github.com/UIUC-iSchool-DataViz/fall2020online/blob/master/week15/lecture13.md">source</a>, <a href="/is445AOG_fall2020/week15/lecture13.html?showNotes=false">present</a>)</li>
 	
 	 <!-- end if not lecture -->
 	 <!-- end iodide -->
@@ -174,6 +133,10 @@
         
          <!-- end if contains page.dir and url-->
         
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
         
         
         
@@ -312,17 +275,34 @@
         
 	<!-- I am a comment -->
         
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
+	
+        <li>Notebook: inClass_week13: 
+         (<a href="../nbv.html?notebook_name=%2Fis445AOG_fall2020%2Fweek15%2FinClass_week13.ipynb">view</a>,
+          <a href="/is445AOG_fall2020/week15/inClass_week13.ipynb">download</a>)</li>
+	
         
         
 	<!-- I am a comment -->
+        
+	
+        <li>Notebook: prep_notebook_week13: 
+         (<a href="../nbv.html?notebook_name=%2Fis445AOG_fall2020%2Fweek15%2Fprep_notebook_week13.ipynb">view</a>,
+          <a href="/is445AOG_fall2020/week15/prep_notebook_week13.ipynb">download</a>)</li>
+	
+        
+        
+	<!-- I am a comment -->
+        
+	
+        
+        
+	<!-- I am a comment -->
+        
+	
+        <li>Notebook: test_imports_week13: 
+         (<a href="../nbv.html?notebook_name=%2Fis445AOG_fall2020%2Fweek15%2Ftest_imports_week13.ipynb">view</a>,
+          <a href="/is445AOG_fall2020/week15/test_imports_week13.ipynb">download</a>)</li>
+	
         
         
 	<!-- I am a comment -->
@@ -374,6 +354,8 @@
 	
 
 
+	
+        <h3>Materials from Previous Courses</h3>
 	
 
         <ul>
@@ -472,7 +454,9 @@
         
         
         
-        
+        <li>Notebook: spring2019_prep_notebook_week13: 
+         (<a href="../nbv.html?notebook_name=%2Fis445AOG_fall2020%2Fweek15%2Fspring2019_prep_notebook_week13.ipynb">view</a>,
+         <a href="/is445AOG_fall2020/week15/spring2019_prep_notebook_week13.ipynb">download</a>)</li>
         
         
         

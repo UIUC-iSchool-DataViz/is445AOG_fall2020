@@ -3,24 +3,25 @@ layout: week
 visible: true
 ---
 
-# Week 9 - Network Visualization & Word clouds
+# Week 9 - Iodide and Intro to Javascript
 
-## Downloads
+## Downloads & Links
 
-### Data:
+### Iodide Notebooks:
 
- * <a href='https://uiuc-ischool-dataviz.github.io/spring2019online/week09/data/facebook_combined_sm000090_000010.txt' download>Several small nodes facebook data</a>
- * <a href='https://uiuc-ischool-dataviz.github.io/spring2019online/week09/data/facebook_combined_sm000030_000000.txt' download>One major node facebook data</a>
- * <a href='https://github.com/UIUC-iSchool-DataViz/spring2019online/tree/master/week09/data'>More facebook data</a>
- * <a href="othello.txt" download>Text of Othello (othello.txt)</a>
+ * <a href="https://alpha.iodide.io/notebooks/4351/">Prep Iodide Notebook</a>
+ * <a href="https://alpha.iodide.io/notebooks/4367/">In Class Iodide Notebook</a>
 
 ## Optional reading list
 
- 1. VAD Ch. 9: Arrange Networks and Trees
+ 1. <a href="https://alpha.iodide.io/">Iodide Docs</a> - in particular: <a href="https://iodide-project.github.io/docs/key_concepts/">key concepts</a> & <a href="https://iodide-project.github.io/docs/iomd/">IOMD format</a>
+ 1. <a href="https://www.codecademy.com/learn/introduction-to-javascript">Intro to Javascript</a>
+ 1. <a href="https://serialmentor.com/dataviz/directory-of-visualizations.html">FDA, Ch. 5: Directory of visualizations</a>
 
 
 ## Extra Resources
-
- * <a href='https://snap.stanford.edu/data/'>Variety of SNAP datasets</a>
- * <a href='https://snap.stanford.edu/data/ego-Facebook.html'>We used this SNAP dataset</a>
- * <a href='https://github.com/jcatw/snap-facebook'>Python Library to parse snap facebook data</a>
+ * [FiveThirtyEight](https://fivethirtyeight.com/)
+ * [FiveThirtyEight datasets](https://github.com/fivethirtyeight/data)
+ * [jsdelivr](https://www.jsdelivr.com/)
+ * [vega-datasets](https://github.com/vega/vega-datasets/tree/master/data)
+ 

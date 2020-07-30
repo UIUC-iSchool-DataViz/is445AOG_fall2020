@@ -211,6 +211,170 @@ We can do even more complex stepping following tutorials like the [stacking scro
 
 [/Scroller]
 
+// ---------------------- This is where we got to last week -----------------------
+
+// We'll get into plotting data right now and circle back to other components if we have time, OR you can look them over in the full index.idyll file linked in class today
+
+// First we'll start by loading in some data and looking at it with an interactive table
+
+## Data
+
+So far, we've been using data/image sources available on the web.  We also have the option of storing data within our Idyll directory and accessing it that way.  This is useful if we want to use our own data that we've created.
+
+For example, if we check out the [course webpage for this week](https://uiuc-ischool-dataviz.github.io/spring2020/week14/), we see that there is a [corgis per country over time](https://uiuc-ischool-dataviz.github.io/spring2020/week12/corg/corgs_per_country_over_time_2020.csv) dataset.  We'll talk a bit more about how this dataset was generated next week, but you can check out the [webscraping code](https://uiuc-ischool-dataviz.github.io/spring2020/week12/corg/grabCorgData_subpages.py) and [processing notebook](https://uiuc-ischool-dataviz.github.io/spring2020/week12/corg/calc_corgData.ipynb) for more details if you can't wait.
+
+For now, just download the [corgis per country over time](https://uiuc-ischool-dataviz.github.io/spring2020/week12/corg/corgs_per_country_over_time_columns_2020.csv) dataset and save it in the `data/` subdirectory of your Idyll project.
+
+Now we can load this dataset with:
+
+```
+[data name:"corgsTime" source:"corgs_per_country_over_time_columns_2020.csv" /]
+```
+
+[data name:"corgsTime" source:"corgs_per_country_over_time_columns_2020.csv" /]
+
+We can check out our data really quick with an interactive table:
+
+[Table data:corgsTime /]
+
+We can also use Idyll's default [Chart](https://idyll-lang.org/docs/components/default/chart) component to do a preliminary plot with this dataset for the United States:
+
+[Chart type:"time" data:`corgsTime` domain:`null` range:`null` x:"Years" y:"United States" /]
+
+Probably what we actually want is a histogram though, which is another Chart option:
+
+[Chart type:"bar" data:`corgsTime` domain:`null` range:`null` x:"Years" y:"United States" /]
+
+You'll note a lot of the formatting here isn't what we'd really like (why are years weirdly formatted, what about axis labels and titles?), but this is another motivation to learn about external-installable components (like vega-lite & d3).
+
+
+## D3 in Idyll
+
+As of right now, vega-lite in Idyll [is still not working](https://gitter.im/idyll-lang/Lobby), but hopefully it will be fixed soon and you can use all the vega-lite things you've learned before to make plots!  We'll certainly circle back next week if things get fixed by next week!
+
+Let's start by looking at an example component in the, perhaps obviously, `components` directory where there is one called `custom-d3-component.js` which, from the default start up `index.idyll` file, was called with:
+
+```
+[var name:"state" value:0 /]
+[CustomD3Component className:"d3-component" state:state /]
+[button onClick:`state++`]
+  Click Me.
+[/button]
+```
+
+[var name:"state" value:0 /]
+[CustomD3Component className:"d3-component" state:state /]
+[button onClick:`state++`]
+  Click Me.
+[/button]
+
+Let's step through this code in some detail and put in comments.  Its written in [d3.js](https://d3js.org/) which is a used frequently on the internet for interactive info-viz:
+
+```
+// node-module libraries 
+const React = require('react');
+const D3Component = require('idyll-d3-component');
+const d3 = require('d3');
+
+// setting the base size of our svg plot
+const size = 600;
+
+class CustomD3Component extends D3Component { // essentially adding in a component to a library that is already there (look in node_modules)
+
+    // needed to first draw the svggraphics
+    initialize(node, props) {
+	// setting the definition of our svg space
+	const svg = this.svg = d3.select(node).append('svg');
+	// the size of the base box
+	svg.attr('viewBox', `0 0 ${size} ${size}`)
+	    .style('width', '100%')
+	    .style('height', 'auto');
+
+	// here adds the circle
+	svg.append('circle')
+	    .attr('r', 20) // 20 pixels 
+	    .attr('cx', Math.random() * size)
+	    .attr('cy', Math.random() * size);
+    }
+
+    // updates when state updates
+    update(props, oldProps) {
+	this.svg.selectAll('circle') // do something with the circle
+	    .transition() // I want a nice animation
+	    .duration(750) // duration of my animation in millisecs
+	    .attr('cx', Math.random() * size) // replace randomly in x&y
+	    .attr('cy', Math.random() * size);
+    }
+}
+
+module.exports = CustomD3Component; // make this available to idyll
+
+```
+
+// Try changing some things in the above and see what happens: radius, width to 50% etc
+
+
+### Our own d3 component
+
+Let's try making our own d3 component.  Luckily for us, there are MANY examples of d3.js in action.  
+// Let's start from [this basic histogram example](https://www.d3-graph-gallery.com/graph/histogram_basic.html).  
+Let's start from [this basic histogram example](https://bl.ocks.org/vikkya/75bda04cd0c00e49cbda6cfee8d97aba) which we can find from googling "time bar chart d3 v4" to make sure we are getting a d4 example.
+The trick here is going to be translating between what is listed here and what Idyll expects.
+
+To do this:
+1. copy `custom-d3-component.js` to `histogram-custom-d3-component.js`
+1. change the names for the extend to add in `Histogram` and then plot
+1. delete the updateProps function and the drawing of the circle
+1. delete the drawing of the viewer box code and replace with the example from the basic histogram
+
+[HistogramCustomD3Component className:"d3-component" /]
+
+So, we see that this is close, but not 100% what we wanted -- we want also to have a larger drawing area.  We can do this by modifying the "style" of our drawing within the `style.css` file in our Idyll directory.  **NOTE:** this changes the style for ALL graphs!
+
+Ok cool, but what we really want to do is make this a histogram using our corgi data.  Let's try changing a few things in `histogram-custom-d3-component.js`. 
+
+That's nice, but not super interactive.  Let's change that by combining this with Idyll variables!
+
+
+[var name:"myCountry" value:"United States" /]
+
+[HistogramButtonCustomD3Component className:"d3-component" country:myCountry /]
+
+Select Country:
+ [Select value:myCountry options:`["United States", "United Kingdom", "South Africa", "Russia"]`  /]
+
+
+We can also add a range slider to update the y-axis:
+
+[var name:"myCountry2" value:"United States" /]
+
+[var name:"mySlider" value:650 /]
+
+[HistogramButtonSliderCustomD3Component className:"d3-component" country:myCountry2 yheight:mySlider /]
+
+
+
+Select Country:
+ [Select value:myCountry2 options:`["United States", "United Kingdom", "South Africa", "Russia"]`  /]
+ Select y-axis height:
+  [Range value:mySlider min:0 max:1000 step:1 /]
+  [Display value:mySlider /]
+
+// [var name:"myVar" value:10 /]
+
+// [Dynamic value:mySlider min:0 max:100 /]
+
+Note: you can see how updates sort of break if you pull the range (bounces).
+
+
+# More built-ins
+
+Next week we'll do more d3, but for now, let's finish covering a few more built in components in Idyll!
+
+
+
+// EXTRA THINGS IF WE HAVE TIME
+
 ## Flow Control & Conditionals
 
 Idyll also allows for some of the flow control and conditional components that we've used before in Python and Javascript.  
@@ -301,7 +465,7 @@ Like with the [ipywidgets integer slider](https://ipywidgets.readthedocs.io/en/l
 
 
 [var name:"imgs4" 
-  value:`["https://external-preview.redd.it/-17yZH_Rhsl68DHe8A-GWRbZOu_irAeGGEkGKCM82_o.jpg?auto=webp&s=23d90b3c33816ea9d4314d79db5ecdbfab4c01b9", "https://i.ytimg.com/vi/kfCI5O3AUTk/maxresdefault.jpg", "https://i.imgur.com/m0CZRQy.jpg", "https://i1.wp.com/threecorgis.com/wp-content/uploads/2014/09/three-corgis-4189.jpg?resize=500%2C667", "https://i.imgur.com/aWpxP5O.jpg", "https://pbs.twimg.com/media/CMF2lpLUMAAYA49.jpg", "https://static1.fjcdn.com/comments/Corgis+with+things+on+their+head+thread+lets+_3412ee73c2c508ee101c40b4b1d6a92a.jpg"]` /]
+  value:`["https://external-preview.redd.it/-17yZH_Rhsl68DHe8A-GWRbZOu_irAeGGEkGKCM82_o.jpg?auto=webp&s=23d90b3c33816ea9d4314d79db5ecdbfab4c01b9", "https://i.ytimg.com/vi/kfCI5O3AUTk/maxresdefault.jpg", "https://i.imgur.com/m0CZRQy.jpg", "https://i1.wp.com/threecorgis.com/wp-content/uploads/2014/09/three-corgis-4189.jpg?resize=500%2C667", "https://i.imgur.com/aWpxP5O.jpg", "https://pbs.twimg.com/media/CMF2lpLUMAAYA49.jpg", "https://barkpost.com/wp-content/uploads/2015/01/corgiarya1.jpg"]` /]
 
 [var name:"corgRange" value:5 /]
 
@@ -341,32 +505,3 @@ What is the name of corgi-dachshund mixes?
   You answered [Display value:`radioVal`/] which is not correct.  Please review the material at the top of the page.
 [/Conditional]
 
-## Data
-
-So far, we've been using data/image sources available on the web.  We also have the option of storing data within our Idyll directory and accessing it that way.  This is useful if we want to use our own data that we've created.
-
-For example, if we check out the [course webpage for this week](https://uiuc-ischool-dataviz.github.io/spring2020/week12/), we see that there is a [corgis per country over time](https://uiuc-ischool-dataviz.github.io/spring2020/week12/corg/corgs_per_country_over_time_2020.csv) dataset.  We'll talk a bit more about how this dataset was generated next week, but you can check out the [webscraping code](https://uiuc-ischool-dataviz.github.io/spring2020/week12/corg/grabCorgData_subpages.py) and [processing notebook](https://uiuc-ischool-dataviz.github.io/spring2020/week12/corg/calc_corgData.ipynb) for more details if you can't wait.
-
-For now, just download the [corgis per country over time](https://uiuc-ischool-dataviz.github.io/spring2020/week12/corg/corgs_per_country_over_time_columns_2020.csv) dataset and save it in the `data/` subdirectory of your Idyll project.
-
-Now we can load this dataset with:
-
-```
-[data name:"corgsTime" source:"corgs_per_country_over_time_columns_2020.csv" /]
-```
-
-[data name:"corgsTime" source:"corgs_per_country_over_time_columns_2020.csv" /]
-
-We can check out our data really quick with an interactive table:
-
-[Table data:corgsTime /]
-
-[Chart type:"line" data:`corgsTime` domain:`null` range:`null` x:"Years" y:"United States" stroke:"red" /]
-
-You'll note a lot of the formatting here isn't what we'd really like, but this is another motivation to learn about external-installable components next time (like vega-lite & d3).
-
-## Publishing to github.io
-
-Let's talk about it!
-
-NOTE: something of importance is selecting your theme!

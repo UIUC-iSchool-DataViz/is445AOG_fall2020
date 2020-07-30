@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Week 11 - Viz Audience; More Iodide, Javascript &amp; Vega-lite (and maybe Idyll) | IS445(AOG) - Data Viz</title>
+<title>Week 11 - Intro to Idyll | IS445(AOG) - Data Viz</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Week 11 - Viz Audience; More Iodide, Javascript &amp; Vega-lite (and maybe Idyll)" />
+<meta property="og:title" content="Week 11 - Intro to Idyll" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This is the course website for IS445(AOG) in Fall 2020" />
 <meta property="og:description" content="This is the course website for IS445(AOG) in Fall 2020" />
@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://localhost:4001/is445AOG_fall2020/week11/" />
 <meta property="og:site_name" content="IS445(AOG) - Data Viz" />
 <script type="application/ld+json">
-{"description":"This is the course website for IS445(AOG) in Fall 2020","headline":"Week 11 - Viz Audience; More Iodide, Javascript &amp; Vega-lite (and maybe Idyll)","@type":"WebPage","url":"http://localhost:4001/is445AOG_fall2020/week11/","@context":"https://schema.org"}</script>
+{"description":"This is the course website for IS445(AOG) in Fall 2020","headline":"Week 11 - Intro to Idyll","@type":"WebPage","url":"http://localhost:4001/is445AOG_fall2020/week11/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -40,25 +40,31 @@
       </header>
 
       <section>
-                <h1 id="week-11---viz-audience-more-iodide-javascript--vega-lite-and-maybe-idyll">Week 11 - Viz Audience; More Iodide, Javascript &amp; Vega-lite (and maybe Idyll)</h1>
+                <h1 id="week-11---intro-to-idyll">Week 11 - Intro to Idyll</h1>
+
+<p>Today we’ll cover a brief intro of <a href="https://idyll-lang.org/">Idyll</a> and web development in general.</p>
 
 <h2 id="downloads--links">Downloads &amp; Links</h2>
 
-<h3 id="iodide-notebooks">Iodide Notebooks:</h3>
+<h3 id="data">Data</h3>
 
-<ul>
-  <li><a href="https://alpha.iodide.io/notebooks/4399/">Prep Iodide Notebook</a></li>
-  <li><a href="https://alpha.iodide.io/notebooks/4466/">In Class Iodide Notebook</a></li>
-</ul>
+<ol>
+  <li><a href="corg/corgs_per_country_over_time_columns_2020.csv" download="">Corgis per country over time (corgs_per_country_over_time_columns_2020.csv)</a></li>
+</ol>
+
+<h3 id="links--code">Links &amp; Code</h3>
+
+<ol>
+  <li>We’ll be building toward a webpage like <a href="https://jnaiman.github.io/">this</a> today using <a href="https://idyll-lang.org/">Idyll</a>’s built-in components.</li>
+  <li>We got to this <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week12/corg/inClass/index.idyll">Markdown code right here in Class this week</a>.</li>
+  <li>Full Markdown code for this week and next week <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week12/corg/index.idyll">available right here</a>.</li>
+</ol>
 
 <h2 id="optional-reading-list">Optional reading list</h2>
 
 <ol>
-  <li><a href="https://medium.com/multiple-views-visualization-research-explained/same-data-multiple-perspectives-curse-of-knowledge-in-visual-data-communication-d827c381f936">Same Data, Multiple Perspectives</a></li>
-  <li><a href="https://alpha.iodide.io/">Iodide Docs</a></li>
-  <li><a href="https://vega.github.io/vega-lite/docs/transform.html">Vega-lite transformations</a></li>
-  <li><a href="https://vega.github.io/vega-lite/docs/selection.html">Vega-lite selections</a></li>
-  <li><a href="https://idyll-lang.org/docs"> Idyll Docs</a></li>
+  <li><a href="https://idyll-lang.org/docs"> Idyll Docs</a> - in particular: <a href="https://idyll-lang.org/docs/components">Built in</a>/<a href="https://idyll-lang.org/docs/components/npm">npm installed</a> components</li>
+  <li><a href="http://avl.ncsa.illinois.edu/works">Works of AVL</a></li>
 </ol>
 
 
@@ -118,10 +124,18 @@
         
          <!-- end if contains page.dir and url-->
         
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
         
 	
-        <li>Lecture 11, Part 1: (<a href="/is445AOG_fall2020/week11/lecture11_part1.html">view</a>,
-          <a href="https://github.com/UIUC-iSchool-DataViz/fall2020online/blob/master/week11/lecture11_part1.md">source</a>, <a href="/is445AOG_fall2020/week11/lecture11_part1.html?showNotes=false">present</a>)</li>
+        <li>Lecture 12, Part 1: (<a href="/is445AOG_fall2020/week11/lecture12_part1.html">view</a>,
+          <a href="https://github.com/UIUC-iSchool-DataViz/fall2020online/blob/master/week11/lecture12_part1.md">source</a>, <a href="/is445AOG_fall2020/week11/lecture12_part1.html?showNotes=false">present</a>)</li>
 	
 	 <!-- end if not lecture -->
 	 <!-- end iodide -->
@@ -129,8 +143,8 @@
         
         
 	
-        <li>Lecture 11, Part 2: (<a href="/is445AOG_fall2020/week11/lecture11_part2.html">view</a>,
-          <a href="https://github.com/UIUC-iSchool-DataViz/fall2020online/blob/master/week11/lecture11_part2.md">source</a>, <a href="/is445AOG_fall2020/week11/lecture11_part2.html?showNotes=false">present</a>)</li>
+        <li>Lecture 12, Part 2: (<a href="/is445AOG_fall2020/week11/lecture12_part2.html">view</a>,
+          <a href="https://github.com/UIUC-iSchool-DataViz/fall2020online/blob/master/week11/lecture12_part2.md">source</a>, <a href="/is445AOG_fall2020/week11/lecture12_part2.html?showNotes=false">present</a>)</li>
 	
 	 <!-- end if not lecture -->
 	 <!-- end iodide -->
@@ -146,10 +160,6 @@
         
          <!-- end if contains page.dir and url-->
         
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
         
         
         
@@ -270,8 +280,11 @@
         
 	<!-- I am a comment -->
         
-        
-	<!-- I am a comment -->
+	
+        <li>Notebook: calc_corgData: 
+         (<a href="../nbv.html?notebook_name=%2Fis445AOG_fall2020%2Fweek11%2Fcorg%2Fcalc_corgData.ipynb">view</a>,
+          <a href="/is445AOG_fall2020/week11/corg/calc_corgData.ipynb">download</a>)</li>
+	
         
         
 	<!-- I am a comment -->
@@ -338,6 +351,11 @@
         
         
         
+	
+        <li>Python Script: grabCorgData_subpages: 
+         (<a href="/is445AOG_fall2020/week11/corg/grabCorgData_subpages.py">download</a>)</li>
+	
+        
         
         
         
@@ -356,8 +374,6 @@
 	  
 	
 	
-        
-        
         
         
         

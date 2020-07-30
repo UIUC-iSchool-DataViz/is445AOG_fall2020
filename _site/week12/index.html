@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Week 12 - Idyll &amp; Intro to Scientific Viz with AVL | IS445(AOG) - Data Viz</title>
+<title>Week 12 - More with Idyll, Publishing Viz | IS445(AOG) - Data Viz</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Week 12 - Idyll &amp; Intro to Scientific Viz with AVL" />
+<meta property="og:title" content="Week 12 - More with Idyll, Publishing Viz" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This is the course website for IS445(AOG) in Fall 2020" />
 <meta property="og:description" content="This is the course website for IS445(AOG) in Fall 2020" />
@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://localhost:4001/is445AOG_fall2020/week12/" />
 <meta property="og:site_name" content="IS445(AOG) - Data Viz" />
 <script type="application/ld+json">
-{"description":"This is the course website for IS445(AOG) in Fall 2020","headline":"Week 12 - Idyll &amp; Intro to Scientific Viz with AVL","@type":"WebPage","url":"http://localhost:4001/is445AOG_fall2020/week12/","@context":"https://schema.org"}</script>
+{"description":"This is the course website for IS445(AOG) in Fall 2020","headline":"Week 12 - More with Idyll, Publishing Viz","@type":"WebPage","url":"http://localhost:4001/is445AOG_fall2020/week12/","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -40,35 +40,48 @@
       </header>
 
       <section>
-                <h1 id="week-12---idyll--intro-to-scientific-viz-with-avl">Week 12 - Idyll &amp; Intro to Scientific Viz with AVL</h1>
+                <h1 id="week-12---more-with-idyll-publishing-viz">Week 12 - More with Idyll, Publishing Viz</h1>
 
-<p>Today we’ll cover a brief intro of <a href="https://idyll-lang.org/">Idyll</a> and web development in general.</p>
-
-<p>We’ll also be getting a lecture from the <a href="http://avl.ncsa.illinois.edu/">Advanced Visualization Lab at NCSA</a> who will talk about scientific and cinematic visualization.  We’ll cover scientific visualization more next week.</p>
+<p>We talk a little bit about publishing and carry on with Idyll.</p>
 
 <h2 id="downloads--links">Downloads &amp; Links</h2>
 
 <h3 id="data">Data</h3>
 
-<ol>
-  <li><a href="corg/corgs_per_country_over_time_columns_2020.csv" download="">Corgis per country over time (corgs_per_country_over_time_columns_2020.csv)</a></li>
-</ol>
+<ul>
+  <li>Idyll: <a href="corg/corgs_per_country_over_time_columns_2020.csv" download="">Corgis per country over time (corgs_per_country_over_time_columns_2020.csv)</a></li>
+</ul>
 
 <h3 id="links--code">Links &amp; Code</h3>
 
 <ol>
   <li>We’ll be building toward a webpage like <a href="https://jnaiman.github.io/">this</a> today using <a href="https://idyll-lang.org/">Idyll</a>’s built-in components.</li>
-  <li>We got to this <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week12/corg/inClass/index.idyll">Markdown code right here in Class this week</a>.</li>
-  <li>Full Markdown code for this week and next week <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week12/corg/index.idyll">available right here</a>.</li>
+  <li>Last week, we got to this <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week12/corg/inClass/index.idyll">Markdown code right here</a> and we’ll start from there this week.</li>
+  <li>Full Markdown code for this week and next week <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week14/corg/index.idyll">available right here</a>.</li>
+  <li>We’ll also build a few histogram components like:
+    <ul>
+      <li>starting with <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week14/corg/histogram-custom-d3-component.js">this one</a></li>
+      <li>then <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week14/corg/histogram-button-custom-d3-component.js">this one</a></li>
+      <li>and finally <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week14/corg/histogram-button-slider-custom-d3-component.js">this one</a></li>
+    </ul>
+  </li>
 </ol>
+
+<p>Where we got to in class this week:</p>
+<ul>
+  <li><a href="index.idyll">This index.idyll</a> file</li>
+  <li><a href="histogram-custom-d3-component.js">This histogram component</a></li>
+</ul>
+
+<p><strong>Note:</strong> see <a href="../week12/">week 12</a> for the scripts used to generate this dataset.</p>
 
 <h2 id="optional-reading-list">Optional reading list</h2>
 
 <ol>
-  <li><a href="https://idyll-lang.org/docs"> Idyll Docs</a> - in particular: <a href="https://idyll-lang.org/docs/components">Built in</a>/<a href="https://idyll-lang.org/docs/components/npm">npm installed</a> components</li>
-  <li><a href="http://avl.ncsa.illinois.edu/works">Works of AVL</a></li>
+  <li><a href="https://yt-project.org/">yt docs</a></li>
+  <li><a href="https://yt-project.org/doc/visualizing/volume_rendering.html">yt Volume Rendering Tutorial</a></li>
+  <li><a href="https://idyll-lang.org/docs"> Idyll Docs</a></li>
 </ol>
-
 
 
         <h3>Materials</h3>
@@ -130,28 +143,25 @@
         
          <!-- end if contains page.dir and url-->
         
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
         
 	
-        <li>Lecture 12, Part 1: (<a href="/is445AOG_fall2020/week12/lecture12_part1.html">view</a>,
-          <a href="https://github.com/UIUC-iSchool-DataViz/fall2020online/blob/master/week12/lecture12_part1.md">source</a>, <a href="/is445AOG_fall2020/week12/lecture12_part1.html?showNotes=false">present</a>)</li>
+        <li>Lecture 14: (<a href="/is445AOG_fall2020/week12/lecture14.html">view</a>,
+          <a href="https://github.com/UIUC-iSchool-DataViz/fall2020online/blob/master/week12/lecture14.md">source</a>, <a href="/is445AOG_fall2020/week12/lecture14.html?showNotes=false">present</a>)</li>
 	
 	 <!-- end if not lecture -->
 	 <!-- end iodide -->
          <!-- end if contains page.dir and url-->
         
-        
-	
-        <li>Lecture 12, Part 2: (<a href="/is445AOG_fall2020/week12/lecture12_part2.html">view</a>,
-          <a href="https://github.com/UIUC-iSchool-DataViz/fall2020online/blob/master/week12/lecture12_part2.md">source</a>, <a href="/is445AOG_fall2020/week12/lecture12_part2.html?showNotes=false">present</a>)</li>
-	
-	 <!-- end if not lecture -->
-	 <!-- end iodide -->
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
          <!-- end if contains page.dir and url-->
         
          <!-- end if contains page.dir and url-->
@@ -281,29 +291,50 @@
         
 	<!-- I am a comment -->
         
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
+	
+        <li>Notebook: extraNotebook_galaxiesIn3D_preCollege: 
+         (<a href="../nbv.html?notebook_name=%2Fis445AOG_fall2020%2Fweek12%2FextraNotebook_galaxiesIn3D_preCollege.ipynb">view</a>,
+          <a href="/is445AOG_fall2020/week12/extraNotebook_galaxiesIn3D_preCollege.ipynb">download</a>)</li>
+	
         
         
 	<!-- I am a comment -->
         
 	
-        <li>Notebook: calc_corgData: 
-         (<a href="../nbv.html?notebook_name=%2Fis445AOG_fall2020%2Fweek12%2Fcorg%2Fcalc_corgData.ipynb">view</a>,
-          <a href="/is445AOG_fall2020/week12/corg/calc_corgData.ipynb">download</a>)</li>
+        <li>Notebook: for_mybinder: 
+         (<a href="../nbv.html?notebook_name=%2Fis445AOG_fall2020%2Fweek12%2Ffor_mybinder.ipynb">view</a>,
+          <a href="/is445AOG_fall2020/week12/for_mybinder.ipynb">download</a>)</li>
 	
+        
+        
+	<!-- I am a comment -->
+        
+	
+        <li>Notebook: inClass_week14: 
+         (<a href="../nbv.html?notebook_name=%2Fis445AOG_fall2020%2Fweek12%2FinClass_week14.ipynb">view</a>,
+          <a href="/is445AOG_fall2020/week12/inClass_week14.ipynb">download</a>)</li>
+	
+        
+        
+	<!-- I am a comment -->
+        
+	
+        <li>Notebook: prep_notebook_week14: 
+         (<a href="../nbv.html?notebook_name=%2Fis445AOG_fall2020%2Fweek12%2Fprep_notebook_week14.ipynb">view</a>,
+          <a href="/is445AOG_fall2020/week12/prep_notebook_week14.ipynb">download</a>)</li>
+	
+        
+        
+	<!-- I am a comment -->
+        
+	
+        <li>Notebook: test_imports_week14: 
+         (<a href="../nbv.html?notebook_name=%2Fis445AOG_fall2020%2Fweek12%2Ftest_imports_week14.ipynb">view</a>,
+          <a href="/is445AOG_fall2020/week12/test_imports_week14.ipynb">download</a>)</li>
+	
+        
+        
+	<!-- I am a comment -->
         
         
 	<!-- I am a comment -->
@@ -352,12 +383,12 @@
         
         
         
-	
-        <li>Python Script: grabCorgData_subpages: 
-         (<a href="/is445AOG_fall2020/week12/corg/grabCorgData_subpages.py">download</a>)</li>
-	
         
         
+	
+        <li>Python Script: solverlibs: 
+         (<a href="/is445AOG_fall2020/week12/solverlibs.py">download</a>)</li>
+	
         
         
 	
@@ -375,8 +406,6 @@
 	  
 	
 	
-        
-        
         
         
         
