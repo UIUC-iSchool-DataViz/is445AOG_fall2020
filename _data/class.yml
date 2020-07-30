@@ -1,31 +1,26 @@
 instructor: 
   name: Jill P. Naiman
   email: jnaiman@illinois.edu
-  office: 1205 W Clark ST, NCSA, No. 2040 
-  office_hours: Tuesdays 3-4pm (soft time cut-off), NCSA; Fridays 3-4pm, iSchool; other times by request
+  office: online 
+  office_hours: Tuesday 5-6pm & Mondays 8-9pm (homework "study hour"), other times by request
 tas:
   -
     name: Diptendra Bagchi 
     email: dbagchi2@illinois.edu
-    office: iSchool, 56
-    office_hours: Wednesday & Friday 1-2pm
-  -
-    name: Qiuyan Guo 
-    email: qqguo2@illinois.edu
-    office: iSchool, 56
-    office_hours: Thursdays 8-9am
+    office: TBD
+    office_hours: TBD
 
 course:
   name: Data Visualization
-  number: IS590DV
-  semester: Spring, 2020
-  location: Ceramics Building, Room 218
-  time: Mon 9AM-11:50PM
+  number: IS445(AOG)
+  semester: Fall, 2020
+  location: online
+  time: Mon 6-8PM
   credit_hours: 4
 urls:
   -
     name: Slack
-    url: https://is590dv-spring2020.slack.com/
+    url: TBD
   - 
     name: Moodle
-    url: https://learn.illinois.edu/course/view.php?id=42777
+    url: https://learn.illinois.edu/course/view.php?id=50409
