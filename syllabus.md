@@ -47,7 +47,7 @@ wrap-up session at the end.
 
 Students are expected to have laptops with them, as well as access to Python
 installations, and will be encouraged to participate in class.  Homework will
-be assigned and collected utilizing the Jupyter nbgrader extension or through
+be assigned and collected through
 other methods specified at time of submission like Moodle.
 
 The central themes of the course are:
@@ -213,17 +213,18 @@ be collected electronically.
 The submission process for homeworks will be described by example during class
 before any homeworks are to be submitted.
 
-Each assignment will be 50% "correctness" and 50% the narrative description of
+Each assignment will be based on "correctness" and the narrative description of
 the process.  "Correctness" in this case indicates that the code runs without
 issue, results are produced, and each component of the assignment is completed.
-The narrative description of the process will be graded on grammar (less so) and
-completeness (more so).
+The narrative description of the process will be graded on grammar minimally and
+more so on completeness and thoughtfulness.
 
 ### Grading Policy
 
-All assignments are required for all students. Completing all assignments is
-not a guarantee of a passing grade.  All work must be completed in order to
-pass this class. Late or incomplete assignments will not be given full credit
+All assignments are required for all students, aside from one homework (lowest HW grade will be dropped). 
+Completing all assignments is
+not a guarantee of a passing grade.  You must do homework, visualization reports, and final to 
+receive a passing grade. Late or incomplete assignments will not be given full credit
 unless the student has contacted the instructor prior to the due date of the
 assignment (or in the case of emergencies, as soon as practicable).
 
