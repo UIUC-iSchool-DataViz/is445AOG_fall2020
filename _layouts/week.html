@@ -1,0 +1,86 @@
+---
+layout: default
+---
+
+        {{content}}
+
+        <h3>Materials</h3>
+        <ul>
+        {% for f in site.html_pages %}
+        {% if f.dir contains page.dir and page.url != f.url%}
+	{% if f.layout == "lecture" and f.visible_lec %}
+        <li>{{f.title}}: (<a href="{{f.url | relative_url}}">view</a>,
+          <a href="{{ site.github.repository_url }}/blob/{{site.branch}}/{{f.path}}">source</a>{% if f.layout == "lecture" %}, <a href="{{f.url | relative_url}}?showNotes=false">present</a>{% endif %})</li>
+	{% endif %}
+	{% if f.layout != "lecture" %}
+	{% unless f.path contains "iodide" %}
+        <li>{{f.title}}: (<a href="{{f.url | relative_url}}">view</a>,
+          <a href="{{ site.github.repository_url }}/blob/{{site.branch}}/{{f.path}}">source</a>{% if f.layout == "lecture" %}, <a href="{{f.url | relative_url}}?showNotes=false">present</a>{% endif %})</li>
+	{% endunless %}
+	{% endif %} <!-- end if not lecture -->
+	{% if f.path contains "iodide" %}
+	<li>{{f.title}}: (<a href="{{ site.github.repository_url }}/blob/{{site.branch}}/{{f.path}}">source</a>)</li>
+	{% endif %} <!-- end iodide -->
+        {% endif %} <!-- end if contains page.dir and url-->
+        {% endfor %}
+        {% assign pdfs = site.static_files | where: "extname", ".pdf" %}
+        {% for pdf in pdfs %}
+        {% if pdf.path contains page.dir %}
+        <li>PDF {{pdf.basename}}: 
+         (<a href="{{pdf.path | relative_url }}">view</a>)
+        </li>
+        {% endif %}
+        {%endfor%}
+	{% assign notebooks = site.static_files | where: "extname", ".ipynb" %}
+	
+        {% for nb in notebooks %}
+	<!-- I am a comment -->
+        {% if nb.path contains page.dir %}
+	{% unless nb.basename contains "2019" %}
+        <li>Notebook: {{nb.basename}}: 
+         (<a href="../nbv.html?notebook_name={{nb.path | relative_url | url_encode }}">view</a>,
+          <a href="{{nb.path | relative_url}}">download</a>)</li>
+	{% endunless %}
+        {% endif %}
+        {%endfor%}
+
+	<!-- Also for plain py files -->
+	{% assign pyfiles = site.static_files | where: "extname", ".py" %}
+        {% for nb in pyfiles %}
+        {% if nb.path contains page.dir %}
+	{% unless nb.basename contains "2019" %}
+        <li>Python Script: {{nb.basename}}: 
+         (<a href="{{nb.path | relative_url}}">download</a>)</li>
+	{% endunless %}
+        {% endif %}
+        {%endfor%}
+	
+        </ul>
+
+	<!-- do we have any previous materials? -->
+	{% assign previousFiles = site.static_files | where: "extname", ".ipynb" %}
+	{% assign materialsPrevious = "NO" %}
+	{% for previousFile in previousFiles %}
+ 	 {% if previousFile.path contains page.dir and previousFile.basename contains "2019" %}
+	  {% assign materialsPrevious = "YES" %}
+	 {% endif %}
+	{% endfor %}
+
+
+	{% if materialsPrevious == "YES" %}
+        <h3>Materials from Previous Courses</h3>
+	{% endif %}
+
+        <ul>
+	  
+	{% assign notebooks = site.static_files | where: "extname", ".ipynb" %}
+	
+        {% for nb in notebooks %}
+        {% if nb.path contains page.dir and nb.basename contains "2019" %}
+        <li>Notebook: {{nb.basename}}: 
+         (<a href="../nbv.html?notebook_name={{nb.path | relative_url | url_encode }}">view</a>,
+         <a href="{{nb.path | relative_url}}">download</a>)</li>
+        {% endif %}
+        {%endfor%}
+        </ul>
+	
