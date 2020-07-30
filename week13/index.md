@@ -1,6 +1,8 @@
 ---
 layout: week
-visible: true
+visible: false
+visible_lec: true
+visible_n: true
 ---
 
 # Week 13 - A few more Idyll+d3 things & AVL HERE??

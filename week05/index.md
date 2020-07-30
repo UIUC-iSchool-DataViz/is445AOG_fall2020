@@ -1,6 +1,6 @@
 ---
 layout: week
-visible: true
+visible: false
 visible_lec: false
 visible_n: true
 ---

@@ -1,6 +1,8 @@
 ---
 layout: week
-visible: true
+visible: false
+visible_lec: true
+visible_n: true
 ---
 
 # Week 12 - More with Idyll, Publishing Viz
