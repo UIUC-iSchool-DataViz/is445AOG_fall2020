@@ -5,7 +5,7 @@ visible_lec: true
 visible_n: true
 ---
 
-# Week 15 - Scientific Viz & AVL HERE??
+# Week 15 - Scientific Viz & AVL Guest lecture
 
 We talked a little bit about publishing, networks, and scientific viz.
 

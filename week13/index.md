@@ -5,7 +5,7 @@ visible_lec: true
 visible_n: true
 ---
 
-# Week 13 - A few more Idyll+d3 things & AVL HERE??
+# Week 13 - A few more Idyll+d3 things 
 
 A few more things in Idyll and d3.js.
 
