@@ -27,7 +27,7 @@ palette of operations you can apply to data to visualize it.
 ## Optional Reading List (See syllabus for acronyms)
 
 1. VAD, Ch. 2: What: Data Abstraction
-2. <a href="https://serialmentor.com/dataviz/aesthetic-mapping.html">FDA, Ch. 2: Visualizing data: Mapping data onto aesthetics</a>
+2. <a href="https://serialmentor.com/dataviz/aesthetic-mapping.html">FDV, Ch. 2: Visualizing data: Mapping data onto aesthetics</a>
 3. <a href="https://github.com/jnaiman/IS-452AO-Fall2019/blob/master/Lectures/Week-10-JSONandCSV.ipynb">IS452’s intro to CSV files (bottom of page)</a>
 4. <a href="https://github.com/jnaiman/IS-452AO-Fall2019/blob/master/Lectures/Week-09-Dictionaries.ipynb">IS452’s Intro to Dictionaries</a>
 5. <a href="https://pandas.pydata.org/pandas-docs/stable/">Pandas Docs</a> & <a href="https://docs.scipy.org/doc/numpy/reference/">NumPy Docs</a>
