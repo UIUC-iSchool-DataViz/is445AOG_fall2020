@@ -181,7 +181,26 @@ that are of particular interest will be emphasized.</p>
 
 <p><strong>Course Outline and <em>Optional</em> Reading List</strong></p>
 
+<style>
+table th:first-of-type {
+    width: 10%;
+}
+table th:nth-of-type(2) {
+    width: 30%;
+}
+table th:nth-of-type(3) {
+    width: 60%;
+}
+</style>
+
 <table>
+  <thead>
+    <tr>
+      <th>Week</th>
+      <th>Topic</th>
+      <th>Reading</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
       <td>Week 1</td>
@@ -190,8 +209,8 @@ that are of particular interest will be emphasized.</p>
     </tr>
     <tr>
       <td>Week 2</td>
-      <td>Data storage &amp; Operations</td>
-      <td>1. VAD, Ch. 2: What: Data Abstraction <br /> 2. <a href="https://serialmentor.com/dataviz/aesthetic-mapping.html">FDV, Ch. 2: Visualizing data: Mapping data onto aesthetics</a> <br /> 3. VAD, Ch. 13: Reduce Items and Attributes <br /> 4. <a href="https://github.com/jnaiman/IS-452AO-Fall2019/blob/master/Lectures/Week-10-JSONandCSV.ipynb">IS452’s intro to CSV files (bottom of page)</a> <br /> 5. <a href="https://github.com/jnaiman/IS-452AO-Fall2019/blob/master/Lectures/Week-09-Dictionaries.ipynb">IS452’s Intro to Dictionaries</a> <br /> 6. <a href="https://pandas.pydata.org/pandas-docs/stable/">Pandas Docs</a> &amp; <a href="https://docs.scipy.org/doc/numpy/reference/">NumPy Docs</a></td>
+      <td>Data storage &amp; Operations; Image data</td>
+      <td>1. VAD, Ch. 2: What: Data Abstraction <br /> 2. <a href="https://serialmentor.com/dataviz/aesthetic-mapping.html">FDV, Ch. 2: Visualizing data: Mapping data onto aesthetics</a> <br /> 3. VAD, Ch. 13: Reduce Items and Attributes <br /> 4. <a href="https://serialmentor.com/dataviz/image-file-formats.html">FDV, Ch. 27: Understanding the most commonly used image file formats</a> <br /> 5. <a href="https://github.com/jnaiman/IS-452AO-Fall2019/blob/master/Lectures/Week-10-JSONandCSV.ipynb">IS452’s intro to CSV files (bottom of page)</a> <br /> 6. <a href="https://github.com/jnaiman/IS-452AO-Fall2019/blob/master/Lectures/Week-09-Dictionaries.ipynb">IS452’s Intro to Dictionaries</a> <br /> 7. <a href="https://pandas.pydata.org/pandas-docs/stable/">Pandas Docs</a> &amp; <a href="https://docs.scipy.org/doc/numpy/reference/">NumPy Docs</a></td>
     </tr>
     <tr>
       <td>Week 3</td>
@@ -201,7 +220,7 @@ that are of particular interest will be emphasized.</p>
     <tr>
       <td>Week 4</td>
       <td>Types of Viz and color, colormaps</td>
-      <td>1. VAD, Ch. 10: Map Color and Other Channels <br /> 2. <a href="https://serialmentor.com/dataviz/color-basics.html">FDV, Ch. 4: Color scales</a> <br /> 3. VAD, Ch. 5: Marks and Channels <br /> 4. <a href="https://www.csc2.ncsu.edu/faculty/healey/PP/">Perception in Visualization (pay attention to the parts about color)</a>  <br /> 5. <a href="https://jiffyclub.github.io/palettable/#documentation">Palettable Docs</a></td>
+      <td>1. VAD, Ch. 10: Map Color and Other Channels <br /> 2. <a href="https://serialmentor.com/dataviz/color-basics.html">FDV, Ch. 4: Color scales</a> <br /> 3. VAD, Ch. 5: Marks and Channels <br /> 4. <a href="https://www.csc2.ncsu.edu/faculty/healey/PP/">Perception in Visualization (pay extra attention to the parts about color)</a>  <br /> 5. <a href="https://jiffyclub.github.io/palettable/#documentation">Palettable Docs</a></td>
     </tr>
     <tr>
       <td>Week 5</td>
@@ -230,8 +249,8 @@ that are of particular interest will be emphasized.</p>
     </tr>
     <tr>
       <td>Week 10</td>
-      <td>Designing for the web with Python &amp; Javascript, Web dev with Iodide</td>
-      <td>1. <a href="https://medium.com/multiple-views-visualization-research-explained/same-data-multiple-perspectives-curse-of-knowledge-in-visual-data-communication-d827c381f936">Same Data, Multiple Perspectives</a> <br /> 2. <a href="https://alpha.iodide.io/">Iodide Docs</a> <br /> 3. <a href="https://vega.github.io/vega-lite/docs/">vega-lite docs</a> - in particular: <a href="https://vega.github.io/vega-lite/docs/transform.html">Vega-lite transformations</a> &amp; <a href="https://vega.github.io/vega-lite/docs/selection.html">Vega-lite selections</a> <br /> 4. <a href="https://idyll-lang.org/docs"> Idyll Docs</a></td>
+      <td>Designing for the web with Python &amp; Javascript, Web dev with Iodide; Considering your audience</td>
+      <td>1. <a href="https://medium.com/multiple-views-visualization-research-explained/same-data-multiple-perspectives-curse-of-knowledge-in-visual-data-communication-d827c381f936">Same Data, Multiple Perspectives</a> <br /> 2. <a href="https://serialmentor.com/dataviz/telling-a-story.html">FDV, Ch. 29: Telling a story and making a point</a> <br /> 3. <a href="https://alpha.iodide.io/">Iodide Docs</a> <br /> 4. <a href="https://vega.github.io/vega-lite/docs/">vega-lite docs</a> - in particular: <a href="https://vega.github.io/vega-lite/docs/transform.html">Vega-lite transformations</a> &amp; <a href="https://vega.github.io/vega-lite/docs/selection.html">Vega-lite selections</a> <br /> 4. <a href="https://idyll-lang.org/docs"> Idyll Docs</a></td>
     </tr>
     <tr>
       <td>Week 11</td>
@@ -260,8 +279,8 @@ that are of particular interest will be emphasized.</p>
     </tr>
     <tr>
       <td>Week 16</td>
-      <td>Network Viz &amp; Word cloud Viz</td>
-      <td>1. VAD Ch. 9: Arrange Networks and Trees <br /> 2. VAD, Ch. 13.4.3.1: Reduce Items and Attributes</td>
+      <td>Network Viz &amp; Word cloud Viz; Class summary</td>
+      <td>1. VAD Ch. 9: Arrange Networks and Trees <br /> 2. VAD, Ch. 13.4.3.1: Reduce Items and Attributes <br /> 3. VAD, Ch. 6: Rules of Thumb <br /> 4. <a href="https://serialmentor.com/dataviz/choosing-visualization-software.html">FDV, Ch. 28: Choosing the right visualization software</a> <br /> 5. <a href="https://serialmentor.com/dataviz/no-3d.html">FDV, Ch. 26: Don’t go 3D</a> <br /> 6. <a href="https://serialmentor.com/dataviz/avoid-line-drawings.html">FDV, Ch. 25: Avoid line drawings</a></td>
     </tr>
   </tbody>
 </table>
