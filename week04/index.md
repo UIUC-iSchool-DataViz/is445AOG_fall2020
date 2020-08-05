@@ -38,8 +38,8 @@ Make sure you save these in the same directory as your jupyter notebook is runni
 
 ## Optional Reading List
 
- 1. VAD, Ch. 10: Map Color and Other Channels
- 1. <a href="https://serialmentor.com/dataviz/color-basics.html">FDV, Ch. 4: Color scales</a>
- 1. <a href="https://www.csc2.ncsu.edu/faculty/healey/PP/">Perception in Visualization (pay attention to the parts about color)</a>
- <!--1. VAD, Ch. 5: Marks and Channels-->
- 1. <a href="https://jiffyclub.github.io/palettable/#documentation">Palettable Docs</a>
+ 1. VAD, Ch. 10: Map Color and Other Channels 
+ 2. <a href="https://serialmentor.com/dataviz/color-basics.html">FDV, Ch. 4: Color scales</a> 
+ 3. VAD, Ch. 5: Marks and Channels 
+ 4. <a href="https://www.csc2.ncsu.edu/faculty/healey/PP/">Perception in Visualization (pay extra attention to the parts about color)</a>  
+ 5. <a href="https://jiffyclub.github.io/palettable/#documentation">Palettable Docs</a>

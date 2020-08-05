@@ -37,10 +37,8 @@ A few more things in Idyll and d3.js.
 
 ## Optional reading list
 
- 1. <a href="https://yt-project.org/">yt docs</a> 
- 1. <a href="https://yt-project.org/doc/visualizing/volume_rendering.html">yt Volume Rendering Tutorial</a> 
- 1. <a href="https://idyll-lang.org/docs"> Idyll Docs</a>
- 
+  1. <a href="https://github.com/d3/d3/wiki">d3.js docs</a> 
+
 **d3.js examples (v4)**
  1. [Simple time-bar chart](https://bl.ocks.org/vikkya/75bda04cd0c00e49cbda6cfee8d97aba) (we used this one to start with)
  1. [Grouped bar chart](https://observablehq.com/@d3/grouped-bar-chart)

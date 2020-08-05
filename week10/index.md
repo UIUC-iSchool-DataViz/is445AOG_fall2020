@@ -18,10 +18,9 @@ visible_n: true
 
 ## Optional reading list
 
- 1. <a href="https://medium.com/multiple-views-visualization-research-explained/same-data-multiple-perspectives-curse-of-knowledge-in-visual-data-communication-d827c381f936">Same Data, Multiple Perspectives</a>
- 1. <a href="https://alpha.iodide.io/">Iodide Docs</a>
- 1. <a href="https://vega.github.io/vega-lite/docs/transform.html">Vega-lite transformations</a>
- 1. <a href="https://vega.github.io/vega-lite/docs/selection.html">Vega-lite selections</a>
- 1. <a href="https://idyll-lang.org/docs"> Idyll Docs</a>
-
+ 1. <a href="https://medium.com/multiple-views-visualization-research-explained/same-data-multiple-perspectives-curse-of-knowledge-in-visual-data-communication-d827c381f936">Same Data, Multiple Perspectives</a> 
+ 2. <a href="https://serialmentor.com/dataviz/telling-a-story.html">FDV, Ch. 29: Telling a story and making a point</a> 
+ 3. <a href="https://alpha.iodide.io/">Iodide Docs</a> 
+ 4. <a href="https://vega.github.io/vega-lite/docs/">vega-lite docs</a> - in particular: <a href="https://vega.github.io/vega-lite/docs/transform.html">Vega-lite transformations</a> & <a href="https://vega.github.io/vega-lite/docs/selection.html">Vega-lite selections</a> 
+ 5. <a href="https://idyll-lang.org/docs"> Idyll Docs</a>
 

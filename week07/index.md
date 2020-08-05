@@ -30,6 +30,6 @@ We will start thinking about maps & map projection, both in `bqplot` and `matplo
 
 ## Optional reading list
 
- 1. VAD Ch. 8: Arrange Spatial Data
- 1. VAD Ch. 11: Manipulate View
- 1. <a href="https://serialmentor.com/dataviz/geospatial-data.html">FDV, Ch. 15: Visualizing geospatial data</a>
+ 1. VAD Ch. 8.1-8.3: Arrange Spatial Data 
+ 2. VAD Ch. 11.1-11.5: Manipulate View 
+ 3. <a href="https://serialmentor.com/dataviz/geospatial-data.html">FDV, Ch. 15: Visualizing geospatial data</a>

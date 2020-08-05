@@ -18,8 +18,12 @@ visible_n: true
 
 ## Optional reading list
 
- 1. VAD Ch. 9: Arrange Networks and Trees
-
+ 1. VAD Ch. 9: Arrange Networks and Trees 
+ 2. VAD, Ch. 13.4.3.1: Reduce Items and Attributes 
+ 3. VAD, Ch. 6: Rules of Thumb 
+ 4. [FDV, Ch. 28: Choosing the right visualization software](https://serialmentor.com/dataviz/choosing-visualization-software.html) 
+ 5. [FDV, Ch. 26: Don't go 3D](https://serialmentor.com/dataviz/no-3d.html) 
+ 6. [FDV, Ch. 25: Avoid line drawings](https://serialmentor.com/dataviz/avoid-line-drawings.html)
 
 ## Extra Resources
 

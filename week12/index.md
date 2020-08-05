@@ -34,6 +34,4 @@ We talk a little bit about publishing and carry on with Idyll.
 
 ## Optional reading list
 
- 1. <a href="https://yt-project.org/">yt docs</a> 
- 1. <a href="https://yt-project.org/doc/visualizing/volume_rendering.html">yt Volume Rendering Tutorial</a> 
  1. <a href="https://idyll-lang.org/docs"> Idyll Docs</a>

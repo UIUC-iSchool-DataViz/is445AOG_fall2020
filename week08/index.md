@@ -28,6 +28,7 @@ We will start thinking about maps & map projection, both in `bqplot` and `matplo
 
 ## Optional reading list
 
- 1. VAD Ch. 8: Arrange Spatial Data
- 1. VAD Ch. 11: Manipulate View
- 1. <a href="https://serialmentor.com/dataviz/geospatial-data.html">FDV, Ch. 15: Visualizing geospatial data</a>
+ 1. VAD Ch. 8.1-8.3: Arrange Spatial Data 
+ 2. <a href="https://serialmentor.com/dataviz/geospatial-data.html">FDV, Ch. 15: Visualizing geospatial data</a> 
+ 3. VAD, Ch. 13.4.2: Reduce Items and Attributes 
+ 4. <a href="https://scitools.org.uk/cartopy/docs/latest/">Cartopy docs</a>; <a href="https://ipyleaflet.readthedocs.io/en/latest/">ipyleaflet docs</a>; <a href="https://geopandas.org/">Geopandas Docs</a>
