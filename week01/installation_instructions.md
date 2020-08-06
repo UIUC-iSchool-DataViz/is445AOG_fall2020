@@ -11,7 +11,7 @@ visible_n: true
 
 To install the packages and libraries we need for this course we will be using the Anaconda package manager, so you'll need to install this first.  First, navigate to the [individual edition page](https://www.anaconda.com/products/individual) and scroll down until you see the download links and select either a 32 or 64 bit installation, depending on your machine (if you're not sure if you are on a 32/64 bit machine the easiest is probably to google your computer's name and date along with "32 or 64").:
 
-<img src="images/anacondaInstallers.png">
+<img src="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445AOG_fall2020/master/week01/images/anacondaInstallers.png">
 
 **NOTE:** You will need the Python 3.X version (the version might be different than listed on the conda webpage).
 
