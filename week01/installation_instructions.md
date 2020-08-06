@@ -15,7 +15,7 @@ To install the packages and libraries we need for this course we will be using t
 
 **NOTE:** You will need the Python 3.X version (the version might be different than listed on the conda webpage).
 
-You will then be lead through some installation steps:
+Next, follow these installation steps to install anaconda on your computer:
  * [Install on a Windows](https://docs.anaconda.com/anaconda/install/windows/)
  * [Install on a Mac](https://docs.anaconda.com/anaconda/install/mac-os/)
  
@@ -23,6 +23,10 @@ You will then be lead through some installation steps:
 ## 2. Create an Anaconda Environment
 
 Now we will make a "stand-alone" envirnoment to do our data-viz stuff in.  This is useful to make sure we install packages in a way that will not cause bad interactions.
+
+Here is a ~2 minute movie of how this process looks on my Mac (it may take longer on your machine!)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fEO9KEHCkwI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### 2.1 Conda environment
  1. On a Mac search for the "Terminal" prompt/on Windows search for the Anaconda prompt (NOT the navigator)
