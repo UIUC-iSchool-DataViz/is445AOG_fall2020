@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
 <!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Week 11 - Intro to Idyll | IS445(AOG) - Data Viz</title>
+<title>Installation instructions | IS445(AOG) - Data Viz</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Week 11 - Intro to Idyll" />
+<meta property="og:title" content="Installation instructions" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This is the course website for IS445(AOG) in Fall 2020" />
 <meta property="og:description" content="This is the course website for IS445(AOG) in Fall 2020" />
-<link rel="canonical" href="http://localhost:4001/is445AOG_fall2020/week11/" />
-<meta property="og:url" content="http://localhost:4001/is445AOG_fall2020/week11/" />
+<link rel="canonical" href="http://localhost:4001/is445AOG_fall2020/week01/installation_instructions.html" />
+<meta property="og:url" content="http://localhost:4001/is445AOG_fall2020/week01/installation_instructions.html" />
 <meta property="og:site_name" content="IS445(AOG) - Data Viz" />
 <script type="application/ld+json">
-{"description":"This is the course website for IS445(AOG) in Fall 2020","headline":"Week 11 - Intro to Idyll","@type":"WebPage","url":"http://localhost:4001/is445AOG_fall2020/week11/","@context":"https://schema.org"}</script>
+{"description":"This is the course website for IS445(AOG) in Fall 2020","headline":"Installation instructions","@type":"WebPage","url":"http://localhost:4001/is445AOG_fall2020/week01/installation_instructions.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
     <link href='https://fonts.googleapis.com/css?family=Arvo:400,700,400italic' rel='stylesheet' type='text/css'>
@@ -40,31 +40,48 @@
       </header>
 
       <section>
-                <h1 id="week-11---intro-to-idyll">Week 11 - Intro to Idyll</h1>
+                <h1 id="installation-instructions">Installation instructions</h1>
 
-<p>Today we’ll cover a brief intro of <a href="https://idyll-lang.org/">Idyll</a> and web development in general.</p>
+<h2 id="1-install-anaconda-with-python-3">1. Install Anaconda with Python 3</h2>
 
-<h2 id="downloads--links">Downloads &amp; Links</h2>
+<p>To install the packages and libraries we need for this course we will be using the Anaconda package manager, so you’ll need to install this first.  First, navigate to the <a href="https://www.anaconda.com/products/individual">individual edition page</a> and scroll down until you see the download links and select either a 32 or 64 bit installation, depending on your machine (if you’re not sure if you are on a 32/64 bit machine the easiest is probably to google your computer’s name and date along with “32 or 64”).:</p>
 
-<h3 id="data">Data</h3>
+<p><img src="images/anacondaInstallers.png" /></p>
 
+<p><strong>NOTE:</strong> You will need the Python 3.X version (the version might be different than listed on the conda webpage).</p>
+
+<p>You will then be lead through some installation steps:</p>
+<ul>
+  <li><a href="https://docs.anaconda.com/anaconda/install/windows/">Install on a Windows</a></li>
+  <li><a href="https://docs.anaconda.com/anaconda/install/mac-os/">Install on a Mac</a></li>
+</ul>
+
+<h2 id="2-create-an-anaconda-environment">2. Create an Anaconda Environment</h2>
+
+<p>Now we will make a “stand-alone” envirnoment to do our data-viz stuff in.  This is useful to make sure we install packages in a way that will not cause bad interactions.</p>
+
+<h3 id="21-conda-environment">2.1 Conda environment</h3>
 <ol>
-  <li><a href="corg/corgs_per_country_over_time_columns_2020.csv" download="">Corgis per country over time (corgs_per_country_over_time_columns_2020.csv)</a></li>
+  <li>On a Mac search for the “Terminal” prompt/on Windows search for the Anaconda prompt (NOT the navigator)</li>
+  <li>In the terminal window type: <code class="language-plaintext highlighter-rouge">conda create -n DataViz python=3.7 matplotlib numpy jupyter pillow pandas scipy ipywidgets palettable bqplot h5py requests traitlets geopandas contextily ipyvolume ffmpeg descartes basemap cartopy webcolors ipyleaflet yt wordcloud nltk -c conda-forge</code></li>
+  <li>When prompted, enter y and press return to install stuff (this can take a while!)</li>
 </ol>
 
-<h3 id="links--code">Links &amp; Code</h3>
-
+<h3 id="22-pip-install-remaining-packages">2.2 Pip install remaining packages</h3>
 <ol>
-  <li>We’ll be building toward a webpage like <a href="https://jnaiman.github.io/">this</a> today using <a href="https://idyll-lang.org/">Idyll</a>’s built-in components.</li>
-  <li>We got to this <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week12/corg/inClass/index.idyll">Markdown code right here in Class this week</a>.</li>
-  <li>Full Markdown code for this week and next week <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week12/corg/index.idyll">available right here</a>.</li>
+  <li>Follow the prompt to “activate” this environment with: <code class="language-plaintext highlighter-rouge">conda activate DataViz</code></li>
+  <li>Still in terminal window do: <code class="language-plaintext highlighter-rouge">pip install PyGEL3D</code></li>
 </ol>
 
-<h2 id="optional-reading-list">Optional reading list</h2>
+<h2 id="3-run-your-environment">3. Run your environment</h2>
+
+<p><strong>YOU WILL NEED TO DO THIS EVERY TIME YOU OPEN UP JUPYTER NOTEBOOK</strong></p>
 
 <ol>
-  <li><a href="https://idyll-lang.org/docs"> Idyll Docs</a> - in particular: <a href="https://idyll-lang.org/docs/components">Built in</a>/<a href="https://idyll-lang.org/docs/components/npm">npm installed</a> components</li>
+  <li>after all installs are done type <code class="language-plaintext highlighter-rouge">conda activate DataViz</code> in the terminal window/anaconda prompt</li>
+  <li>then type <code class="language-plaintext highlighter-rouge">jupyter notebook</code> to open the notebook from the command line</li>
 </ol>
+
 
 
         <h3>Materials</h3>
@@ -74,77 +91,12 @@
         
          <!-- end if contains page.dir and url-->
         
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
-         <!-- end if contains page.dir and url-->
-        
         
 	
-        <li>Lecture 12, Part 1: (<a href="/is445AOG_fall2020/week11/lecture12_part1.html">view</a>,
-          <a href="https://github.com/UIUC-iSchool-DataViz/fall2020online/blob/master/week11/lecture12_part1.md">source</a>, <a href="/is445AOG_fall2020/week11/lecture12_part1.html?showNotes=false">present</a>)</li>
 	
-	 <!-- end if not lecture -->
-	 <!-- end iodide -->
-         <!-- end if contains page.dir and url-->
-        
-        
 	
-        <li>Lecture 12, Part 2: (<a href="/is445AOG_fall2020/week11/lecture12_part2.html">view</a>,
-          <a href="https://github.com/UIUC-iSchool-DataViz/fall2020online/blob/master/week11/lecture12_part2.md">source</a>, <a href="/is445AOG_fall2020/week11/lecture12_part2.html?showNotes=false">present</a>)</li>
+        <li>Week 1 - Introduction: (<a href="/is445AOG_fall2020/week01/">view</a>,
+          <a href="https://github.com/UIUC-iSchool-DataViz/fall2020online/blob/master/week01/index.md">source</a>)</li>
 	
 	 <!-- end if not lecture -->
 	 <!-- end iodide -->
@@ -160,8 +112,88 @@
         
          <!-- end if contains page.dir and url-->
         
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
         
         
+	
+        <li>Lecture 1: (<a href="/is445AOG_fall2020/week01/lecture01.html">view</a>,
+          <a href="https://github.com/UIUC-iSchool-DataViz/fall2020online/blob/master/week01/lecture01.md">source</a>, <a href="/is445AOG_fall2020/week01/lecture01.html?showNotes=false">present</a>)</li>
+	
+	 <!-- end if not lecture -->
+	 <!-- end iodide -->
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+         <!-- end if contains page.dir and url-->
+        
+        
+	
+	
+	
+        <li>Example Submission: (<a href="/is445AOG_fall2020/week01/example_assignment.html">view</a>,
+          <a href="https://github.com/UIUC-iSchool-DataViz/fall2020online/blob/master/week01/example_assignment.md">source</a>)</li>
+	
+	 <!-- end if not lecture -->
+	 <!-- end iodide -->
+         <!-- end if contains page.dir and url-->
+        
+        
+        
+        
+        <li>PDF test_imports_week01_howSupposedToLook: 
+         (<a href="/is445AOG_fall2020/week01/test_imports_week01_howSupposedToLook.pdf">view</a>)
+        </li>
         
         
 	
@@ -169,122 +201,134 @@
         
 	<!-- I am a comment -->
         
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
-        
-        
-	<!-- I am a comment -->
+	
+        <li>Notebook: inClass_stuff_week01: 
+         (<a href="../nbv.html?notebook_name=%2Fis445AOG_fall2020%2Fweek01%2FinClass_stuff_week01.ipynb">view</a>,
+          <a href="/is445AOG_fall2020/week01/inClass_stuff_week01.ipynb">download</a>)</li>
+	
         
         
 	<!-- I am a comment -->
         
 	
-        <li>Notebook: calc_corgData: 
-         (<a href="../nbv.html?notebook_name=%2Fis445AOG_fall2020%2Fweek11%2Fcorg%2Fcalc_corgData.ipynb">view</a>,
-          <a href="/is445AOG_fall2020/week11/corg/calc_corgData.ipynb">download</a>)</li>
+        <li>Notebook: prep_notes_week01: 
+         (<a href="../nbv.html?notebook_name=%2Fis445AOG_fall2020%2Fweek01%2Fprep_notes_week01.ipynb">view</a>,
+          <a href="/is445AOG_fall2020/week01/prep_notes_week01.ipynb">download</a>)</li>
 	
+        
+        
+	<!-- I am a comment -->
+        
+	
+        <li>Notebook: test_imports_week01: 
+         (<a href="../nbv.html?notebook_name=%2Fis445AOG_fall2020%2Fweek01%2Ftest_imports_week01.ipynb">view</a>,
+          <a href="/is445AOG_fall2020/week01/test_imports_week01.ipynb">download</a>)</li>
+	
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
+        
+        
+	<!-- I am a comment -->
         
         
 	<!-- I am a comment -->
@@ -350,11 +394,6 @@
         
         
         
-        
-	
-        <li>Python Script: grabCorgData_subpages: 
-         (<a href="/is445AOG_fall2020/week11/corg/grabCorgData_subpages.py">download</a>)</li>
-	
         
         
         
