@@ -56,6 +56,8 @@
   <li><a href="https://docs.anaconda.com/anaconda/install/mac-os/">Install on a Mac</a></li>
 </ul>
 
+<p><strong>NOTE:</strong> If you already have Anaconda installed you might get an error.  You can simply make sure Anaconda is the most recent version by opening a Terminal (Mac) or the Anaconda Prompt (Windows) and typing <code class="language-plaintext highlighter-rouge">conda update anaconda</code>.</p>
+
 <h2 id="2-create-an-anaconda-environment">2. Create an Anaconda Environment</h2>
 
 <p>Now we will make a “stand-alone” envirnoment to do our data-viz stuff in.  This is useful to make sure we install packages in a way that will not cause bad interactions.</p>
@@ -67,14 +69,14 @@
 <h3 id="21-conda-environment">2.1 Conda environment</h3>
 <ol>
   <li>On a Mac search for the “Terminal” prompt/on Windows search for the Anaconda prompt (NOT the navigator)</li>
-  <li>In the terminal window type: <code class="language-plaintext highlighter-rouge">conda create -n DataViz python=3.7 matplotlib numpy jupyter pillow pandas scipy ipywidgets palettable bqplot h5py requests traitlets geopandas contextily ipyvolume ffmpeg descartes basemap cartopy webcolors ipyleaflet yt wordcloud nltk -c conda-forge</code></li>
+  <li>In the terminal window type: <code class="language-plaintext highlighter-rouge">conda create -n DataViz python=3.8 anaconda matplotlib numpy jupyter pillow pandas scipy ipywidgets palettable bqplot h5py requests traitlets geopandas contextily ipyvolume ffmpeg descartes basemap cartopy webcolors ipyleaflet wordcloud nltk xlrd libpng pip -c conda-forge</code></li>
   <li>When prompted, enter y and press return to install stuff (this can take a while!)</li>
 </ol>
 
 <h3 id="22-pip-install-remaining-packages">2.2 Pip install remaining packages</h3>
 <ol>
   <li>Follow the prompt to “activate” this environment with: <code class="language-plaintext highlighter-rouge">conda activate DataViz</code></li>
-  <li>Still in terminal window do: <code class="language-plaintext highlighter-rouge">pip install PyGEL3D</code></li>
+  <li>Still in terminal window do: <code class="language-plaintext highlighter-rouge">pip install PyGEL3D yt</code></li>
 </ol>
 
 <h2 id="3-run-your-environment">3. Run your environment</h2>
@@ -192,12 +194,6 @@
 	 <!-- end iodide -->
          <!-- end if contains page.dir and url-->
         
-        
-        
-        
-        <li>PDF test_imports_week01_howSupposedToLook: 
-         (<a href="/is445AOG_fall2020/week01/test_imports_week01_howSupposedToLook.pdf">view</a>)
-        </li>
         
         
 	
