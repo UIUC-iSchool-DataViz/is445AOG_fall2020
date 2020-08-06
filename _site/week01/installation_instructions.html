@@ -64,7 +64,7 @@
 
 <p>Here is a ~2 minute movie of how this process looks on my Mac (it may take longer on your machine!)</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fEO9KEHCkwI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2iPGcTBHPGE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
 <h3 id="21-conda-environment">2.1 Conda environment</h3>
 <ol>
@@ -81,7 +81,11 @@
   <li>Still in terminal window do: <code class="language-plaintext highlighter-rouge">pip install PyGEL3D</code></li>
 </ol>
 
-<h2 id="3-run-your-environment">3. Run your environment</h2>
+<h2 id="3-run--test-your-environment">3. Run &amp; Test your environment</h2>
+
+<p><strong>NOTE: Here I am assuming your default browser is either Chrome or Firefox.  If not, change it to one of these browsers for the duration of this class.</strong></p>
+
+<h4 id="31-run-a-jupyter-notebook-from-the-environment">3.1 Run a jupyter notebook from the environment</h4>
 
 <p><strong>YOU WILL NEED TO DO THIS EVERY TIME YOU OPEN UP JUPYTER NOTEBOOK</strong></p>
 
@@ -90,6 +94,29 @@
   <li>then type <code class="language-plaintext highlighter-rouge">jupyter notebook</code> to open the notebook from the command line</li>
 </ol>
 
+<h4 id="31-test-the-installs-this-is-part-of-the-first-hw-do-once">3.1. Test the installs (this is part of the first HW, do once)</h4>
+
+<ol>
+  <li><a href="https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week01/test_imports_week01.ipynb">Download the test install script - test_imports_week01</a>, open it with your jupyter notbeook</li>
+</ol>
+
+<p>A movie of this process is shown below (~5 minutes):</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J2GWtnoQrnI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<p>A few things of note:</p>
+<ul>
+  <li>When the little <code class="language-plaintext highlighter-rouge">*</code> is showing in the <code class="language-plaintext highlighter-rouge">In[]</code> part to the left of each cell this means your computer is thinking.  Its best to wait until its done with one cell before moving onto the next one.</li>
+  <li>There is a tip for the <code class="language-plaintext highlighter-rouge">PyGEL3D</code> install near the end in case you get an error, but you might not.  If you do get this error, the process is:
+    <ol>
+      <li>Open the terminal (Mac) or Anaconda Prompt (Windows)</li>
+      <li>Activate your data viz environment with:  <code class="language-plaintext highlighter-rouge">conda activate DataViz</code></li>
+      <li>Find where PyGEL3D is installed with: <code class="language-plaintext highlighter-rouge">pip show PyGEL3D</code></li>
+      <li>Copy the address and uncomment the lines as show to paste it into your jupyter notebook</li>
+    </ol>
+  </li>
+  <li>If nothing shows up for the <code class="language-plaintext highlighter-rouge">bqplot</code> plot or the <code class="language-plaintext highlighter-rouge">ipyvolume</code> plot there are a few tips listed – try refreshing your browser, try installing the extensions (uncomment those lines and run the cell and try running the plotting cells again), or completely close and completely re-open your jupyter notebook as discussed in section 3.1</li>
+</ul>
 
 
         <h3>Materials</h3>

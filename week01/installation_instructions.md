@@ -28,7 +28,7 @@ Now we will make a "stand-alone" envirnoment to do our data-viz stuff in.  This 
 
 Here is a ~2 minute movie of how this process looks on my Mac (it may take longer on your machine!)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fEO9KEHCkwI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2iPGcTBHPGE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### 2.1 Conda environment
  1. On a Mac search for the "Terminal" prompt/on Windows search for the Anaconda prompt (NOT the navigator)
@@ -41,11 +41,30 @@ Here is a ~2 minute movie of how this process looks on my Mac (it may take longe
  1. Follow the prompt to "activate" this environment with: `conda activate DataViz`
  1. Still in terminal window do: `pip install PyGEL3D`
 
-## 3. Run your environment
+## 3. Run & Test your environment
+
+**NOTE: Here I am assuming your default browser is either Chrome or Firefox.  If not, change it to one of these browsers for the duration of this class.**
+
+#### 3.1 Run a jupyter notebook from the environment
 
 **YOU WILL NEED TO DO THIS EVERY TIME YOU OPEN UP JUPYTER NOTEBOOK**
 
  1. after all installs are done type `conda activate DataViz` in the terminal window/anaconda prompt
  2. then type `jupyter notebook` to open the notebook from the command line
  
+#### 3.1. Test the installs (this is part of the first HW, do once)
 
+ 1. [Download the test install script - test_imports_week01](https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week01/test_imports_week01.ipynb), open it with your jupyter notbeook
+ 
+A movie of this process is shown below (~5 minutes):
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J2GWtnoQrnI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+A few things of note:
+ * When the little `*` is showing in the `In[]` part to the left of each cell this means your computer is thinking.  Its best to wait until its done with one cell before moving onto the next one.
+ * There is a tip for the `PyGEL3D` install near the end in case you get an error, but you might not.  If you do get this error, the process is:
+    1. Open the terminal (Mac) or Anaconda Prompt (Windows)
+	1. Activate your data viz environment with:  `conda activate DataViz`
+	1. Find where PyGEL3D is installed with: `pip show PyGEL3D`
+	1. Copy the address and uncomment the lines as show to paste it into your jupyter notebook
+ * If nothing shows up for the `bqplot` plot or the `ipyvolume` plot there are a few tips listed -- try refreshing your browser, try installing the extensions (uncomment those lines and run the cell and try running the plotting cells again), or completely close and completely re-open your jupyter notebook as discussed in section 3.1
