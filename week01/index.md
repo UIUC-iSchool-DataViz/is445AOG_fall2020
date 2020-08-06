@@ -21,6 +21,31 @@ with our data.
 
  * <a href="data/GDP.csv" download>FRED GDP.csv file</a>
  * <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week01/images/stitch_reworked.png" download>Reworked Stitch Image</a>
+ 
+## Installation instructions
+
+### 1. Install Anaconda with Python 3
+HERE
+
+### 2. Create an Anaconda Environment
+
+Now we will make a "stand-alone" envirnoment to do our data-viz stuff in.  This is useful to make sure we install packages in a way that will not cause bad interactions.
+
+#### 2.1 Conda environment
+ 1. On a Mac search for the "Terminal" prompt/on Windows search for the Anaconda prompt (NOT the navigator)
+ 2. In the terminal window type: `conda create -n DataViz python=3.7 matplotlib numpy jupyter pillow pandas scipy ipywidgets palettable bqplot h5py requests traitlets geopandas contextily ipyvolume ffmpeg descartes basemap cartopy webcolors ipyleaflet yt wordcloud nltk -c conda-forge`
+ 3. When prompted, enter y and press return to install stuff (this can take a while!)
+
+#### 2.2 Pip install remaining packages
+HERE
+
+### 3. Run your environment
+
+**YOU WILL NEED TO DO THIS EVERY TIME YOU OPEN UP JUPYTER NOTEBOOK**
+
+ 1. after all installs are done type `conda activate DataViz` in the terminal window/anaconda prompt
+ 2. then type `jupyter notebook` to open the notebook from the command line
+ 
 
 ## Optional Reading List (See syllabus for acronyms)
 
