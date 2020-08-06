@@ -32,12 +32,12 @@ Here is a ~2 minute movie of how this process looks on my Mac (it may take longe
 
 ### 2.1 Conda environment
  1. On a Mac search for the "Terminal" prompt/on Windows search for the Anaconda prompt (NOT the navigator)
- 2. In the terminal window type: `conda create -n DataViz python=3.8 anaconda matplotlib numpy jupyter pillow pandas scipy ipywidgets palettable bqplot h5py requests traitlets geopandas contextily ipyvolume ffmpeg descartes basemap cartopy webcolors ipyleaflet wordcloud nltk xlrd libpng pip -c conda-forge`
+ 2. In the terminal window type: `conda create -n DataViz python=3.8 matplotlib=3.2.2 numpy jupyter pillow pandas scipy ipywidgets palettable bqplot h5py requests traitlets geopandas contextily ipyvolume ffmpeg descartes basemap cartopy webcolors ipyleaflet wordcloud nltk xlrd libpng pip yt -c conda-forge`
  3. When prompted, enter y and press return to install stuff (this can take a while!)
 
 ### 2.2 Pip install remaining packages
  1. Follow the prompt to "activate" this environment with: `conda activate DataViz`
- 1. Still in terminal window do: `pip install PyGEL3D yt`
+ 1. Still in terminal window do: `pip install PyGEL3D`
 
 ## 3. Run your environment
 
