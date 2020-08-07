@@ -14,6 +14,11 @@ visible_n: true
  * <a href="https://alpha.iodide.io/notebooks/4399/">Prep Iodide Notebook</a>
  * <a href="https://alpha.iodide.io/notebooks/4466/">In Class Iodide Notebook</a>
 
+## Installation instructions: Idyll
+
+We'll be using Idyll to do some web-dev and we need to install another package manager, npm, to install Idyll and other Idyll-related packages. 
+
+#### [Please follow these installation instructions to install the necessary packages](installation_instructions_week10).
 
 
 ## Optional reading list
