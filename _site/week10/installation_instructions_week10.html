@@ -46,6 +46,54 @@
 
 <p>There are a few ways to do this.  Probably the easiest is to download the correct version <a href="https://nodejs.org/en/download/">from the Node.js page</a>.</p>
 
+<p>If you go this route, make sure you follow the final install instructions and have the <code class="language-plaintext highlighter-rouge">npm</code> executable in your <code class="language-plaintext highlighter-rouge">PATH</code>.  On my Mac the prompt looks like:</p>
+
+<p><img src="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445AOG_fall2020/master/week10/images/nodejspat.png" /></p>
+
+<p>If you try any of the <code class="language-plaintext highlighter-rouge">npm</code> commands and it gives you an error about not knowing what <code class="language-plaintext highlighter-rouge">npm</code> is it is likely because it doesn’t know where it is (given the example posted in the image above you could expliclity call <code class="language-plaintext highlighter-rouge">npm</code> with: <code class="language-plaintext highlighter-rouge">/usr/local/bin/npm</code>).</p>
+
+<p><strong>Notes for Windows install:</strong></p>
+<ul>
+  <li>You need to have git installed - <a href="https://git-scm.com/">download link here</a>.  You will have to restart your computer.</li>
+</ul>
+
+<h4 id="another-way-with-conda">Another way: with conda</h4>
+
+<p>If the “default” way doesn’t work for any reason you can try with conda in your terminal/Anaconda prompt:</p>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">conda activate DataViz</code></li>
+  <li><code class="language-plaintext highlighter-rouge">conda install nodejs</code></li>
+</ol>
+
+<p>If you go this route, make sure you activate your DataViz environment before using any <code class="language-plaintext highlighter-rouge">npm</code> calls.</p>
+
+<h2 id="2-use-npm-to-install-idyll--other-packages">2. Use npm to install Idyll &amp; other packages</h2>
+
+<ol>
+  <li>Use <code class="language-plaintext highlighter-rouge">npm</code> to install Idyll (you might need root privileges to do so)
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install -g idyll
+</code></pre></div>    </div>
+  </li>
+  <li>Create new post with idyll (you can use the defaults)
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>idyll create
+</code></pre></div>    </div>
+  </li>
+  <li>cd into post directory (with defaults this is <code class="language-plaintext highlighter-rouge">my-idyll-post</code>)</li>
+  <li>Install dependencies to install vegalite
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install --save vega-lite react react-dom vega
+</code></pre></div>    </div>
+  </li>
+  <li>Install vegalite for Idyll
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install --save idyll-vega-lite
+</code></pre></div>    </div>
+  </li>
+  <li>Test by:
+    <ul>
+      <li>downloading <a href="">this index.idyll file</a></li>
+    </ul>
+  </li>
+</ol>
+
 
         <h3>Materials</h3>
         <ul>

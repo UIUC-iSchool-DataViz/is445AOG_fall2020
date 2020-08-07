@@ -10,3 +10,44 @@ visible_n: true
 ## 1. Install npm
 
 There are a few ways to do this.  Probably the easiest is to download the correct version [from the Node.js page](https://nodejs.org/en/download/).
+
+If you go this route, make sure you follow the final install instructions and have the `npm` executable in your `PATH`.  On my Mac the prompt looks like:
+
+<img src="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445AOG_fall2020/master/week10/images/nodejspat.png">
+
+If you try any of the `npm` commands and it gives you an error about not knowing what `npm` is it is likely because it doesn't know where it is (given the example posted in the image above you could expliclity call `npm` with: `/usr/local/bin/npm`).
+
+**Notes for Windows install:**
+ * You need to have git installed - <a href="https://git-scm.com/">download link here</a>.  You will have to restart your computer.
+
+
+#### Another way: with conda
+
+If the "default" way doesn't work for any reason you can try with conda in your terminal/Anaconda prompt:
+ 1. `conda activate DataViz`
+ 1. `conda install nodejs`
+ 
+If you go this route, make sure you activate your DataViz environment before using any `npm` calls.
+
+## 2. Use npm to install Idyll & other packages
+
+1. Use `npm` to install Idyll (you might need root privileges to do so)
+```
+npm install -g idyll
+```
+
+1. Create new post with idyll (you can use the defaults)
+```
+idyll create
+```
+1. cd into post directory (with defaults this is `my-idyll-post`)
+1. Install dependencies to install vegalite
+```
+npm install --save vega-lite react react-dom vega
+```
+1. Install vegalite for Idyll
+```
+npm install --save idyll-vega-lite
+```
+1. Test by:
+  * downloading [this index.idyll file]()
