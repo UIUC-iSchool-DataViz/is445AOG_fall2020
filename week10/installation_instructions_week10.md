@@ -50,4 +50,8 @@ npm install --save vega-lite react react-dom vega
 npm install --save idyll-vega-lite
 ```
 1. Test by:
-  * downloading [this index.idyll file]()
+  * downloading [this index.idyll file](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445AOG_fall2020/master/week10/index.idyll) and replacing the default index.idyll file in your `my-idyll-post` directory
+  * downloading [the LakeHuron.csv file](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445AOG_fall2020/master/week10/LakeHuron.csv) and putting this in the `data/` sub-folder in the `my-idyll-post` directory
+  * do `idyll` in your `my-idyll-post` directory and make sure it looks like whats in the test video below
+  
+
