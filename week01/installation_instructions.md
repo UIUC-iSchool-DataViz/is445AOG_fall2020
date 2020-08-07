@@ -26,7 +26,7 @@ Next, follow these installation steps to install anaconda on your computer:
 
 Now we will make a "stand-alone" envirnoment to do our data-viz stuff in.  This is useful to make sure we install packages in a way that will not cause bad interactions.
 
-Here is a ~2 minute movie of how this process looks on my Mac (it may take longer on your machine!)
+Here is a ~2 minute movie of how this process looks on my Mac (it may take longer on your machine!) which covers the instructions in section 2.1 and 2.2 of the installation process:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2iPGcTBHPGE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -45,16 +45,16 @@ Here is a ~2 minute movie of how this process looks on my Mac (it may take longe
 
 **NOTE: Here I am assuming your default browser is either Chrome or Firefox.  If not, change it to one of these browsers for the duration of this class.**
 
-#### 3.1 Run a jupyter notebook from the environment
+### 3.1 Run a jupyter notebook from the environment
 
 **YOU WILL NEED TO DO THIS EVERY TIME YOU OPEN UP JUPYTER NOTEBOOK**
 
  1. after all installs are done type `conda activate DataViz` in the terminal window/anaconda prompt
  2. then type `jupyter notebook` to open the notebook from the command line
  
-#### 3.1. Test the installs (this is part of the first HW, do once)
+### 3.1. Test the installs (this is part of the first HW, do once)
 
- 1. [Download the test install script - test_imports_week01](https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week01/test_imports_week01.ipynb), open it with your jupyter notbeook
+ 1. [Download the test install script - test_imports_week01](https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week01/test_imports_week01.ipynb), open it with your jupyter notbeook and run it cell-by-cell
  
 A movie of this process is shown below (~5 minutes):
 
