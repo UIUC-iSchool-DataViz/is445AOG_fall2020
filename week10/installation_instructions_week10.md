@@ -31,6 +31,8 @@ If you go this route, make sure you activate your DataViz environment before usi
 
 ## 2. Use npm to install Idyll & other packages
 
+You'll run these commands in a terminal (Mac) or anaconda prompt (Windows) so make sure you open them up.
+
 1. Use `npm` to install Idyll (you might need root privileges to do so)
 ```
 npm install -g idyll
@@ -54,4 +56,4 @@ npm install --save idyll-vega-lite
   * downloading [the LakeHuron.csv file](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445AOG_fall2020/master/week10/LakeHuron.csv) and putting this in the `data/` sub-folder in the `my-idyll-post` directory
   * do `idyll` in your `my-idyll-post` directory and make sure it looks like whats in the test video below
   
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J_w9kowGkIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
