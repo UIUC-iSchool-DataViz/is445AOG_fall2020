@@ -149,41 +149,29 @@ iSchool writing coaches also offer free consultations.
 
 # Academic Integrity
 
-Please review and reflect on the academic integrity policy of the University of Illinois,
-<http://admin.illinois.edu/policy/code/article1_part4_1-401.html> to which we subscribe.
-By turning in materials for review, you certify that all work presented is your own and
-has been done by you independently, or as a member of a designated group for group assignments.
-If, in the course of your writing, you use the words or ideas of another writer, proper
-acknowledgment must be given (using APA, Chicago, or MLA style). Not to do so is to commit
-plagiarism, a form of academic dishonesty. If you are not absolutely clear on what constitutes
-plagiarism and how to cite sources appropriately, now is the time to learn. Please ask me!
-Please be aware that the consequences for plagiarism or other forms of academic dishonesty
-will be severe. Students who violate university standards of academic integrity are
-subject to disciplinary action, including a reduced grade, failure in the course, and
-suspension or dismissal from the University.
+Please review and reflect on the academic integrity policy of the University of Illinois, http://studentcode.illinois.edu/article1_part4_1-401.html, to which we subscribe. By turning in materials for review, you certify that all work presented is your own and has been done by you independently, or as a member of a designated group for group assignments. 
+
+If, in the course of your writing, you use the words or ideas of another writer, proper acknowledgement must be given (using APA, Chicago, or MLA style). Not to do so is to commit plagiarism, a form of academic dishonesty. If you are not absolutely clear on what constitutes plagiarism and how to cite sources appropriately, now is the time to learn. Please ask me!
+
+Please be aware that the consequences for plagiarism or other forms of academic dishonesty will be severe. Students who violate university standards of academic integrity are subject to disciplinary action, including a reduced grade, failure in the course, and suspension or dismissal from the University.
+
+Criteria for grading homework assignments include (but are not limited to) creativity and the amount of original work demonstrated in the assignment. However, students are permitted to use and adapt the work of others, provided that the following guidelines are followed:
+ * Use of other people’s material must not infringe the copyright of the original author, nor violate the terms of any licensing agreement. Know and respect the principles of fair use with respect to copyrighted material.
+ * Students must scrupulously attribute the original source and author of whatever material has been adapted for the assignment. Summarize the changes or adaptations that have been made. Make plain how much of the assignment represents original work.
 
 # Statement of Inclusion
 
-[Inclusive Illinois Committee Diversity Statement](http://www.inclusiveillinois.illinois.edu/supporting_docs/Inclusive%20Illinois%20Diversity%20Statement.pdf)
+[Review the statement](http://www.inclusiveillinois.illinois.edu/mission.html).
 
-As the state's premier public university, the University of Illinois
-at Urbana-Champaign's core mission is to serve the interests of the
-diverse people of the state of Illinois and beyond. The institution
-thus values inclusion and a pluralistic learning and research
-environment, one which we respect the varied perspectives and lived
-experiences of a diverse community and global workforce. We support
-diversity of worldviews, histories, and cultural knowledge across a
-range of social groups including race, ethnicity, gender identity,
-sexual orientation, abilities, economic class, religion, and their
-intersections.
+As the state’s premier public university, the University of Illinois at Urbana-Champaign’s core mission is to serve the interests of the diverse people of the state of Illinois and beyond. The institution thus values inclusion and a pluralistic learning and research environment, one which we respect the varied perspectives and lived experiences of a diverse community and global workforce. We support diversity of worldviews, histories, and cultural knowledge across a range of social groups including race, ethnicity, gender identity, sexual orientation, abilities, economic class, religion, and their intersections.
+
 
 # Accessibility Statement
-To obtain accessibility-related academic adjustments and/or auxiliary
-aids, students with disabilities must contact the course instructor
-and the [Disability Resources and Educational Services](http://disability.illinois.edu/) (DRES) as soon
-as possible.  To contact DRES you may visit 1207 S. Oak St.,
-Champaign, call (217) 333-4603 (V/TTY), or e-mail a message to
-disability@illinois.edu.
+
+To obtain accessibility-related academic adjustments and/or auxiliary aids, students with disabilities must contact the course instructor and the  [Disability Resources and Educational Services](http://disability.illinois.edu/) (DRES) as soon as possible. To contact DRES you may visit 1207 S. Oak St., Champaign, call 333-4603 (V/TTY), or e-mail a message to disability@uiuc.edu.  
+
+This syllabus may be obtained in alternative formats upon request. Please contact the instructor.
+
 
 # Assignments and Evaluation
 
