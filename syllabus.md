@@ -12,6 +12,8 @@ Additionally, please be aware that there are mental health resources available t
  * https://www.counselingcenter.illinois.edu/ 
  * https://mckinley.illinois.edu/medical-services/mental-health 
  * https://www.disability.illinois.edu/health/mental-health-resources 
+ 
+Finally, due to the current messiness of the COVID learning environment, we are allowing up to three late homeworks.  If you need to “use” one of your late homeworks email the instructor and/or the TA.  You do not need to provide any explanation for why you’d like to use one of your late homeworks.  You will then have until the end of the week -- the Sunday after the homework was due, midnight -- to turn in this assignment.  
 
 # Course Description
 
