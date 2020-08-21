@@ -3,6 +3,11 @@ layout: syllabus
 title: Syllabus
 ---
 
+# COVID-19 Statement
+In keeping with University and iSchool policy, all students are required to engage in appropriate behavior to protect the health and safety of our community.  If you are on campus, this includes wearing a facial covering properly, maintaining social distance (at least 6 feet from others at all times), disinfecting the immediate seating area, and using hand sanitizer.
+
+If you feel ill or are unable to come to class or complete class assignments due to issues related to COVID-19, including but not limited to: testing positive yourself, feeling ill, caring for a family member with COVID-19, or having unexpected child-care obligations, should contact their instructor immediately and cc their advisor.
+
 # Course Description
 
 Data visualization is crucial to conveying information drawn from models,
@@ -75,6 +80,11 @@ As the course progresses, a list of recommended readings will be generated for
 each class.  These will be included in the course materials repository, and
 students are encouraged to fork that repository and issue pull requests to add
 suggested readings.
+
+# Writing Resources
+The iSchool Writing Resources is the in-house writing support team for graduate students at the iSchool.  They are here to help you with your writing and help you feel more comfortable and confident in your skills. The writing consultants are not professors or evaluators. They simply know the struggles of graduate and undergraduate-level writing and want to help you learn how to succeed and improve your writing skills. The iSchool writing consultants can help you with every step of the writing process. For detailed information on our services please visit our website:
+https://publish.illinois.edu/ischoolwritingresources/
+
 
 # Topic Calendar & Optional Reading
 
@@ -319,3 +329,4 @@ assistance in emergency situations.
   Illini-Alert text messages.
 - Follow the University of Illinois Police Department on Twitter and
   Facebook to get regular updates about campus safety.
+
