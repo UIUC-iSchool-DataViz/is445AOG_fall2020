@@ -8,6 +8,11 @@ In keeping with University and iSchool policy, all students are required to enga
 
 If you feel ill or are unable to come to class or complete class assignments due to issues related to COVID-19, including but not limited to: testing positive yourself, feeling ill, caring for a family member with COVID-19, or having unexpected child-care obligations, should contact their instructor immediately and cc their advisor.
 
+Additionally, please be aware that there are mental health resources available to students:
+ * https://www.counselingcenter.illinois.edu/ 
+ * https://mckinley.illinois.edu/medical-services/mental-health 
+ * https://www.disability.illinois.edu/health/mental-health-resources 
+
 # Course Description
 
 Data visualization is crucial to conveying information drawn from models,
