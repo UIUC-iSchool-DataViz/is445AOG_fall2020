@@ -79,7 +79,7 @@ introduction to Python will be presented during the course.
 There is no required textbook for this course.  All course materials will be posted to
 the GitHub repository at https://github.com/UIUC-iSchool-DataViz/spring2020 .
 
-A list of Python libraries week-by-week and tips on how to install them <a href="https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week01/test_imports_week01.ipynb">can be found by clicking this link</a>.
+A list of Python libraries week-by-week and tips on how to install them <a href="https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week01/installation_instructions">can be found by clicking this link</a>.
 
 **Optional** textbook [Visualization Analysis and Design by Tamara Munzner](https://www.amazon.com/gp/product/1466508914/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 
