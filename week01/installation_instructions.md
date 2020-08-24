@@ -40,6 +40,7 @@ Here is a ~2 minute movie of how this process looks on my Mac (it may take longe
 ### 2.2 Pip install remaining packages
  1. Follow the prompt to "activate" this environment with: `conda activate DataViz`
  1. Still in terminal window do: `pip install PyGEL3D`
+	* NOTE: as of writing, PyGEL3D is not supported on machines other than Mac OSX and/or Windows.  We will only use this package briefly so it is not the end of the world if you cannot install it.
 
 ## 3. Run & Test your environment
 
