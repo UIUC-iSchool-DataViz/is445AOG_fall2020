@@ -10,7 +10,7 @@ visible_n: true
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Spring 2020
+## Fall 2020
 
 ---
 
@@ -26,18 +26,15 @@ Website.](https://chancellor.illinois.edu/land_acknowledgement.html)
 <!-- .slide: class="vertical_center" -->
 ## Basics
 
-9AM-11:50PM Mondays
+6-8PM Mondays, online
 
 Jill P. Naiman - `jnaiman@illinois.edu`
- * Office Hours: Tuesday 3-4pm NCSA 2040 (this OH can go a little longer as needed), Friday 3-4pm in iSchool lounge; other times by request
+ * Office Hours: Tuesday 5-6pm, Mondays 8-9pm after class; other times by request
 
 TA: Diptendra Bagchi, `dbagchi2@illinois.edu`
- * Office Hours: iSchool, Room 56, Wednesday & Friday 1-2pm
+ * Office Hours: TBD (later in week)
 
-TA: Qiuyan Guo, `qqguo2@illinois.edu`
- * Office Hours: iSchool, Room 56, Thursday 8-9am
-
-https://uiuc-ischool-dataviz.github.io/spring2020/
+https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/
 
 notes: go through website!!
 
@@ -47,16 +44,9 @@ notes: go through website!!
 
  * Moodle - where the grades and assignments will be posted
 
- * Course webpage: https://uiuc-ischool-dataviz.github.io/spring2020/ - where lecture slides, notebooks, data & general course info will live.
+ * Course webpage: https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/ - where lecture slides, notebooks, data & general course info will live.
 
- * Slack: https://is590dv-spring2020.slack.com/ - the best place to ask questions
-
-
----
-
-<img src="https://uiuc-ischool-dataviz.github.io/spring2019online/week01/images/map_to_ncsa.png" alt="drawing" width="700"/>
-
-notes: here is where the iSchool is, NCSA is above
+ * Slack: https://is445-fall2020.slack.com - the best place to ask questions
 
 ---
 
@@ -157,35 +147,27 @@ about these types of data, and how we approach visualizing them.
 
 ---
 
-Break into groups based on your numbers, and visualize the results by whatever
-method you choose: by hand, by computer, or otherwise.
+## A Jamboard moment!
 
-Affix to or inscribe upon your sheet of paper.
+https://jamboard.google.com/d/1oStFQNKWXG6c4OsNUWx51dMnDny5V2V-yJ228PRuiLU/edit?usp=sharing
 
-notes:
-Count off numbers!
+notes: 
 
-Don't get used to sitting in the same seat in this room!  We're going to move
-around and try things, starting with hand-crafting some visualizations.
-
-What was easy/hard about visualizing the various datasets?  How did you do it?
+*copy link to jamboard*
 
 ---
 
-Break into groups based on your numbers, and visualize the results by whatever
-method you choose: by hand, by computer, or otherwise.
+Breakout groups: visualize the results of your group on the jamboard under your group's number.
 
-Affix to or inscribe upon your sheet of paper.
+* What are the most memorable movies you saw over the last year?
+* Do you prefer cats or dogs?
+* How would you quantify your experience in visualization?
+* How many hours do you spend online in classes each week?
 
-What did you come up with?
+Don't forget to say hi to eachother!
 
-What was easy/hard about visualizing each dataset in a different way?
 
 notes:
-Count off numbers!
-
-Don't get used to sitting in the same seat in this room!  We're going to move
-around and try things, starting with hand-crafting some visualizations.
 
 What was easy/hard about visualizing the various datasets?  How did you do it?
 
@@ -204,26 +186,29 @@ We have to do it!
 
 ## Getting Python Setup
 
+**NOTE -** you might want to wait until break to do this.
+
  1. Download Anaconda!
  
 [anaconda.com/download](anaconda.com/download)
 
  2. Install Week 1 libraries
 
-see: https://uiuc-ischool-dataviz.github.io/spring2020/week01/test_imports_week01.ipynb
+see: https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week01/test_imports_week01.ipynb
 
 ---
 
 ## Syllabus
 
- * Week 1 (Today): Introduction, syllabus, examples, and some basics
- * Week 2: Data storage & Operations 
- * Week 3: Types of Viz and color, colormaps
- * Week 4: Distributions, Engines
- * Week 5: Beginning Interactivity
- * Week 6: Interactivity, continued & Grammar of Graphics
- * Week 7: Dashboards & Maps
-
+ * Week 1 (Today) - Introduction
+ * Week 2 - Data Storage and Operations
+ * Week 3 - Holiday!
+ * Week 4 - Types of Viz and Choosing Colors
+ * Week 5 - Beginning interactivity
+ * Week 6 - Continuing interactivity with bqplot
+ * Week 7 - More with dashboards & Map Viz
+ * Week 8 - Maps, maps and more maps
+ 
 notes:
 This is a rough syllabus!  These are many of the topics we will cover, but
 based on how the course proceeds and how folks respond, we may shorten or
@@ -240,13 +225,14 @@ We might start getting into javascript earlier, depending on how we are doing.
 
 ## Syllabus, cont
 
- * Week 8: Comparisons between different datasets
- * Week 9: Maps & Geographic Data 
- * Week 10: Network Visualization & beginning web dev & Publishing, Javascript
- * Week 11: Designing for the web with Python & Javascript, Web dev
- * Week 12: More javascript
- * Week 13: Scientific visualization & Advanced topics
- * Week 14: Group presentations
+ * Week 9 - Iodide and Intro to Javascript
+ * Week 10 - Viz Audience; More Iodide, Javascript & Vega-lite (and maybe Idyll)
+ * Week 11 - Intro to Idyll
+ * Week 12 - More with Idyll, Publishing Viz
+ * Week 13 - A few more Idyll+d3 things
+ * Week 14 - Holiday!
+ * Week 15 - Scientific Viz & AVL Guest lecture
+ * Week 16 - Network Visualization & Word clouds
 
 notes:
 Toward the end of class we are going to have a slightly more free-form set of
@@ -332,6 +318,8 @@ students will *follow along* with what is going on -- typing in the specific
 commands, and maybe even trying different things as we go.  It is not meant to
 simply be a "performance" of coding, but instead an opportunity to learn.
 
+YOU HAVE THE NOTES BEFORE CLASS.
+
 ---
 
 ## Grading
@@ -375,7 +363,7 @@ Each week, one of you will at random be asked to describe the visualization you 
 
 ## _Optional_ reading assignments
 
-See the course syllabus: https://uiuc-ischool-dataviz.github.io/spring2020/syllabus.html
+See the course syllabus: https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/syllabus.html
 
 notes:
 These are TOTally optional - more on that in a minute.
@@ -455,9 +443,9 @@ use a mix of local installations & web-services.
 We will be sharing a slack channel with the in-person class, so feel free to
 converse with them as well!
 
- * Team channel at `https://is590dv-spring2020.slack.com`
+ * Team channel at `https://is445-fall2020.slack.com`
    * `#general` : General announcements
-   * `#data-viz` : Help with assignments, general viz questions, Python, Javascript, etc
+   * `#is445-fall2020-aog` : Specific questions/issues for *this* class.
    * `#random` : see a cool viz you want to share?  This is the place!
 
 ---
@@ -482,15 +470,15 @@ feedback.  However, please do behave in a professional fashion.
 
 ## How do I access Slack?
 
- * Should have received email
+ * Should have received instructions in welcome email
  * Ask me after class or send me an email with _your_ email
 
 ---
 
 ## Github
 
- * Course repo is at [UIUC-iSchool-DataViz/spring2020](https://github.com/UIUC-iSchool-DataViz/spring2020/)
- * Automatically built to [uiuc-ischool-dataviz.github.io/spring2020/](https://uiuc-ischool-dataviz.github.io/spring2020/)
+ * Course repo is at [UIUC-iSchool-DataViz/is445AOG_fall2020](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/)
+ * Automatically built to [uiuc-ischool-dataviz.github.io/is445AOG_fall2020/](https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/)
  * Copy the notebooks to your directory before using them.
  * Supplemental materials can be found at [UIUC-iSchool-DataViz/support-files](https://github.com/UIUC-iSchool-DataViz/support-files)
 
@@ -574,6 +562,17 @@ There are 3 pathways (that I can see in this course, could be more!)
 
 notes:
 there is a *huge* overlay of topics that cover data viz - from the neurology of how your prefrontal cortex process information, to how humans process storytelling, to data analytics, and color theory and the list goes on!
+
+---
+
+### Why any data viz course will feel a little weird
+
+<img src="images/diagram_for_gradclass.png" width='700px'>
+
+notes:
+this is another way of looking at this.
+
+here is the overall diagram of the things we'll cover in this class -- you can see there are a lot of topics from different areas and they are all interconnected.
 
 ---
 
