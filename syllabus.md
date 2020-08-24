@@ -81,7 +81,7 @@ the GitHub repository at https://github.com/UIUC-iSchool-DataViz/spring2020 .
 
 A list of Python libraries week-by-week and tips on how to install them <a href="https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week01/installation_instructions">can be found by clicking this link</a>.
 
-**Optional** textbook [Visualization Analysis and Design by Tamara Munzner](https://www.amazon.com/gp/product/1466508914/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
+**Optional** textbook [Visualization Analysis and Design by Tamara Munzner](https://www.amazon.com/gp/product/1466508914/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).  You can find a lot of the concepts from this textbook on [the books webpage](https://www.cs.ubc.ca/~tmm/vadbook/) and the [associated lecture slides](https://www.cs.ubc.ca/~tmm/talks.html#vadallslides).
 
 As the course progresses, a list of recommended readings will be generated for
 each class.  These will be included in the course materials repository, and
@@ -102,7 +102,7 @@ to provide feedback on the topics covered, particularly toward the end.  Topics
 that are of particular interest will be emphasized.
 
 **Optional texts:**
- * <a href="https://www.amazon.com/Visualization-Analysis-Design-AK-Peters/dp/1466508914/ref=sr_1_2?crid=1WC409BVX1489&keywords=visualization+analysis+and+design&qid=1580082878&sprefix=visualization%2Caps%2C158&sr=8-2">Visualization Analysis & Design, Tamara Munzner</a>
+ * <a href="https://www.amazon.com/Visualization-Analysis-Design-AK-Peters/dp/1466508914/ref=sr_1_2?crid=1WC409BVX1489&keywords=visualization+analysis+and+design&qid=1580082878&sprefix=visualization%2Caps%2C158&sr=8-2">Visualization Analysis & Design, Tamara Munzner</a>. You can find a lot of the concepts from this textbook on [the books webpage](https://www.cs.ubc.ca/~tmm/vadbook/) and the [associated lecture slides](https://www.cs.ubc.ca/~tmm/talks.html#vadallslides).
  * Edward Tufte wrote a series of visualization books that are often thought of as foundational to the field.  These include <a href="https://www.amazon.com/Visual-Display-Quantitative-Information/dp/0961392142/ref=sr_1_1?keywords=edward+tufte+books&qid=1580082986&sr=8-1">The Visual Display of Quantitative Information</a>, <a href="https://www.amazon.com/Beautiful-Evidence-Edward-R-Tufte/dp/0961392177/ref=sr_1_2?keywords=edward+tufte+books&qid=1580082986&sr=8-2">Beautiful Evidence</a>, <a href="https://www.amazon.com/Envisioning-Information-Edward-R-Tufte/dp/0961392118/ref=sr_1_3?keywords=edward+tufte+books&qid=1580082986&sr=8-3">Envisioning Information</a>, and <a href="https://www.amazon.com/Visual-Explanations-Quantities-Evidence-Narrative/dp/0961392126/ref=sr_1_4?keywords=edward+tufte+books&qid=1580082986&sr=8-4">Visual Explanations: Images and Quantities, Evidence and Narrative<a>
  * There is a free online book, <a href="https://serialmentor.com/dataviz/">Fundamentals of Data Visualization by Claus O. Wilke</a> that provies a lot of nice examples and serves as an intro to Tamara Munzner's book.  It has an <a href="https://serialmentor.com/dataviz/bibliography.html">annotated bibliography at the end</a> that gives a few references for books in data viz that include programming. It is built from the linked <a href="https://github.com/clauswilke/dataviz">GitHub repo</a>.  Note that this book is focused on static (not interactive) visualizations.
  * Additional references will be added as needed.
