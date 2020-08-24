@@ -29,3 +29,11 @@ Lectures can utilize the layout `lecture`, which will present them in revealjs.
 General instructions about how to build websites locally using jekyll can be found [right here](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/).
 
 Key build command (to be run in repo directory): __bundle exec jekyll serve__
+
+## Notes on Course Materials
+
+As of Fall 2020, this section and the [section developed in parallel by Matthew Turk](https://github.com/UIUC-iSchool-DataViz/fall2020-bo) have
+diverged somewhat.  Occasionally, contributions will be passed back and forth
+and the commit message history may not reflect the original authorship.
+These two repositories have been developed in collaboration, and authorship is
+shared between Matthew Turk and Jill Naiman.
