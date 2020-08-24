@@ -38,7 +38,7 @@ layout: default
         {% if nb.path contains page.dir %}
 	{% unless nb.basename contains "2019" %}
         <li>Notebook: {{nb.basename}}: 
-         (<a href="../nbv.html?notebook_name={{nb.path | relative_url | url_encode }}">view</a>,
+         (<a href="{{ site.github.repository_url }}/tree/master{{nb.path}}">view</a>,
           <a href="{{nb.path | relative_url}}">download</a>)</li>
 	{% endunless %}
         {% endif %}
