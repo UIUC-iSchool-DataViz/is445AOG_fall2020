@@ -23,6 +23,18 @@ Website.](https://chancellor.illinois.edu/land_acknowledgement.html)
 
 ---
 
+## COVID-19 Statement
+
+Please see the statement about policies related to COVID-19 at the [top of the Syllabus](https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/syllabus.html).
+
+---
+
+## IS400 Colloquium
+
+See for-credit [IS400 Colloquium](https://ischool.illinois.edu/degrees-programs/courses/is400) and your academic advisor for more info.
+
+---
+
 <!-- .slide: class="vertical_center" -->
 ## Basics
 
@@ -642,6 +654,9 @@ here for example, we might want to know the labels of bones or how they fit toge
 
 <img src="http://www.dinopit.com/wp-content/uploads/2012/08/funny-dinosaur.jpg" height='300px'>
 
+notes:
+we will be using artistic concepts and elements of storytelling, BUT that is not our focus -- here we are TASK oriented.
+
 
 ---
 
@@ -799,6 +814,24 @@ Can you spot the differences?
 
 notes:
 compare this to how long it would take to spot differences in 2 songs - you'd have to listen to both songs (probably more than once) and compare after!  This would be sequential rather than parallel data transfer!
+
+---
+
+# Try it with sound
+
+* [Moonlight Sonota, 1](https://soundcloud.com/redreapergrell/beethoven-moonlight-sonata)
+* [Moonlight Sonota, 2](https://soundcloud.com/user-37232775/sets/beethoven-moonlight-sonata)
+
+Try doing the same thing with these on your own!
+
+notes:
+time this activity, give them 1.5 minutes
+
+ask: how long did this take you?  How many differences were there?
+I spotted tempo as one (but you can cheat by looking at the timer on the bottom!)
+
+Also, you can look at how different each of the sound-bars are on each link and see how different the music looks visually!
+
 
 ---
 
@@ -1083,45 +1116,6 @@ Map5 - percentage of votes by county, weighted by population
 
 ## Assignment 1
 
- * Identify three visualizations in pop culture -- *not* academic literature.
-   This could be, for instance, from:
-   * Movies / TV / Music videos
-   * Everyday life
-   * Advertisements
- * Describe each one in detail
-   * Where did the data come from?
-   * Is the data quantitative, qualitative, categorical, etc?
-   * How was the data processed before being displayed?
-   * What method was used to display that data?
- * Replicate the visualization with different, but similarly “shaped,” data
-   * By hand is acceptable
-   * Computational methods should include source code
-
-PLUS: an intake survey -  https://forms.gle/daHMr8n8Vd97rUCv8
-
-<small>Example: https://uiuc-ischool-dataviz.github.io/spring2020/week01/example_assignment.html</small>
-
----
-
-## Assignment 1
-
- * Identify three visualizations in pop culture -- *not* academic literature.
-   This could be, for instance, from:
-   * Movies / TV / Music videos
-   * Everyday life
-   * Advertisements
- * Describe each one in detail
-   * Where did the data come from?
-   * Is the data quantitative, qualitative, categorical, etc?
-   * How was the data processed before being displayed?
-   * What method was used to display that data?
- * <span style="color:red">Replicate the visualization with different, but similarly “shaped,” data</span>
-   * By hand is acceptable
-   * Computational methods should include source code
-
-PLUS: an intake survey -  https://forms.gle/daHMr8n8Vd97rUCv8
-
-<small>Example: https://uiuc-ischool-dataviz.github.io/spring2020/week01/example_assignment.html</small>
-
+ *Go to Moodle to discuss!*
 
 ---
