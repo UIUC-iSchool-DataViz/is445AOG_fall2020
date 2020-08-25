@@ -33,6 +33,7 @@ Here is a ~2 minute movie of how this process looks on my Mac (it may take longe
 ### 2.1 Conda environment
  1. On a Mac search for the "Terminal" prompt/on Windows search for the Anaconda prompt (NOT the navigator)
  2. In the terminal window type: `conda create -n DataViz python=3.8 matplotlib=3.2.2 numpy jupyter pillow pandas scipy ipywidgets palettable bqplot h5py requests traitlets geopandas contextily ipyvolume ffmpeg descartes basemap cartopy webcolors ipyleaflet wordcloud nltk xlrd libpng pip yt -c conda-forge`
+    * NOTE: if this fails or there are package conflicts you can try with Python 3.7 -- In the terminal window type: `conda create -n DataViz python=3.7 matplotlib=3.2.2 numpy jupyter pillow pandas scipy ipywidgets palettable bqplot h5py requests traitlets geopandas contextily ipyvolume ffmpeg descartes basemap cartopy webcolors ipyleaflet wordcloud nltk xlrd libpng pip yt -c conda-forge`
  3. When prompted, enter y and press return to install stuff (this can take a while!)
  
 **Note:** Right now we need a special version of `matplotlib` to work with `yt`, but this might change in the future.
