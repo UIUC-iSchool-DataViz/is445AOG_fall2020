@@ -37,21 +37,8 @@
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Spring 2020
+## Fall 2020
 ## Lecture 2
-
----
-## Brainstorming Warm-Up Activity
-
-1. What is the visualization trying to show?
-1. What are its methods?
-1. What are the strengths / weaknesses?
-1. (Bonus) Where is the outright error?
-
-
-[Harvey's Energy Toll](https://www.axios.com/the-latest-on-harveys-energy-toll-2479055875.html)
-
-There are no concrete right or wrong answers here!
 
 ---
 
@@ -66,34 +53,22 @@ There are no concrete right or wrong answers here!
 ## How to get help
 
 Jill P. Naiman - `jnaiman@illinois.edu`
- * Office Hours: Tuesday 3-4pm NCSA 2040 (this OH can go a little longer as needed), Friday 3-4pm in iSchool lounge; other times by request
+ * Office Hours: Tuesday 5-6pm, Mondays 8-9pm after class; other times by request
 
 TA: Diptendra Bagchi, `dbagchi2@illinois.edu`
- * Office Hours: iSchool, Room 56, Wednesday & Friday 1-2pm
+ * Office Hours: Monday/Thursday 11am-12pm
 
-TA: Qiuyan Guo, `qqguo2@illinois.edu`
- * Office Hours: iSchool, Room 56, Thursday 8-9am
-
----
-
-## Where information is located:
-
- * Moodle: where the grades and assignments will be posted - https://learn.illinois.edu/course/view.php?id=42777
-
- * Course webpage: where lecture slides, notebooks, data & general course info will live - https://uiuc-ischool-dataviz.github.io/spring2020/ 
-
- * Slack: the best place to ask questions - https://is590dv-spring2020.slack.com/
+https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/
 
 ---
 
-## Reminder - Python Library List by Week
+## In summary: where things will be located:
 
-See: https://uiuc-ischool-dataviz.github.io/spring2020/week01/test_imports_week01.ipynb
+ * Moodle - where the grades and assignments will be posted
 
-**There is an addition!**
+ * Course webpage: https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/ - where lecture slides, notebooks, data & general course info will live.
 
-notes:
-this will occasionally be updated, so be sure to check it out frequently!
+ * Slack: https://is445-fall2020.slack.com - the best place to ask questions
 
 ---
 
@@ -105,8 +80,6 @@ think is interesting, etc.
 
 _These are meant to be easy points:_ No more than 2-3 sentences are needed in your description.
 
-Each week, one of you will at random be asked to describe the visualization you picked to the class.
-
 notes:
 our first one is assigned today, due next week -- remember, I'll pick someone randomly to ask you about yours!
 
@@ -114,22 +87,12 @@ our first one is assigned today, due next week -- remember, I'll pick someone ra
 
 ## Assignment 1
 
-<span style="color:red">Part 2: an intake survey</span> -  https://forms.gle/daHMr8n8Vd97rUCv8
+<span style="color:red">Part 2: an intake survey</span> 
 
 <span style="color:red">Part 3: Say hi on Slack!</a>
 
 notes:
-these last two count for ~20% of this hw grade so I'll carefully ignore you if you are typing on something else for a few min!
-
----
-
-## Another reading reference added
-
-See syllabus: https://uiuc-ischool-dataviz.github.io/spring2020/syllabus.html
-
-notes:
-
-this does not cover interactive stuff, but its still a nice reference and its free!
+these last two count for ~25% of this hw grade so I'll carefully ignore you if you are typing on something else for a few min!
 
 ---
 
@@ -169,9 +132,8 @@ There are 3 pathways (that I can see in this course, could be more!)
 
 ## Many ways to get notes
 
- 1. The course website, last I taught it - https://uiuc-ischool-dataviz.github.io/spring2019online/
+ 1. The course website, last I taught it - https://uiuc-ischool-dataviz.github.io/spring2020/
  1. The course website, Fall 2019 - https://uiuc-ischool-dataviz.github.io/fall2019/
- 1. I'll also be posting the equivalent Spring 2019 (online) notebooks to each week of this course
 
 ---
 
@@ -207,7 +169,16 @@ This is a fine for something like stats, but we have to start thinking about how
 
 ## Data organization is important
 
-<img src="https://media-exp1.licdn.com/dms/image/C4E12AQED2s2Lgpvgqw/article-cover_image-shrink_600_2000/0?e=1583971200&v=beta&t=MasiisDI3MPVYATH3fcJAWFyIwyypUIb3V2pzA4viWg">
+<div class="left">
+	<img src="images/tamaraSlide.png">
+</div>
+<div class="right">
+    <img src="images/tamaraTables.png">
+	 - Munzner - https://www.cs.ubc.ca/~tmm/talks.html
+
+</div>
+
+
 
 notes:
 We have to think a little bit about how our data represents reality *and* how it is represented on disk.
@@ -224,13 +195,13 @@ Similarly for categorical data like with an organization, network, or a tree -- 
 
 <div class="left">
 
-<img src="https://serialmentor.com/dataviz/aesthetic_mapping_files/figure-html/temp-normals-vs-time-1.png" width="400px">
+<img src="http://serialmentor.com/dataviz/aesthetic_mapping_files/figure-html/temp-normals-vs-time-1.png" width="400px">
 
 </div>
 
 <div class="right">
 
-<img src="https://serialmentor.com/dataviz/coordinate_systems_axes_files/figure-html/temperature-normals-polar-1.png" width="400px">
+<img src="http://serialmentor.com/dataviz/coordinate_systems_axes_files/figure-html/temperature-normals-polar-1.png" width="400px">
 
 </div>
 
@@ -594,7 +565,7 @@ REST = REpresentational State Transfer - web architecture that keeps clients and
 <br>
 <br>
 
-# Let's revisit image (spatial) data.
+# Let's consider image (spatial) data.
 
 notes:
 image data is an excellent example of data where the orientation of each element is important -- i.e. how we display things in space is not a choice that is really up to us, its up to the data!
@@ -682,6 +653,9 @@ with data that is enharently spatial in nature, we see we lose information and c
 
 # Raster vs. Vector representations of image data
 
+notes:
+generally, we'll be in charge of *making* images from data and not using images as data themselves, but it is worth spending some time thinking about how images are actually represented on a computer.
+
 ---
 
 ## Let's draw a line.
@@ -721,6 +695,9 @@ notes: so, if we map this line to an image, we see that we lose a bit of informa
 Convert to an 8x8 image.
 
 <!-- .slide: data-background-image="images/line_grid_fill.svg" data-background-size="auto 65%" data-background-position="right 10% bottom 50%"-->
+
+notes:
+this is how that line would look in a pixel representation
 
 ---
 
@@ -921,6 +898,9 @@ Now most of the line goes off the screen. We haven't changed the coordinates, we
 
 Raster data discards any information outside of the domain. Vector data preserves all information, regardless of boundaries.
 
+so, for example, if you have a PDF document you can often times do "infinity zooming in" and STILL see sharp outlines of pictures/text.  But if its 
+a raster representation zooming in will make things look "pixelated" at some point.
+
 ---
 
 ## Raster Representation
@@ -1074,7 +1054,7 @@ notes: note here that a circle is represented by less points than the line so th
 
 ## Raster or Vector?
 
-![](/is445AOG_fall2020/week02/images/menger1.png)
+<img src="images/menger1.png" width=700>
 
 Vector points: 8 points $\rightarrow$ number of "verticies" to make a cube
 
@@ -1088,7 +1068,7 @@ This is larger than a few bytes because it's storing other useful values in CG s
 
 ## Raster or Vector?
 
-![](/is445AOG_fall2020/week02/images/menger2.png)
+<img src="images/menger2.png" width=700>
 
 Vector points: 160 points
 
@@ -1102,7 +1082,7 @@ This is a recursive shape known as a Menger Sponge. Each cube keeps getting repl
 
 ## Raster or Vector?
 
-![](/is445AOG_fall2020/week02/images/menger3.png)
+<img src="images/menger3.png" width=700>
 
 Vector points: 3200 points
 
@@ -1115,7 +1095,7 @@ notes:
 
 ## Raster or Vector?
 
-![](/is445AOG_fall2020/week02/images/menger4.png)
+<img src="images/menger4.png" width=700>
 
 Vector points: 64000 points
 
@@ -1128,7 +1108,7 @@ Does it make a difference yet?
 
 ## Raster or Vector?
 
-![](/is445AOG_fall2020/week02/images/menger5.png)
+<img src="images/menger5.png" width=700>
 
 Vector points: 1.28M points
 
@@ -1141,7 +1121,7 @@ notes:
 
 ## Raster or Vector?
 
-![](/is445AOG_fall2020/week02/images/menger6.png)
+<img src="images/menger6.png" width=700>
 
 Vector points: 25.6M points
 
@@ -1154,7 +1134,7 @@ notes:
 
 ## Raster or Vector?
 
-![](/is445AOG_fall2020/week02/images/menger6.png)
+<img src="images/menger6.png" width=700>
 
 Vector points: 25.6M points
 
@@ -1258,7 +1238,7 @@ to it.
 
 <div class="right" style="font-size: 150%;">
 <div style="height: 4.0em;"></div>
-You have a palette of operations to apply.
+In the abstract: You have a palette of operations to apply.
 </div>
 
 ---
