@@ -1131,9 +1131,31 @@ You can see that in this higher frequency data, the same sampling rates fall apa
 
 ---
 
-## Let's try some stuff in Python!
+## Let's try some stuff in Python with image data!
 
-... opening Jupyter...
+---
+
+<!-- .slide: data-background-image="images/stitch_bg.png" data-background-size="contain"-->
+
+notes:
+This is a screenshot from the movie "Lilo and Stitch" where the little girl Lilo is graphing how much evil is in the alien Stitch. It borrows from a familiar visual - the thermometer. But how could this visualization be misinterpreted? How is it different from a thermometer?
+
+---
+
+<!-- .slide: data-background-image="images/stitch_nobg.png" data-background-size="contain"-->
+
+notes:
+The angle can be misleading. So can the relative width of the head vs the feet. The surface area is not consistent from top to bottom. Also there are empty areas in the mouth and eyes!
+
+---
+
+<!-- .slide: data-background-image="images/stitch_nobg_tilted.png" data-background-size="contain"-->
+
+notes:
+If we rotate the image so that the red liquid is level, do we get a different impression for how much bad is in Stitch?
+
+We'll spend some time messing with this image to try to understand how colors encode these goodness/badness levels
+
 
 ---
 
