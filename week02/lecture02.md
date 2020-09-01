@@ -81,7 +81,7 @@ these last two count for ~25% of this hw grade so I'll carefully ignore you if y
 ## Homework grading
 
  * Homework points will be listed as reference, all HWs will be graded out of 100%, all HWs are worth the same
- * We do not drop a HW score
+ * We *will* drop a HW score
 
 ---
 
