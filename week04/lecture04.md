@@ -1,5 +1,5 @@
 ---
-title: Lecture 3
+title: Lecture 3, Week 4 - let's call it Lecture 4!
 layout: lecture
 visible_lec: true
 visible_n: true
@@ -10,16 +10,12 @@ visible_n: true
 <div style="height: 6.0em;"></div>
 
 ## Jill P Naiman
-## Spring 2020
-## Lecture 3
+## Fall 2020
+## Lecture 4
 
 ---
 
-## Warm-Up Activity
-
-1. What is the visualization trying to show?
-1. What are its methods?
-1. What are the strengths / weaknesses?
+## Warm-Up Activity -- Thinking about Colors
 
 http://old.vijayp.ca/blog/2012/06/colours-in-movie-posters-since-1914/
 
@@ -32,63 +28,13 @@ just see Hue (H) and the full set of colors
 
 ---
 
-<br>
-<br>
-<br>
-
-# Bureaucracy, Part 3: The Final Installment
-
----
-
-## How to get help
-
-Jill P. Naiman - `jnaiman@illinois.edu`
- * Office Hours: Tuesday 3-4pm NCSA 2040 (this OH can go a little longer as needed), Friday 3-4pm in iSchool lounge; other times by request
-
-TA: Diptendra Bagchi, `dbagchi2@illinois.edu`
- * Office Hours: iSchool, Room 56, Wednesday & Friday 1-2pm
-
-TA: Qiuyan Guo, `qqguo2@illinois.edu`
- * Office Hours: iSchool, Room 56, Thursday 8-9am
-
----
-
-## Where information is located:
-
- * Moodle: where the grades and assignments will be posted - https://learn.illinois.edu/course/view.php?id=42777
-
- * Course webpage: where lecture slides, notebooks, data & general course info will live - https://uiuc-ischool-dataviz.github.io/spring2020/ 
-
- * Slack: the best place to ask questions - https://is590dv-spring2020.slack.com/
-
----
-
-## Reminder - Python Library List by Week
-
-See: https://uiuc-ischool-dataviz.github.io/spring2020/week01/test_imports_week01.ipynb
-
-**There is an addition!**
-
-notes:
-this will occasionally be updated, so be sure to check it out frequently!
-
----
-
-## Weekly Viz Report
-
-And the winner is...
-
-notes:
-run the random number generator!
-
----
-
 ## Today's Main Topics
 
  * Colors - what are they really?
  * Color mapping - mapping data to colors
  * Visual Encoding in general
- * More on data transformations (Pandas)
+ * Python: More on data transformations (Pandas)
+ * Python: Colors!
 
 ---
 
@@ -346,6 +292,15 @@ CIELAB is the color space that covers the average of human vision.
 
 Which image has the red dot?
 
+notes:
+lets play a game
+
+---
+
+## Importance of Color
+
+Which image has the red dot?
+
 <!-- .slide: class="two-floating-elements" -->
 
 <div class="left">
@@ -396,6 +351,7 @@ Which image has the red dot?
 [https://www.csc2.ncsu.edu/faculty/healey/PP/#jscript_search](https://www.csc2.ncsu.edu/faculty/healey/PP/#jscript_search)
 
 Color makes use of our "preattentive" visual cortex processing power -- we are able to detect color *before* our attention focuses.
+
 
 ---
 
@@ -501,7 +457,7 @@ there are a million websites that allow you to create color palettes
 
 ## Ordered Colormaps
 
-<img src="https://lh3.googleusercontent.com/proxy/Mwkhi008aSx6rEdl2_YqW_yCPvsvO_5tI1taFMN8F7Fwn-LCUR5Zdkg6C5HpgoykG9WPA9Bwz31_sYWs5Ft-YsA-vG_uZWE3YirNE94z6tg">
+<img src="https://blogs.mathworks.com/images/steve/2014/parula_part_2_01.png">
 
 Historically, rainbows have been very popular.
 
@@ -512,7 +468,7 @@ which colors jump out at your the most?
 
 ## Ordered Colormaps
 
-<img src="https://serialmentor.com/dataviz/pitfalls_of_color_use_files/figure-html/rainbow-desaturated-1.png">
+<img src="http://serialmentor.com/dataviz/pitfalls_of_color_use_files/figure-html/rainbow-desaturated-1.png">
 
 Historically, rainbows have been very popular, but they can be misleading.
 
@@ -780,6 +736,32 @@ Check out [sc2.ncsu.edu/faculty/healey/PP](sc2.ncsu.edu/faculty/healey/PP) for m
 
 ---
 
+## Color as a Perception Channel
+
+<!-- .slide: data-background-image="images/vad_slides_p51.png" data-background-size="auto 75%" -->
+
+notes:
+color hue, luminance and saturation make use of different "perception channels" listed here 
+
+there are others that we intuatively use, like position, length, tilt, area, ect
+
+These are ordered in terms of which are more effective to use -- i.e. which our brains has a better means of tracking -- for both numerical & ordered categorical data (ordered) and categorcial data that is ordinal (no obvious ordering)
+
+---
+
+## Color as a Perception Channel
+
+<!-- .slide: data-background-image="images/stevensLaw.png" data-background-size="auto 75%" -->
+
+notes:
+without going into too much detail, this has to do with how different stimuli map to human perception -- often it is highly non-linear
+
+For example, our sensation of electric shock is far more sensitive than just linear, but brightness is far less sensitive
+
+Length is the most linear -- which is why bar charts are so effective for transfering information!
+
+---
+
 ## Colormaps: Loading Data
 
 Colormaps in Python - with the Michigan data and the scan data, we'll evaluate:
@@ -791,6 +773,8 @@ Colormaps in Python - with the Michigan data and the scan data, we'll evaluate:
 ---
 
 # To Python!
+
+But first, let's play with Pandas!
 
 
 

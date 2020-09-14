@@ -26,7 +26,7 @@ Note there are a variety of notebooks from previous iterations of this course li
 
 Make sure you save these in the same directory as your jupyter notebook is running in!
 
- * <a href="palette_colors.py" download>Palette Colors - save to notebook folder (or modify your path)</a>
+ * <a href="palette_colors.py" download>Palette Colors (palette_colors.py) - save to notebook folder or modify your path if you know how to do that</a>
 
 
 ## References
