@@ -49,12 +49,30 @@ today will be very coding heavy so we will get lots of practice
 <div class="fig-container" data-style="height: 650px;" data-file="figures/hsv_space.html" data-markdown=true>
 </div>
 
+notes:
+order is:
+1. hue
+2. saturation
+3. value
+4. C - cyan
+5. M - magenta
+6. Y - yellow
+7. Alpha - opacity
+8. K - black
+
 ---
 
 ## What is a widget?
 
 <div class="fig-container" data-style="height: 600px;" data-file="figures/example_coloring_image.html" data-markdown=true>
 </div>
+
+notes:
+order is
+1. R
+2. G
+3. B
+4. A (alpha)
 
 ---
 
@@ -63,6 +81,16 @@ today will be very coding heavy so we will get lots of practice
 <div class="fig-container" data-style="height: 640px;" data-file="figures/apply_colormap.html" data-markdown=true>
 </div>
 
+notes:
+I think the slider is V (value)
+
+---
+
+## What is a widget?
+
+For the purposes of this class: a widget is a way to use Javascript to make interactive plots without having to learn much Javascript! 
+
+(yet)
 
 ---
 
@@ -71,6 +99,10 @@ today will be very coding heavy so we will get lots of practice
 <img src="images/vehicles.jpg" width="700"/>
 
 notes:
+While we won't be learning full JS just yet, we do need to have a bit of an understanding of object oriented programming to in Python "get" a lot of the ways we will be interacting with JS using Python.
+
+We'll start conseptually and then put these ideas into practice.
+
 What are some traits every vehicle has?
 
 ---
