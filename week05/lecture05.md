@@ -1,64 +1,17 @@
-<!doctype html>
-<html>
-  <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-<title>Lecture 4</title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/white.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-<!-- Theme used for syntax highlighting of code -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/head.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js"></script>
-
-
-
-</style>
-
-  <link rel="stylesheet/less" type="text/css" href="/is445AOG_fall2020/assets/styles.less" />
-  </head>
-
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section data-markdown
-           data-separator="^\n---\n"
-           data-separator-vertical="^\n----\n">
-          <script type="text/template">
+---
+title: Lecture 5
+layout: lecture
+visible_lec: true
+visible_n: true
+---
 <!-- .slide: class="titleslide" -->
 
 # Data Visualization
 <div style="height: 6.0em;"></div>
 
 ## Jill P Naiman
-## Spring 2020
-## Lecture 4
-
----
-
-## Warm-Up Activity
-
-1. What is the visualization trying to show?
-1. What are its methods?
-1. What are the strengths / weaknesses?
-
- * https://gizmodo.com/observatories-across-the-world-announce-groundbreaking-1819500578
- * https://gizmodo.com/let-s-break-down-what-that-monumental-neutron-star-coll-1819613829
-
----
-
-## Weekly Viz Report
-
-And the winner is...
-
-notes:
-run the random number generator!
+## Fall 2020
+## Lecture 5
 
 ---
 
@@ -68,13 +21,6 @@ run the random number generator!
  * traitlets and IPython/Jupyter
 
 These will build to the viz engine `bqplot` for next week and Javascript in the near future.
-
-## Then: In class HW Lab for rest of day
-
-notes:
-lecture will be short, then we'll do some intro stuff with widgets & traitlets
-
-and then you'll have the rest of the class to work together on the HW and as me questions about it!
 
 ---
 
@@ -95,6 +41,28 @@ notes:
 now we will start linking these concepts together with code
 
 today will be very coding heavy so we will get lots of practice
+
+---
+
+## What is a widget?
+
+<div class="fig-container" data-style="height: 650px;" data-file="figures/hsv_space.html" data-markdown=true>
+</div>
+
+---
+
+## What is a widget?
+
+<div class="fig-container" data-style="height: 600px;" data-file="figures/example_coloring_image.html" data-markdown=true>
+</div>
+
+---
+
+## What is a widget?
+
+<div class="fig-container" data-style="height: 640px;" data-file="figures/apply_colormap.html" data-markdown=true>
+</div>
+
 
 ---
 
@@ -288,42 +256,3 @@ notes:
 ## To Python!
 
 That all was a bit abstract, let's go through it again with Python.
-          </script>
-        </section>
-      </div>
-    </div>
-<script>
-    // More info about config & dependencies:
-    // - https://github.com/hakimel/reveal.js#configuration
-    // - https://github.com/hakimel/reveal.js#dependencies
-    Reveal.initialize({
-        dependencies: [
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/marked.js' },
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/markdown.min.js' },
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/notes/notes.min.js', async: true },
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/highlight/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/math/math.min.js', async: true },
-            { src: 'https://cdn.jsdelivr.net/npm/reveald3/reveald3.js'},
-            { src: '/reveal.js-plugins/chalkboard/chalkboard.js' },
-            { src: '/reveal-paperjs/paper-figures.js', async: true},
-        ],
-		keyboard: {
-			67: function() { RevealChalkboard.toggleNotesCanvas() },	// toggle notes canvas when 'c' is pressed
-			66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
-			46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
-			 8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
-			68: function() { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
-		},
-        center: false,
-        transition: 'none',
-        backgroundTransition: 'none',
-	slideNumber: true
-
-    });
-</script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
-
-
-  </body>
-</html>
-
