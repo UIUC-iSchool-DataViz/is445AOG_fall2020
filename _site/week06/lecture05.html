@@ -37,31 +37,8 @@
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Spring 2020
-## Lecture 5
-
----
-
-## Warm-Up Activity
-
-1. What is the visualization trying to show?
-1. What are its methods?
-1. What are the strengths / weaknesses?
-
- * https://zzzev.com/movies
-
----
-
-## Weekly Viz Report
-
-And the winner is...
-
-notes:
-run the random number generator!
-
-* review: widgets
-* motivate bqplot with pretty pictures
-* GoG
+## Fall 2020
+## Lecture 6
 
 ---
 
@@ -79,7 +56,10 @@ bqplot!
 
 ## Where we are: Last week
 
-<img src="../week04/images/data_viz_diagram_week4.png">
+<img src="../week05/images/data_viz_diagram_week4.png">
+
+notes:
+last week we started linking together some visual encodings and programming concepts to build interactivity
 
 ---
 
@@ -87,14 +67,21 @@ bqplot!
 
 <img src="images/data_viz_diagram_week05.png">
 
+notes:
+today we'll cover a new viz engine called bqplot (we've been using matplotlib as our main viz engine up until this point)
+
+we'll also cover some concepts of grammar of graphics which is a way that many web-based viz engines are layed out
+
 ---
 
 ## Note on HW for the next two weeks
 
-## Note on OH's next few Fridays
-
 notes:
 go over HW stuff
+
+point out that HW this week is writing, talk about plagurism!!!
+
+mention that next week's is more coding based, and based on several concepts we'll talk about today if you want to get started on it early
 
 ---
 
@@ -113,6 +100,13 @@ go over HW stuff
 
 [Reference](http://cfpm.org/~bruce/logreas/logreas_7.html)
 
+notes:
+so here are the definitions of declaritive vs. imperative
+
+they are a little nebolous, but for reference we've been using mostly imperative programming for viz
+
+you can think of imperative as a step-by-step reciepe and its usually what you'll run across in programming in Python
+
 ---
 
 ## Grammar of Graphics for Declaritive Viz
@@ -124,6 +118,9 @@ go over HW stuff
 
 
 [More info here](https://towardsdatascience.com/a-comprehensive-guide-to-the-grammar-of-graphics-for-effective-visualization-of-multi-dimensional-1f92b4ed4149)
+
+notes:
+declarative is more like painting, or linking different viz elements together like data and coordinates
 
 ---
 
@@ -139,6 +136,9 @@ go over HW stuff
  * IO features
    * Reading/writing CSV, HDF5
    * Loading data from remote sources
+   
+notes:
+these are just a few of the ways we've been using Pandas Imperatively
 
 ---
 
@@ -159,6 +159,11 @@ This week we'll be looking at a new visualization engine.
 Next few weeks:
  * `vega-lite` - declaritive
  * `Idyll` - declaritive
+ 
+note:
+full disclosure -- bqplot has a matplotlib-like, imperative, programming interface
+
+however, we are going to focus on its declarative interface.  Why?  Because we'll be using other declarative viz engines in the next few weeks so its worth getting some practice here.
 
 ---
 
@@ -288,31 +293,28 @@ Our first example will be a simple lineplot.
 import bqplot
 import numpy as np
 
+# data
 x = np.arange(100)
 y = np.random.random(100) + 5
 
+# scales
 x_sc = bqplot.LinearScale()
 y_sc = bqplot.LinearScale()
+
+# marks
 lines = bqplot.Lines(x = x, y = y, scales = {'x': x_sc, 'y': y_sc})
+
+# axis
 ax_x = bqplot.Axis(scale = x_sc, label = 'X value')
 ax_y = bqplot.Axis(scale = y_sc, label = 'Y value', orientation = 'vertical')
+
+# figure
 fig = bqplot.Figure(marks = [lines], axes = [ax_x, ax_y])
 display(fig)
 ```
 
 notes:
 walk through each line and say this order is pretty usual
-
----
-
-### vega-lite (if we have time)
-
-vega-lite is a high-level method for describing visualizations independently of
-their data.
-
-We will be exploring this using the online editor at:
-
-https://vega.github.io/editor/
 
 ---
 
