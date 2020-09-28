@@ -289,27 +289,24 @@ interactivity.
 ## bqplot introduction
 
 Our first example will be a simple lineplot.
-
 ```#python
 import bqplot
 import numpy as np
 
-# data
+# 1. data
 x = np.arange(100)
 y = np.random.random(100) + 5
-
-# scales
+# 2. scales
 x_sc = bqplot.LinearScale()
 y_sc = bqplot.LinearScale()
-
-# marks
+# 3. marks
 lines = bqplot.Lines(x = x, y = y, scales = {'x': x_sc, 'y': y_sc})
-
-# axis
+# 4. sometimes interactive elements are defined around here
+# 5. axis
 ax_x = bqplot.Axis(scale = x_sc, label = 'X value')
 ax_y = bqplot.Axis(scale = y_sc, label = 'Y value', orientation = 'vertical')
 
-# figure
+# finally: figure
 fig = bqplot.Figure(marks = [lines], axes = [ax_x, ax_y])
 display(fig)
 ```
