@@ -20,3 +20,7 @@ We talked a little bit about publishing, networks, and scientific viz.
  2. VAD Ch. 11.6: Manipulate View 
  3. <a href="https://yt-project.org/">yt docs</a>  
  4. <a href="https://yt-project.org/doc/visualizing/volume_rendering.html">yt Volume Rendering Tutorial</a>
+ 
+Also, here is a slightly more in-depth explaination of path/ray tracing:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/frLwRLS_ZR0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
