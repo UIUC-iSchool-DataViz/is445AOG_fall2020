@@ -16,11 +16,17 @@ visible_n: true
 
 ---
 
-## Announcement: Office Hours Nov 3
+## Announcement #1: Office Hours Nov 3
 
 In accordance with the UIUC/Illinois holiday, office hours Tuesday, Nov 3 will be by appointment only (so, email me if you want to chat!).  
 
 There will be additional office hours on Thursday, Nov 5, 5-6pm.
+
+---
+
+## Announcement #2: Office Hours Nov 3
+
+Short *anonymous* feedback survey.
 
 ---
 
