@@ -48,9 +48,10 @@ if we have time we'll also start talking about map projections this week (but we
 
 ## Today's Main Topics
 
+ 1. Interactivity and linked views
  1. More dashboarding
- 2. Dashboards with maps
- 3. Map projections (if we have time)
+ 1. Dashboards with maps
+ 1. Map projections (if we have time)
 
 ---
 
@@ -58,7 +59,113 @@ if we have time we'll also start talking about map projections this week (but we
 <br>
 <br>
 
-# TOPIC 1: Dashboarding
+# TOPIC 1: Interactivity
+
+
+---
+
+## Interactivity
+
+What do you think of when you think of interactive visualizations?
+
+---
+
+## Interactivity: Parameters
+
+<!-- .slide: data-background-image="images/brushlink_01.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
+
+ * Point characteristics
+ * Axis limits/bounds
+ * Transform/scale
+
+---
+
+## Interactivity: Parameters
+
+<!-- .slide: data-background-image="images/brushlink_01.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
+
+ * Point characteristics - Click-and-drag
+ * Axis limits/bounds - Rectangle zoom
+ * Transform/scale - Adjustment
+
+---
+
+## Interactivity: Linking & Brushing
+
+<!-- .slide: data-background-image="images/brushlink_02.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
+
+---
+
+## Interactivity: Linking & Brushing
+
+<!-- .slide: data-background-image="images/brushlink_02.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
+
+`filter( variable2 > variable1 )`
+
+---
+
+## Interactivity: Linking & Brushing
+
+<!-- .slide: data-background-image="images/brushlink_03.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
+
+`filter( variable2 > variable1 )`
+
+---
+
+## Interactivity: Linking & Brushing
+
+<!-- .slide: data-background-image="images/brushlink_04.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
+
+`filter( variable2 > variable1 )`
+
+---
+
+## Interactivity: Linking & Brushing
+
+<!-- .slide: data-background-image="images/brushlink_05.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
+
+---
+
+## Interactivity: Linking & Brushing
+
+<!-- .slide: data-background-image="images/brushlink_06.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
+
+---
+
+## Interactivity: Linking & Brushing
+
+<!-- .slide: data-background-image="images/brushlink_07.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
+
+---
+
+<iframe width="1024" height="576"
+src="https://www.youtube.com/embed/B7XoW2qiFUA" frameborder="0"
+allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+---
+
+## Implementing This
+
+Two main approaches to the selection process:
+
+ * Concurrent filtering ("masks")
+ * Index-based selection (i, j - based)
+
+What are the pros and cons of each?
+
+What are methods of showing "linked" and "brushed" data if you have:
+
+ * Scatter plot
+ * Histogram
+ * Field / image plot
+
+---
+
+<br>
+<br>
+<br>
+
+# TOPIC 2: Dashboarding
 
 ---
 
@@ -156,6 +263,6 @@ if we use dashboarding software, it can often obfuscate a lot of of these aspect
 
 ## Dashboards: Building our own in Python
 
-# TOPIC 2: To Python for an intro to map dashboards!
+# TOPIC 3: To Python for an intro to map dashboards!
 
 notes: today we will get more experience building up these sorts of interfaces ourselves!
