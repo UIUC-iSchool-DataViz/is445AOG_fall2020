@@ -1,5 +1,5 @@
 ---
-title: Lecture 7
+title: Lecture 8
 layout: lecture
 visible_lec: true
 visible_n: true
@@ -11,62 +11,28 @@ visible_n: true
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Spring 2020
-## Lecture 7
+## Fall 2020
+## Lecture 8
 
 ---
 
-## Warm-Up Activity
-
- 1. What is the visualization trying to show?
- 1. What are its methods?
- 1. What are the strengths / weaknesses?
-
-[Seismic Sound Lab](http://www.seismicsoundlab.org/?page_id=338)
-
-In particular: [Ground Motions for Hait and Tohoku](https://vimeo.com/187740441)
-
----
-
-## Weekly Viz Report
-
-And the winner is...
-
-notes:
-run the random number generator!
-
----
-
-# Office Hours this week
-
-Tuesday **3:30pm-?**, no office hours on Friday.
-
-<br>
-<br>
-
-**FYI:** less internet availability during Spring Break
- * email, Slack, etc should all work if you have questions!
-
----
-
-# Homework over break
+# Homework (2 assigned)
 
 1. Installations & trying some web interfaces out
-1. Extra Credit: Map viz
+1. Interactive maps (due in 2 weeks)
 
 notes:
-there will be HW over break, but it will be installing things and trying out some web interfaces.
-
+There are 2 homeworks.  Like the last #5 & #6 you might want to get looking at #8 sooner than later
 **go to HW!**
 
 ---
 
 ## Where we are: Last week
 
-<img src="../week06/images/dataviz_map_thisweek.png">
+<img src="images/dataviz_lastweek_t2.png">
 
 notes:
-last week we started thinking a bit about making maps and their projections
+last week we messed a bit with mappable data and made some interactive dashboards
 
 ---
 
@@ -75,26 +41,20 @@ last week we started thinking a bit about making maps and their projections
 <img src="images/this_week_diagram.png">
 
 notes:
-this week, we will talk more about maps & their projections and play with a few different mapping options in Python
+this week we'll talk a bit about map projections and a few specific engines
+
+fyi -- we might not get to much of ipyleaflet and cartopy, but there are some extra notebooks from other years with more examples
 
 ---
 
 ## Today's Main Topics
 
-
-#### ~~Part 1:~~
- * ~~Evaluating Visualization Systems - Summary of HW Ideas~~
- * ~~More on dashboards~~
- * ~~Beginning map-dashboards with histogramming & bqplot~~
-
-
-#### Part 2:
  * Maps - in more detail
    * Projections
    * Coordinate Systems
    * Infoviz/Choropleth maps 
-   * Plotting with CartoPy 
-   * Plotting with ipyleaflet 
+   * Plotting with CartoPy(?)
+   * Plotting with ipyleaflet(?)
    * Plotting with geopandas
    * Geojson in general
 
@@ -102,6 +62,8 @@ notes:
 in more detail: last week we started with maps and how we can use bqplot to do a lot of mapping type stuff
 
 This week we will play with a few different mapping and viz engines and deal with the JSON and geo-json format for storing data
+
+again, might not get to as much with cartopy/ipyleaflet
 
 ---
 
@@ -142,7 +104,7 @@ to the flat object we are observing.
 
 What are some things we could preserve during such a projection?
 
-<img src="../week06/images/mapwrap.gif" height="350"/>
+<img src="../week07/images/mapwrap.gif" height="350"/>
 
 notes:
 One common conversion from sphere to plane is the squashed cylinder approach
@@ -154,7 +116,7 @@ This can be used to conserve straight lines (distances)
 
 ## Projections
 
-<img src="../week06/images/mapsplode.gif" height="350"/>
+<img src="../week07/images/mapsplode.gif" height="350"/>
 
 notes:
 There's always a weird way to do it too. Here we're exploding the sphere into lots of 
@@ -193,7 +155,7 @@ What happens when we preserve one property over another?
 
 Mercator is a "conformal" projection.  What is wrong with this?
 
-<!-- .slide: data-background-image="../week06/images/mercator.png" data-background-size="auto 80%" -->
+<!-- .slide: data-background-image="../week07/images/mercator.png" data-background-size="auto 80%" -->
 
 notes:
 conformal = shape preserving (at the expense of accurate size)
@@ -206,7 +168,7 @@ We can characterize distortions in a projection by examining how a known shape
 appears on them.  The Tissot Ellipse of Distortion is a method of showing this
 by drawing circles of a fixed radius and examining their elliptical distortion.
 
-<img src="../week06/images/Tissot_indicatrix_world_map_Mercator_proj.svg" height="400">
+<img src="../week07/images/Tissot_indicatrix_world_map_Mercator_proj.svg" height="400">
 
 notes: so here for example, we see that the mercator projection has circles that
 stay circles, though they change in relative size depending on where they are on the map
@@ -215,33 +177,33 @@ stay circles, though they change in relative size depending on where they are on
 
 What do you notice?
 
-<!-- .slide: data-background-image="../week06/images/mercator.png" data-background-size="auto 80%" -->
+<!-- .slide: data-background-image="../week07/images/mercator.png" data-background-size="auto 80%" -->
 
 ---
 
-<!-- .slide: data-background-image="../week06/images/mercator_tissot.png" data-background-size="auto 80%" -->
+<!-- .slide: data-background-image="../week07/images/mercator_tissot.png" data-background-size="auto 80%" -->
 
 notes:
 Greenland and Antarctica are HUGE
 
 ---
 
-<!-- .slide: data-background-image="../week06/images/transversemercator.png" data-background-size="auto 95%" -->
+<!-- .slide: data-background-image="../week07/images/transversemercator.png" data-background-size="auto 95%" -->
 
 ---
 
-<!-- .slide: data-background-image="../week06/images/transversemercator_tissot.png" data-background-size="auto 95%" -->
+<!-- .slide: data-background-image="../week07/images/transversemercator_tissot.png" data-background-size="auto 95%" -->
 
 notes:
 this projection is most accurate near the vertical center line
 
 ---
 
-<!-- .slide: data-background-image="../week06/images/lambertcylindrical.png" data-background-size="auto 95%" -->
+<!-- .slide: data-background-image="../week07/images/lambertcylindrical.png" data-background-size="auto 95%" -->
 
 ---
 
-<!-- .slide: data-background-image="../week06/images/lambertcylindrical_tissot.png" data-background-size="auto 95%" -->
+<!-- .slide: data-background-image="../week07/images/lambertcylindrical_tissot.png" data-background-size="auto 95%" -->
 
 notes:
 Also known as "equirectangular", this is the favorite format of NASA because it's mathematically straightforward.
@@ -250,33 +212,33 @@ Note that the very top line of the image represents a single point on the globe.
 
 ---
 
-<!-- .slide: data-background-image="../week06/images/mollweide.png" data-background-size="auto 95%" -->
+<!-- .slide: data-background-image="../week07/images/mollweide.png" data-background-size="auto 95%" -->
 
 ---
 
-<!-- .slide: data-background-image="../week06/images/mollweide_tissot.png" data-background-size="auto 95%" -->
+<!-- .slide: data-background-image="../week07/images/mollweide_tissot.png" data-background-size="auto 95%" -->
 
 notes:
 this is considered a good compromise between shape-preserving and angle preserving - but it's not perfect at either.
 
 ---
 
-<!-- .slide: data-background-image="../week06/images/sinusoidal.png" data-background-size="auto 95%" -->
+<!-- .slide: data-background-image="../week07/images/sinusoidal.png" data-background-size="auto 95%" -->
 
 ---
 
-<!-- .slide: data-background-image="../week06/images/sinusoidal_tissot.png" data-background-size="auto 95%" -->
+<!-- .slide: data-background-image="../week07/images/sinusoidal_tissot.png" data-background-size="auto 95%" -->
 
 notes:
 this has even less distortion than mollweide, but the pointy ends don't feel very elegant and planet-like
 
 ---
 
-<!-- .slide: data-background-image="../week06/images/gnomonic.png" data-background-size="auto 95%" -->
+<!-- .slide: data-background-image="../week07/images/gnomonic.png" data-background-size="auto 95%" -->
 
 ---
 
-<!-- .slide: data-background-image="../week06/images/gnomonic_tissot.png" data-background-size="auto 95%" -->
+<!-- .slide: data-background-image="../week07/images/gnomonic_tissot.png" data-background-size="auto 95%" -->
 
 notes:
 this is another nightmare scenario like Mercator that was initially created for navigation. Straight lines on this map are the shortest route, but area, shape, and size are distorted.
@@ -304,7 +266,7 @@ after watching this, it's useful to know that the Peters projection is actually 
 [The True Size Of...](https://thetruesize.com)
 
 notes:
-Let's go see what Greenland actually looks like -- this was part of the intro, but I'll point it out again so you can really see it!
+Let's go see what Greenland actually looks like ...
 
 ---
 
@@ -316,7 +278,7 @@ Why is Europe at the center of all the maps we've looked at?
 
 ## Discussion
 
-<img src="../week06/images/Azimuthal_equidistant_projection.jpg" width="512"/>
+<img src="../week07/images/Azimuthal_equidistant_projection.jpg" width="512"/>
 
 notes: there is nothing specifically wrong with putting a pole at the center of the map
 
@@ -324,14 +286,14 @@ notes: there is nothing specifically wrong with putting a pole at the center of 
 
 ## Discussion
 
-<img src="../week06/images/Azimuthal_equidistant_tissot.png" width="512"/>
+<img src="../week07/images/Azimuthal_equidistant_tissot.png" width="512"/>
 
-notes: also see here that now the equator is very distorted
+notes: also see here that now the equator is very distorted, and the south pole even more so!
 
 ---
 ## Discussion
 
-<img src="../week06/images/Waterman_projection.png" width="512"/>
+<img src="../week07/images/Waterman_projection.png" width="512"/>
 
 notes: or why bother having a spherical or rectangular shape at all?
 
@@ -339,7 +301,7 @@ notes: or why bother having a spherical or rectangular shape at all?
 
 ## Discussion
 
-<img src="../week06/images/Waterman_tissot.png" width="512"/>
+<img src="../week07/images/Waterman_tissot.png" width="512"/>
 
 notes: look how here there is very little distortion of size or shape
 
@@ -432,7 +394,7 @@ Tips for dealing with GeoJSON:
  * use `.keys()` and progressively drill down to data of interest
  * look for location of `properties` and `features`
 
-We will get practice at this during programming.
+We will get practice at this during programming (and in extra notebook examples).
 
 notes:
 often our issue will be linking the information stored in JSON file formats with that of whatever plotting routine we are using
@@ -451,9 +413,86 @@ we'll get some practice with this in the coding portion of class
 
 ## Access to geometry files
 
- 1. Cartopy
- 1. ipyleaflet
  1. GeoPandas
+ 1. Cartopy (extra)
+ 1. ipyleaflet (extra)
+ 
+notes:
+so, we'll mostly be using geopandas for this lecture, but there are other tools available like cartopy and ipyleaflet
+
+If we have time, we'll go into those, but if not, they are in the extra prep notebook for today if you want to look on your own
+
+---
+
+## Geopandas
+
+<img src="https://geopandas.org/_images/sphx_glr_create_geopandas_from_pandas_001.png">
+
+notes:
+the calls for geopandas is going to look very similar to pandas calls!
+
+---
+
+## Geopandas
+
+```python
+gdf = geopandas.read_file('mapfile.geojson')
+gdf.head()
+gdf.plot()
+```
+
+notes:
+very pandas-like calls we can use
+
+---
+
+## Geopandas
+
+```python
+gdf = geopandas.read_file('mapfile.geojson')
+gdf.head()
+gdf.plot()
+```
+
+Map information sources:
+ * [https://datagateway.nrcs.usda.gov/](https://datagateway.nrcs.usda.gov/)
+ * [US Census info](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)
+ * [City of Champaign](https://gis-cityofchampaign.opendata.arcgis.com/)
+ 
+notes:
+we'll just touch on a few data sources, and you'll have the opportunity to explore a few more in the HW
+
+---
+
+## Geopandas + contextily
+
+<img src="https://geopandas.org/_images/sphx_glr_plotting_basemap_background_002.png" width='500px'>
+
+notes:
+we'll also play around with using contextily to add backgrounds to maps
+
+---
+
+## Other Map Viz
+
+ * Google Maps & Earth
+ * WorldWide Telescope
+ * CesiumJS
+ * bqplot
+ * Vega & friends
+ * cartopy (see extra slides)
+ * ipyleaflet (see extra slides)
+ 
+notes:
+I've added a few extra slides about cartopy and ipyleaflet that we can look over if we get to those topics
+
+otherwise they are left for your reference
+
+---
+
+# To Python!
+
+---
 
 ---
 
@@ -535,50 +574,3 @@ Leaflet is another mechanism of plotting, displaying and interacting with maps.
 
 We will very briefly play with this in Python - could be of use for those that were having issues with cartopy.
 
----
-
-## Geopandas
-
-<img src="https://geopandas.org/_images/sphx_glr_create_geopandas_from_pandas_001.png">
-
-notes:
-the calls for geopandas is going to look very similar to pandas calls!
-
----
-
-## Geopandas
-
-```python
-gdf = geopandas.read_file('mapfile.geojson')
-gdf.head()
-gdf.plot()
-```
-
----
-
-## Geopandas
-
-```python
-gdf = geopandas.read_file('mapfile.geojson')
-gdf.head()
-gdf.plot()
-```
-
-Map information sources:
- * [https://datagateway.nrcs.usda.gov/](https://datagateway.nrcs.usda.gov/)
- * [US Census info](https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html)
- * [City of Champaign](https://gis-cityofchampaign.opendata.arcgis.com/)
-
----
-
-## Other Map Viz
-
- * Google Maps & Earth
- * WorldWide Telescope
- * CesiumJS
- * bqplot
- * Vega & friends
-
----
-
-# To Python!
