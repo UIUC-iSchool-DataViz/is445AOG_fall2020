@@ -7,7 +7,7 @@ visible_n: true
 
 # Week 8 - Maps, maps and more maps
 
-We will start thinking about maps & map projection, both in `bqplot` and `matplotlib`.  We'll continue this week with building dashboards of mappable data.
+We will start thinking about maps & map projection, both in `bqplot` and `matplotlib` and with `geopandas`+`contextily`.  We'll continue this week with building dashboards of mappable data.
 
 ## Downloads
 
