@@ -33,6 +33,8 @@ If you go this route, make sure you activate your DataViz environment before usi
 
 You'll run these commands in a terminal (Mac) or anaconda prompt (Windows) so make sure you open them up.
 
+**NOTE:** to install things globally (-g) you might have to use `sudo` in front of the `npm` commands.
+
 1. Use `npm` to install Idyll (you might need root privileges to do so)
 ```
 npm install -g idyll
