@@ -57,5 +57,6 @@ npm install --save idyll-vega-lite
   * downloading [this index.idyll file](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445AOG_fall2020/master/week10/index.idyll) and replacing the default index.idyll file in your `my-idyll-post` directory
   * downloading [the LakeHuron.csv file](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445AOG_fall2020/master/week10/LakeHuron.csv) and putting this in the `data/` sub-folder in the `my-idyll-post` directory
   * do `idyll` in your `my-idyll-post` directory and make sure it looks like whats in the test video below
+     * **NOTE:** if you get an error and it won't build try `idyll --compileLibs=true` instead of just `idyll`.  You might get a "BABEL" warning that you can ignore for now.
   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/J_w9kowGkIs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
