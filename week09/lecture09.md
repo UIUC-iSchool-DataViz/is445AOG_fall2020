@@ -1,36 +1,9 @@
-<!doctype html>
-<html>
-  <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-<title>Lecture 10</title>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/white.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-<!-- Theme used for syntax highlighting of code -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/js/head.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.min.js"></script>
-
-
-
-</style>
-
-  <link rel="stylesheet/less" type="text/css" href="/is445AOG_fall2020/assets/styles.less" />
-  </head>
-
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section data-markdown
-           data-separator="^\n---\n"
-           data-separator-vertical="^\n----\n">
-          <script type="text/template">
+---
+title: Lecture 9
+layout: lecture
+visible_lec: true
+visible_n: true
+---
 <!-- .slide: class="titleslide" -->
 
 # Data Visualization
@@ -38,41 +11,25 @@
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Spring 2020
-## Lecture 10
-
----
-
-## Warm-Up Activity
-
-1. What is the visualization trying to show?
-1. What are its methods?
-1. What are the strengths / weaknesses?
-
-<br/>
-
-https://coronavirus.jhu.edu/map.html
-
-(Don't click if you are coronavirus-news saturated!)
-
----
-
-## Bureaucracy
-
- * Final parts posted
- * We will be dropping a HW grade
+## Fall 2020
+## Lecture 9
 
 ---
 
 ## Last Week
 
-<img src="../week09/images/this_week.png">
+<img src="images/last_week2.png">
 
 ---
 
 ## This Week
 
-<img src="images/this_week.png">
+<img src="images/this_week2.png">
+
+notes: 
+this week we'll finally start dipping our toes into Javascript with some seriousness
+
+Luckily, will all of our usage of bqplot and grammar of graphics we are well equipt to do this!
 
 ---
 
@@ -323,6 +280,9 @@ Declarative:
    and data values.
  * `Axis` objects are where data are placed.
  * `Figure` objects contain marks and axes, as well as interaction.
+ 
+notes:
+a quick reminder about our grammar of graphics objects
 
 ---
 
@@ -699,42 +659,3 @@ To the internet!
 
 notes:
 make sure you go over all these things!
-          </script>
-        </section>
-      </div>
-    </div>
-<script>
-    // More info about config & dependencies:
-    // - https://github.com/hakimel/reveal.js#configuration
-    // - https://github.com/hakimel/reveal.js#dependencies
-    Reveal.initialize({
-        dependencies: [
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/marked.js' },
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/markdown.min.js' },
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/notes/notes.min.js', async: true },
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/highlight/highlight.min.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-            { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/math/math.min.js', async: true },
-            { src: 'https://cdn.jsdelivr.net/npm/reveald3/reveald3.js'},
-            { src: '/reveal.js-plugins/chalkboard/chalkboard.js' },
-            { src: '/reveal-paperjs/paper-figures.js', async: true},
-        ],
-		keyboard: {
-			67: function() { RevealChalkboard.toggleNotesCanvas() },	// toggle notes canvas when 'c' is pressed
-			66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
-			46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
-			 8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
-			68: function() { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
-		},
-        center: false,
-        transition: 'none',
-        backgroundTransition: 'none',
-	slideNumber: true
-
-    });
-</script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
-
-
-  </body>
-</html>
-
