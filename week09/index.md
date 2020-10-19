@@ -14,7 +14,7 @@ visible_n: true
  * <a href="https://alpha.iodide.io/notebooks/4351/">Prep Iodide Notebook</a>
 <!-- * <a href="https://alpha.iodide.io/notebooks/4367/">In Class Iodide Notebook</a> -->
 
-Feel free to check out [Spring 2020's notebook that uses police shooting data for visualization](https://alpha.iodide.io/notebooks/4351/) if you are interested.  For sensitivity reasons we will not be working with this dataset this semester.
+Feel free to check out [Spring 2020's notebook that uses police shooting data for visualization](https://alpha.iodide.io/notebooks/4351/) if you are interestedin other mappable datasets.  
 
 ## Optional reading list
 
