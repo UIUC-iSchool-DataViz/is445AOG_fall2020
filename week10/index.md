@@ -15,6 +15,11 @@ visible_n: true
 <!-- * <a href="https://alpha.iodide.io/notebooks/4466/">In Class Iodide Notebook</a> -->
  
  Feel free to check out [Spring 2020's notebook that uses police shooting data for visualization](https://alpha.iodide.io/notebooks/4399/) if you are interestedin other mappable datasets.  
+ 
+### Info about dataset
+
+We will use a dataset of USA "mobility" which (I *think* comes from a [a large census study from 1989-2015](https://www.census.gov/library/working-papers/2018/adrm/CES-WP-18-40R.html)) and is collected in several places [including right here](http://www.stat.cmu.edu/~cshalizi/uADA/15/hw/01/mobility.csv).  Here "mobility" is refering to how easy it is for a person to move up in economic status ([more info can be found here](http://www.stat.cmu.edu/~cshalizi/uADA/15/hw/01/hw-01.pdf)) based on factors like parental income, location, race, etc.
+
 
 
 ## Installation instructions: Idyll
