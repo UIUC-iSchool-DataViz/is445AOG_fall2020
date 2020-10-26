@@ -47,32 +47,20 @@
 
 ---
 
-## Warm-Up Activity
-
-1. What is the visualization trying to show?
-1. What are its methods?
-1. What are the strengths / weaknesses?
-
-<br/>
-
-https://www.vox.com/policy-and-politics/2018/9/28/17914308/kavanaugh-ford-question-dodge-hearing-chart
-
----
-
 ## Last Week
 
-<img src="../week10/images/this_week.png">
+<img src="../week09/images/this_week2.png">
 
 ---
 
 ## This Week
 
-<img src="images/this_week.png">
+<img src="images/this_week2.png">
 
 notes:
 this week we will discuss how one has to consider the audience of their visualization - is your audience you? your peers? others?
 
-we'll aslo talk about linking views through brushing and selecting - we did this earlier with building dashboards, but we'll formalize it more today and talk about applications in vega-lite
+we'll start linking stuff together in vegalite
 
 if we have time after doing a few more things with javascript & vega-lite, we'll start in on doing a few things with Idyll
 
@@ -82,7 +70,6 @@ if we have time after doing a few more things with javascript & vega-lite, we'll
 
  1. Viz for Self/Peers/Others
  1. Review about final projects
- 1. Linking & Brushing
  1. More `vega-lite` - transformations and calculations
  1. More programming in Iodide
  1. Intro to Idyll (if time)
@@ -550,9 +537,9 @@ There are three components, turned in the last three weeks of class.
 
 You will have three components:
 
-1. Viz for Self (Due April 13)
-1. Viz for Peers (Due April 20)
-1. Viz for Others (Due April 27)
+1. Viz for Self (Due November 16)
+1. Viz for Peers (Due November 30)
+1. Viz for Others (Due December 7, 18)
 
 ---
 
@@ -591,8 +578,6 @@ information in your Jupyter notebook:
 
 ## Final Project: Part 1 (cont, cont)
 
-Per usual, there will be a class google doc for this assignment.
-
 You can share raw data sets and sources, ask questions about reading/modifying the dataset and post code to do so **that isn't working**.
 
 Please do not share processed or cleaned datasets.
@@ -627,13 +612,10 @@ Submit in a Jupyter notebook.
 
 ## Final Project: Part 3
 
-You will submit this as your final project in week 14 and get some feedback.
+You will submit this as your final project and get some feedback -- both from the instructors and in the forum.
 
-### In flux:
+You will also provide feedback for 3 other students (more on this later).
 
-For week 15, everbody will share their viz for a few minutes in class
-(tech willing).  This doesn't have to be a formal presentation, just a quick screen-share and a few
-comments about what you have been working on.
 
 ---
 
@@ -655,163 +637,6 @@ Some possible ways to approach this:
 
 ---
 
-<br />
-<br />
-<br />
-
-# TOPIC 3: Linking & Brushing
-
----
-
-## Interactivity: Linking & Brushing
-
-<!-- .slide: data-background-image="images/brushlink_02.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
-
-`data(variable1, variable2, variable3, variable4)`
-
-note: here we are plotting a set of data that is a function of 4 variables.
-
-For example, this could be the amount you are late to class as a function of (1) how much sleep you got, (2) how excited you are about the topic that day (3) how nervous you are about the topic that day and (4) how much of your homework the dog ate.
-
-here we are plotting 2 2d plots of this dataset - were we know intuatively each point is represented both as a dot on the first graph *and* as a dot on the 2nd graph
-
----
-
-## Interactivity: Linking & Brushing
-
-<!-- .slide: data-background-image="images/brushlink_02.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
-
-`data(variable1, variable2, variable3, variable4)`
-
-`filter( variable2 > variable1 )`
-
-note: now we are going to think about applying a simple filter, based around the first plot
-
-we'll only show data where variable2 > variable1
-
----
-
-## Interactivity: Linking & Brushing
-
-<!-- .slide: data-background-image="images/brushlink_03.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
-
-`data(variable1, variable2, variable3, variable4)`
-
-`filter( variable2 > variable1 )`
-
-note: lets draw a line where the demarkation of our filter would be
-
----
-
-## Interactivity: Linking & Brushing
-
-<!-- .slide: data-background-image="images/brushlink_04.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
-
-`data(variable1, variable2, variable3, variable4)`
-
-`filter( variable2 > variable1 )`
-
-note: ... and lets take out all the data of both plots that has variable2 <= variable1
-
----
-
-## Interactivity: Linking & Brushing
-
-<!-- .slide: data-background-image="images/brushlink_05.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
-
-note: we can also select regions in our linked view
-
----
-
-## Interactivity: Linking & Brushing
-
-<!-- .slide: data-background-image="images/brushlink_06.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
-
-note: here are how these points are linked in the plot of variable3 vs variable4
-
----
-
-## Interactivity: Linking & Brushing
-
-<!-- .slide: data-background-image="images/brushlink_07.svg" data-background-size="80% auto" data-background-position="right 50% bottom 50%" -->
-
-note: so when we select with our brush in the first plot we can show what is selected in the second plot
-
----
-
-## Interactivity: Linking & Brushing with UFO data
-
-![](/is445AOG_fall2020/week10/images/durationAllPoints.png)
-
-note: as a "practical" example, we can for example make cuts in things like the
-duration of UFO sitings for all years
-
----
-
-## Interactivity: Linking & Brushing with UFO data
-
-![](/is445AOG_fall2020/week10/images/durationAllPoints_p2.png)
-
-note: we can select only the longest sitings
-
----
-
-## Interactivity: Linking & Brushing with UFO data
-
-![](/is445AOG_fall2020/week10/images/durationLongPoints.png)
-
-note: this is how this plot would now look
-
----
-
-## Interactivity: Linking & Brushing with UFO data
-
-![](/is445AOG_fall2020/week10/images/mapAllPoints.png)
-
-note: and then we can see how the map changes
-
-this is our original
-
----
-
-## Interactivity: Linking & Brushing with UFO data
-
-![](/is445AOG_fall2020/week10/images/mapLongPoints.png)
-
-note: this is how this dataset looks now w/o the shortest duration ufo sitings
-
----
-
-<iframe width="1024" height="576"
-src="https://www.youtube.com/embed/B7XoW2qiFUA?rel=0" frameborder="0"
-allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-[Link to video](https://www.youtube.com/embed/B7XoW2qiFUA)
-
-note: here is one of the first examples of a "linked view" visualization machine.  We won't watch this whole video, but
-if you are interested, they talk about how they can "interact" with different views
-
-this was developed by SLAC (stanford linear accelerator)
-
-prim9 = picturing, rotation, isolation & masking in up to 9 dimensions - for looking at multidimensional datasets
-this was developed for particle data (so, like x,y,z and vx,vy,vz might be of interest)
-
----
-
-## Implementing This
-
-Two main approaches to the selection process:
-
- * Concurrent filtering
- * Index-based selection
-
-What are the pros and cons of each?
-
-What are methods of showing "linked" and "brushed" data if you have:
-
- * Scatter plot
- * Histogram
- * Field / image plot
 
 ---
 
@@ -819,7 +644,7 @@ What are methods of showing "linked" and "brushed" data if you have:
 <br />
 <br />
 
-# TOPIC 4: More `vega-lite`
+# TOPIC 3: More `vega-lite`
 
 ---
 
