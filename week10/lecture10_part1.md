@@ -1,5 +1,5 @@
 ---
-title: Lecture 11, Part 1
+title: Lecture 10
 layout: lecture
 visible_lec: true
 visible_n: true
@@ -13,8 +13,8 @@ setup_script: setup_script.js
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Spring 2020
-## Lecture 11
+## Fall 2020
+## Lecture 10
 
 ---
 
