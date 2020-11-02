@@ -5,12 +5,19 @@ visible_lec: true
 visible_n: true
 ---
 
-# Week 11 - Intro to Idyll 
+# Week 11 - Finish up with Iodide, Intro to Idyll 
 
 Today we'll cover a brief intro of [Idyll](https://idyll-lang.org/) and web development in general.
 
 
 ## Downloads & Links
+
+### Iodide Notebooks:
+
+ * We'll finish up with this notebook: <a href="https://alpha.iodide.io/notebooks/6217/">Prep Iodide Notebook</a>
+<!-- * <a href="https://alpha.iodide.io/notebooks/6219/">In Class Iodide Notebook</a> -->
+ 
+ Feel free to check out [Spring 2020's notebook that uses police shooting data for visualization](https://alpha.iodide.io/notebooks/4399/) if you are interestedin other mappable datasets.  
 
 ### Data
 
@@ -25,3 +32,4 @@ Today we'll cover a brief intro of [Idyll](https://idyll-lang.org/) and web deve
 ## Optional reading list
 
  1. <a href="https://idyll-lang.org/docs"> Idyll Docs</a> - in particular: <a href="https://idyll-lang.org/docs/components">Built in</a>/<a href="https://idyll-lang.org/docs/components/npm">npm installed</a> components
+ 1. Idyll example: https://mathisonian.github.io/diy-data-fugazi/

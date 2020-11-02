@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<title>Lecture 12, Part 2</title>
+<title>Lecture 11, More with Vega-lite</title>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/white.min.css">
@@ -42,135 +42,131 @@
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Spring 2020
-## Lecture 12, Part 2
+## Fall 2020
+## Lecture 11, Extra Vega-lite
 
 ---
 
-## A Little Bit of d3
+<br />
+<br />
 
-We're going to learn a very small bit of [d3.js](https://d3js.org/).
-
-The easiest way to utilize D3 is through [observablehq.com](https://observablehq.com):
-
-```
-d3 = require("d3@5");
-```
-
-although it is straightforward to include the necessary code in an HTML page:
-
-<code>
-&lt;script src="https://d3js.org/d3.v5.min.js"&gt;&lt;/script&gt;
-</code>
+# A few more notes about vega-lite if we have time
 
 ---
 
-## Concepts in d3: outline
+## The vega-lite View API
 
-The basic concepts here we will convey:
-
- * `.select()` and `.selectAll()`
- * `.enter()`
- * `.attr()` and `.style()`
- * `d3.scaleLinear()`
-
----
-
-## Concepts in d3: data and elements
-
-When we manipulate items in d3, we connect the concept of a data item to an
-element in a document.
-
-Typically, this will be an element in an SVG -- for instance, a `line`,
-`circle`, `rect` or `text` element.
-
-Our typical workflow:
-
- 1. Select all items of a specific criteria
- 2. Bind these items to a set of data
- 3. Update, append or remove items based on their corresponding item.
-
----
-
-## Concepts in d3: accessors and setters
-
-We will very frequently run into the case where we call something, and supply a
-*function* to it, rather than supplying a value.  For instance, *both* of these
-calls to `attr` are valid in a typical d3 workflow:
+The [`View` API](https://vega.github.io/vega/docs/api/view/#view_insert) in
+vega-lite (rather, vega) is how we manipulate and change data.  This can be
+done by constructing a `changeset`, appending operations to that changeset, and
+then executing that changeset on the `view` of our embedded visualization.
 
 ```javascript
-.attr("cx", 1.0)
-
-// or
-
-.attr("cx", d => d.x)
+var cs = vega.changeset()
+          .remove( function(t) {
+              return t.CIRCULATION < 10000
+          });
+embedded.then( function(res) {
+  res.view.change('table', cs).run();
+});
 ```
 
-In one, we are setting the value static; in the other, we base the value on the datapoint supplied.
+This will update the data table named `'table'` with everything "queued up" in
+the `changeset` object `cs`.
 
 ---
 
-## Concepts in d3: Let's make circles
+## vega-lite: insert example
 
-For our first exploration, let's just make some circles.  I will demonstrate this in observable, but here is the key snippet of code:
-
+```json
+  {
+    "$schema": "https://vega.github.io/schema/vega-lite/v3.json",
+    "description": "A scatterplot",
+    "data": {"name": "table",
+             "values": [ {"x": 1.0, "y": 2.0},
+                         {"x": 2.0, "y": 1.0},
+                         {"x": 3.0, "y": 9.0},
+                         {"x": 4.0, "y": 8.0},
+                         {"x": 5.0, "y": 6.0} ] },
+    "mark": "point",
+      "encoding": {
+        "x": {"field": "x","type": "quantitative"},
+        "y": {"field": "y","type": "quantitative"}
+      }
+  }
 ```
-var dataset = [ {'x': 100, 'y': 200, 'radius': 15},
-                {'x': 150, 'y': 300, 'radius': 30} ];
-svg.selectAll("circle").data(dataset).enter()
-   .append("circle")
-   .attr("cx", d => d.x)
-   .attr("cy", d => d.y)
-   .attr("r", d => d.radius)
-   .style("fill", "black");
-```
 
-What does this do?
+<div id="vis2"></div>
 
 ---
 
-## Concepts in d3: Objects
+## vega-lite: insert example
 
-We will mostly use the objects
-
- * [`rect`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/rect) -- which has `x`, `y`, `width` and `height` 
- * [`circle`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/circle) -- which has `cx`, `cy`, and `r`
- * [`line`](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/line) -- which has `x1`, `x2`, `y1` and `y2`.
-
-Each of these objects can be controlled in style, appearance, position, etc, according to standard SVG and CSS rules.
-
-Let's experiment!
-
----
-
-## Concepts in d3: Scaling
-
-To map from a given range to a different range in a linear fashion, we can construct a linear scale:
+We can add elements to our dataset with the `insert` function.  This takes an
+array of data tuples, like those already included, and adds them to the data
+being visualized.
 
 ```javascript
-var xScale = d3.scaleLinear().range([0, 100]).domain([0.0, 1.0]);
+var cs = vega.changeset()
+          .insert( [
+            {'x': 1.0, 'y': 10.0},
+            {'x': 5.0, 'y': 1.3},
+            {'x': 2.1, 'y': 0.7}
+          ]);
+embedded3.then( function(res) {
+  res.view.change('table', cs).run();
 ```
 
-This is now an object we can use to map the values 0 .. 1 to 0 .. 100.  This is useful for, among other things, computing the position of a given value:
+---
+
+## vega-lite: insert example
+
+We do this by affixing an event handler, in this case to a button and the event
+`click`.
 
 ```javascript
-.attr("cx", d => xScale(d.x))
+document.getElementById("button3")
+  .addEventListener("click", 
+    function onButtonClick(event) {
+  });
+```
+
+<div id="vis3"></div>
+
+<button id="button3">Click to insert</button>
+
+---
+
+## vega-lite: remove
+
+Similarly, we can *remove* data points by supplying a function that is
+evaluated on each of the data tuples.
+
+```javascript
+var cs = vega.changeset()
+          .insert( [
+            {'x': 1.0, 'y': 10.0},
+            {'x': 5.0, 'y': 1.3},
+            {'x': 2.1, 'y': 0.7}
+            ])
+          .remove( function(t) {
+            return t.x < t.y;
+          });
+embedded4.then( function(res) {
+  res.view.change('table', cs).run();
 ```
 
 ---
 
-## Additional Basic Topics
+## vega-lite: remove
+  
+<div id="vis4"></div>
+<button id="button4">Click to insert and remove</button>
 
-`d3.axisBottom(xScale)` can be used to create ticks and axes; however, it
-requires manual translation using the `transform` attribute, using something
-like `.attr("transform", "translate(0, 30)")`.  This then brings up our concept
-of margins, width, height, and the like!  How can we manage these?
-
-Let's try it out!
+(Wait, what happened ...?)
 
 ---
 
-## There are lots of examples on the web we can build from!
 
           </script>
         </section>
@@ -206,6 +202,8 @@ Let's try it out!
     });
 </script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+
+<script src="setup_script.js"></script>
 
 
   </body>

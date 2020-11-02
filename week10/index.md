@@ -5,7 +5,7 @@ visible_lec: true
 visible_n: true
 ---
 
-# Week 10 - Viz Audience; More Iodide, Javascript & Vega-lite (and maybe Idyll)
+# Week 10 - Viz Audience; More Iodide, Javascript & Vega-lite ~~(and maybe Idyll)~~
 
 ## Downloads & Links
 

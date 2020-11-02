@@ -1,5 +1,5 @@
 ---
-title: Lecture 12, Part 1
+title: Lecture 11
 layout: lecture
 include_vega: true
 visible_lec: true
@@ -13,47 +13,50 @@ visible_n: true
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Spring 2020
-## Lecture 12, Part 1
-
----
-
-## Warm-Up Activity
-
-1. What is the visualization trying to show?
-1. What are its methods?
-1. What are the strengths / weaknesses?
-
-<br/>
-
-https://mathisonian.github.io/diy-data-fugazi/
+## Fall 2020
+## Lecture 11
 
 ---
 
 ## This Week/Last Week
 
-<img src='../week11/images/this_week.png'>
+<img src='../week10/images/this_week2.png'>
 
 notes:
 
-today we'll be continuing on with some of what we did last week -- moving into more Markdown-based viz and viz "reports" along with more javascript
+today we'll be continuing on with some of what we did last week -- moving into more Markdown-based viz and viz "reports" along with more javascript and
+finally getting into idyll
 
 ---
 
-## Survey posted later this week for final format
+## Quick note back in Iodide
 
- 1. Informal ~5 min presentation
- 1. More formal critique of ~3 other submissions
+https://alpha.iodide.io/notebooks/6217/
+
+notes:
+I won't be going through all of the rest of this notebook, but I wanted to point out some interactivity options and side-by-side plots
+
+Also, should we push the due-date of the assignment by a few days?
+
+
 
 ---
 
 ## Today
 
  * Publishing
-   * D3.js
    * Idyll
    * Github Pages
- * Guest Lecture: AVL
+   * vega-lite in Idyll
+   * D3.js
+
+---
+
+<br />
+<br />
+<br />
+
+# TOPIC 1: Programming with Idyll
 
 ---
 
@@ -62,7 +65,45 @@ today we'll be continuing on with some of what we did last week -- moving into m
 A web-based toolkit for storytelling with data visualizations!
 
  * Reduce manual coding for interactive articles
+ * Integration with vega-lite
  * Integration with D3.js
+
+---
+
+## Markdown
+
+Idyll uses Markdown for text, just like Iodide:
+
+ * To **bold**, use `**two asterisks**`
+ * You can _italicize_ with `_underscores_`
+ * Try out making bullet lists with `*` on each line
+ * Links are fun: `[link text](http://example.com/)`
+
+---
+
+## Idyll
+
+ * The editor: https://idyll-lang.org/editor
+ * Examples: https://idyll-lang.org/gallery
+   * a favorite: https://idyll-lang.org/gallery/the-d-i-y-data-of-fugazi
+   * source code: https://github.com/mathisonian/diy-data-fugazi
+
+---
+
+## Idyll
+
+Pros:
+ * Visualization-ready, compatible with Vega-Lite, D3.js, and Flourish
+ * Modern features and design
+
+Cons:
+ * Less common syntax (Markdown)
+ * Not well-documented
+ * open source means less guarantee of long-term support in the future
+
+<img src="../week10/images/idyll.png" width="200"/>
+
+
 
 ---
 
@@ -90,6 +131,8 @@ D3 is meant to be well-integrated into the existing infrastructure of the intern
 <img src="images/html.png" width="700"/>
 
 notes:
+We talked about this before, but just as a reminder:
+
 HTML or Hypertext Markup Language is the default syntax for websites. It's meant to be structured with tags like "head", "body", "paragraph", and "division". 
 
 It's essentially a skeleton for other functionality to hang off of.
@@ -131,9 +174,12 @@ JavaScript is a dynamic programming language that runs natively on webpages that
 
 Most of this is hidden from you when writing in Idyll! But it helps to understand the underlying mechanisms.
 
-D3.js and Idyll are another set of tools that can be used for the Final Project to share interactive visualizations connected in a narrative.
+We'll start with vega-lite in Idyll.
 
-Vega-lite and Idyll may or may not be working as of this writing.
+If we have time, we'll get into D3.js and Idyll (examples are posted).
+
+You can use any of these tools in the final project!
+
 
 notes:
 what are the limits to data size in Idyll and the web browser?
@@ -146,4 +192,3 @@ Idyll is a reactive markup language for visualization and narrative documents.
 
 [idyll-lang.org](idyll-lang.org)
 
-... and a quick detour into sci viz topics!
