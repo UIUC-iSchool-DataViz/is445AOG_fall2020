@@ -21,6 +21,8 @@ Today we'll cover a brief intro of [Idyll](https://idyll-lang.org/) and web deve
  
 ### Idyll Files & Example pages
 
+We'll be building toward [this index.idyll file right here](corg/prepIdyll/index.idyll).
+
 
 Further examples include:
  * Website from [Spring 2020](https://jnaiman.github.io/items_dataviz_spring2020/) which focuses on using [d3.js](https://d3js.org/) to do many plots since vega-lite was not working well at that time.  The index.idyll file, along with example d3 components and a styles.css file for the final map are in [this subdirectory from that course page here](https://github.com/UIUC-iSchool-DataViz/spring2020/tree/master/week15/corg).

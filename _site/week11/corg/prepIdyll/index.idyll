@@ -1,0 +1,537 @@
+// INTRO:
+
+// (1) we will be using a text editor to modify this index.idyll file.  I use emacs a lot for work, so that is what I'm using here.  Its also setup to have some nice markdown preferences and colorings which your editor may or may not have if you are using emacs.  I've linked more info in the notes doc.
+
+// Emacs preferences: 
+
+// Vanilla Emacs: You can use ` CTRL-x CTRL-+ ' and 'CTRL-x CTRL--' ( 'text-scale-adjust' ) to increase or decrease 
+
+// Markdown styling following: https://jblevins.org/projects/markdown-mode/
+
+// But also including special styling for Idyll: spring2020/week12/markdown-mode.el, AND make sure you delete markdown-mode.elc in .emacs.d
+
+// NOTE: gotta have a return after the lines
+
+
+// We want to have this same outline for our page, but we'll change a few things here.
+
+// First, the metadata that goes along with this webpage -- this is the stuff that shows up in the tab
+[meta title:"IS590DV Idyll Website" description:"Corgs corgs corgs!" /]
+
+// You'll note that once we save our browser is re-loaded and our locally hosted webpage is re-generated.
+
+// We also want to update the header that appears on our post:
+[Header
+  fullWidth:true
+  title:"IS590DV Idyll Website"
+  subtitle:"Super cool viz for super cool people."
+  author:"Jill P. Naiman"
+  authorLink:"https://uiuc-ischool-dataviz.github.io/spring2020/"
+  date:`(new Date()).toDateString()`
+  background:"#222222"
+  color:"#ffffff"
+   /]
+
+
+
+# Introduction
+
+// We'll delete all the things that were previously here and start from scratch.
+
+Today we are going to go through some of Idyll's [built-in components](https://idyll-lang.org/docs/components).  We'll talk about including other external and custom built components in the next few weeks.
+
+## Markdown
+
+We can use all of the Markdown type syntax we've used before to create **bold** and *italic* styles.
+
+We can do lists of items:
+
+* a thing
+* another thing
+* yet another thing
+
+We can also do numbered lists:
+
+1. My first thing
+1. My 2nd thing
+1. My 3rd thing
+
+We can also specify bits of code like `I am code` or blocks like:
+
+```
+I am
+a big
+piece of code
+```
+
+Hyperlinks are the same like [linking to the course webpage](https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/).
+
+## Images
+
+We can include images in the typical markdown style:
+
+![corgo1](https://i.redd.it/5f0snjdbzr121.jpg)
+
+This is pretty big, so we can include some parameters to rescale things.  We can do this by some Idyll-Markdown specificy styling for images:
+
+```
+[img 
+  src:'https://i.redd.it/5f0snjdbzr121.jpg' 
+  style:`{height:'300px'}` 
+/]
+```
+
+[img src:'https://i.redd.it/5f0snjdbzr121.jpg' style:`{height:'300px'}` /]
+
+You can note that this uses HTML-ish stylings if you are used to that already.  For example:
+
+
+```
+[div className:"myDiv" ]
+[p]
+  My paragraph.
+[/p]
+[/div]
+```
+
+[div className:"myDiv" ]
+[p]
+  My paragraph.
+[/p]
+[/div]
+
+
+
+
+## Layouts
+
+There are also ways to use HTML float styling by using [Idyll's layout parameters](https://idyll-lang.org/docs/components/default/float).
+
+This also allows us to do some nice, placements of images:
+
+```
+[Float position:"right"]
+[img
+  src:'https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/littleCorgiInHat.png'
+  style:`{height:300, padding: '10px'}`
+/]
+[/Float]
+
+[Float position:"left"]
+[img
+  src:'https://uiuc-ischool-dataviz.github.io/spring2019online/week10/corg/IMG_2809.jpg'
+  style:`{height:300, padding: '10px'}`
+/]
+[/Float]
+```
+
+[Float position:"left"]
+[img
+  src:'https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/littleCorgiInHat.png'
+  style:`{height:300, padding: '10px'}`
+/]
+[/Float]
+
+[Float position:"right"]
+[img
+  src:'https://uiuc-ischool-dataviz.github.io/spring2019online/week10/corg/IMG_2809.jpg'
+  style:`{height:300, padding: '10px'}`
+/]
+[/Float]
+
+## Scrolling Overlays
+
+We can also make our figures interactive.  Lists of corgi facts might be boring, but we 
+can spice them up by doing scrolling overlays with this little bit of code:
+
+```
+[Scroller currentStep:scrollerIndex]
+  [Graphic style:`{padding: 5}`]
+      [img
+        src:'https://uiuc-ischool-dataviz.github.io/spring2019online/week10/corg/IMG_2814.jpg'
+        style:`{height:700, float:"left"}` 
+       /]
+  [/Graphic]
+
+  [Step]## Welsh Corgis are a small type of herding dog that originated in Wales, UK.[/Step]
+  [Step]## "Corgi" is Welsh for "dwarf dog"   [/Step]
+  [Step]## Queen Elizabeth II has owned more than 30 corgis in her lifetime.[/Step]
+  [Step]## Corgi-Dachshund mixes are called dorgis.[/Step]
+
+[/Scroller]
+```
+
+// more info here: https://idyll.pub/post/stack-scroll-0c3da7fb8e45f3ecb720bcf8/ 
+[Scroller currentStep:scrollerIndex]
+  [Graphic style:`{padding: 5}`]
+      [img
+        src:'https://uiuc-ischool-dataviz.github.io/spring2019online/week10/corg/IMG_2814.jpg'
+        style:`{height:700}` // (2) lets say we want it on the left to make room 
+       /]
+  [/Graphic]
+
+  [Step]## Welsh Corgis are a small type of herding dog that originated in Wales, UK.[/Step]
+  [Step]## "Corgi" is Welsh for "dwarf dog"   [/Step]
+  [Step]## Queen Elizabeth II has owned more than 30 corgis in her lifetime.[/Step]
+  [Step]## Corgi-Dachshund mixes are called dorgis.[/Step]
+
+[/Scroller]
+// can also try floating with:
+        // style:`{height:700, float:"left"}` // (2) lets say we want it on the left to make room 
+
+
+
+
+## Data
+
+So far, we've been using data/image sources available on the web.  We also have the option of storing data within our Idyll directory and accessing it that way.  This is useful if we want to use our own data that we've created.
+
+For example, if we check out the [course webpage for this week](https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week11/), we see that there is a [corgis per country over time](https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week11/corg/corgs_per_country_over_time_columns_2020.csv) dataset.  We might get into a bit more about how this dataset was generated next week, but you can check out the [webscraping code](https://uiuc-ischool-dataviz.github.io/spring2020/week12/corg/grabCorgData_subpages.py) and [processing notebook](https://uiuc-ischool-dataviz.github.io/spring2020/week12/corg/calc_corgData.ipynb) which grabs and processes data from a [Corgi Database](http://www.cardiped.net/browseDogs.php) for more details if you can't wait.
+
+For now, just download the [corgis per country over time](https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/week11/corg/corgs_per_country_over_time_columns_2020.csv) dataset and save it in the `data/` subdirectory of your Idyll project.
+
+Now we can load this dataset with:
+
+```
+[data name:"corgsTime" source:"corgs_per_country_over_time_columns_2020.csv" /]
+```
+
+[data name:"corgsTime" source:"corgs_per_country_over_time_columns_2020.csv" /]
+
+We can check out our data really quick with an interactive table:
+
+[Table data:corgsTime /]
+
+We can also use Idyll's default [Chart](https://idyll-lang.org/docs/components/default/chart) component to do a preliminary plot with this dataset for the United States:
+
+[Chart type:"time" data:`corgsTime` domain:`null` range:`null` x:"Years" y:"United States" /]
+
+Probably what we actually want is a histogram though, which is another Chart option:
+
+[Chart type:"bar" data:`corgsTime` domain:`null` range:`null` x:"Years" y:"United States" /]
+
+You'll note a lot of the formatting here isn't what we'd really like (why are years weirdly formatted, what about axis labels and titles?), but this is another motivation to learn about external-installable components (like vega-lite & d3).
+
+## Plotting our data
+
+To plot this we want use vega-lite to start.  Don't forget, there are text and video install instructions for 
+both Mac and Windows stored on the [week 10 webpage](https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020/is445AOG_fall2020/week10/installation_instructions_week10). We'll assume you have vega-lite for Idyll installed and go from there.
+
+
+### Simple Scatter plots
+
+Let's start with some simple scatter plots of our data.
+
+We can run the simple code below and make a starter line plot of country and years born:
+
+```
+[IdyllVegaLite data:corgsTime spec:`{
+  width: 400,
+  height: 200,
+  mark: "line",
+  encoding: {
+    x: {field: "Years", type: "temporal", axis:{title:"Year", format:"%Y"}},
+    y: {field: "United States", type: "quantitative"},
+  }
+}` /]
+```
+
+
+[IdyllVegaLite data:corgsTime spec:`{
+  width: 400,
+  height: 200,
+  mark: "line",
+  encoding: {
+    x: {field: "Years", type: "temporal", axis:{title:"Year", format:"%Y"}},
+    y: {field: "United States", type: "quantitative"},
+  }
+}` /]
+
+Let's look at this data in a slightly different way.  More as a database of individual corgis.  The [full dataset is available (but 15Mb which is a little hefty)](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/blob/master/week11/corg/corgiData_countries_full_2020.json), but [we'll be using a subset](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/blob/master/week11/corg/corgiData_countries_subset_2020.json) that is a little easier to deal with.
+
+Let's grab the data:
+[data name:"corgs" source:"corgiData_countries_subset_2020.json"  /]
+[Table data:`corgs.slice(0, 10)` /]
+// Here I'm just taking a slice of the first 10 entries -- there is that JS slice thing!
+
+Let's start with some simple scatter plots of our data.
+
+We can run the simple code below and make a simple scatter plot of countries and years born:
+
+```
+[IdyllVegaLite data:corgs spec:`{
+  width: 400,
+  height: 200,
+  mark: "circle",
+  encoding: {
+    x: {field: "countries", type: "nominal"}, 
+    y: {field: "year", type: "temporal"},
+  }
+}` /]
+```
+
+[IdyllVegaLite data:corgs spec:`{
+  width: 400,
+  height: 200,
+  mark: "circle",
+  encoding: {
+    x: {field: "countries", type: "nominal"}, // (1) we can change the coloring by denoting what type of variable we are plotting */
+    // x: {field: "countries", type: "nominal", axis:{labels:false}}, // (2) */
+    y: {field: "year", type: "temporal"},
+  }
+}` /]
+
+So this is a good start!  Let's add some other data into the mix by using colors.  We can select what we color by with a "color by" variable like so:
+
+```
+[var name:"colorBy" value:`{}` /]
+```
+
+[var name:"colorBy" value:`{}` /]
+
+Once we've included this new variable in our webpage, we can re-do our scatter plot like so:
+
+```
+[IdyllVegaLite data:corgs spec:`{
+  width: 400,
+  height: 200,
+  mark: "circle",
+  encoding: {
+    x: {field: "countries", type: "nominal"}, 
+    y: {field: "year", type: "temporal"},
+    color: colorBy
+  }
+}` /]
+
+Color by:
+ [button onClick:`colorBy = {}` ]None[/button]
+ [button onClick:`colorBy = {field: 'sex', type: 'nominal'}` ]Sex of Corgi[/button]
+```
+
+[IdyllVegaLite data:corgs spec:`{
+  width: 400,
+  height: 200,
+  mark: "circle",
+  encoding: {
+    x: {field: "countries", type: "nominal"}, 
+    y: {field: "year", type: "temporal"},
+    color: colorBy
+  }
+}` /]
+
+Color by:
+ [button onClick:`colorBy = {}` ]None[/button]
+ [button onClick:`colorBy = {field: 'sex', type: 'nominal'}` ]Sex of Corgi[/button]
+
+// HERE - CHANGE COLOR SCHEME - https://vega.github.io/vega-lite/docs/scale.html#scheme 
+
+// [button onClick:`colorBy2 = {field: 'countries', type: 'nominal', scale:{"scheme":"category20"}}` ]Country[/button]
+
+
+// ALSO: make sure they recall scales and whatnot! 
+
+// check out: https://vega.github.io/vega/docs/schemes/#reference 
+
+
+### Binning and aggregating data - histograms
+
+Beyond scatter plots, we can do histograms in which we aggregate parts of our data set:
+
+```
+[var name:"colorBy3" value:`{}` /]
+
+[IdyllVegaLite data:corgs spec:`{
+  width: 400,
+  height: 200,
+  mark: "bar",
+  encoding: {
+    x: {field: "year", type: "temporal"},
+    y: {aggregate:"count", type: "quantitative", title:"Number of Corgis Born"}
+  }
+}` /]
+```
+
+So here we are counting up all the entries in a particular year and plotting this as a histogram:
+
+[var name:"colorBy3" value:`{}` /]
+// add this later!!
+
+
+[IdyllVegaLite data:corgs spec:`{
+  width: 400,
+  height: 200,
+  mark: "bar",
+  encoding: {
+    x: {field: "year", type: "temporal"},
+    y: {aggregate:"count", type: "quantitative", title:"Number of Corgis Born"}// , // (2) */
+    // color: colorBy3 // */
+  }
+}` /]
+
+// Color by:
+
+//  [button onClick:`colorBy3 = {}` ]None[/button]
+
+//  [button onClick:`colorBy3 = {field: 'sex', type: 'nominal'}` ]Sex of Corgi Born[/button]
+
+// [button onClick:`colorBy3 = {field: 'dam', type: 'nominal'}` ]Dam[/button]
+
+// [button onClick:`colorBy3 = {field: 'FamilyName', type: 'nominal'}` ]Family Name[/button] 
+
+We can do some light manipulations of our data with "transforms" and "filters".  There are more 
+complicated examples of filtering our data [on the Vega-lite website docs](https://vega.github.io/vega-lite/docs/filter.html).
+
+Here, lets just look at data between the years 1960 and 2000. We can do this by adding some filtering code 
+to our vega-lite plot (note: this is done differently than with `datum`):
+
+```
+transform:[{filter:{"timeUnit":"year", field:"year", "lte":2000}},
+	  {filter:{"timeUnit":"year", field:"year", "gte":1960}}],
+```
+
+// reference: https://github.com/idyll-lang/examples/blob/master/csv/index.idl
+
+// And: https://vega.github.io/vega-lite/docs/filter.html
+
+// lets first start by plotting only a little range in years */
+[IdyllVegaLite data:corgs spec:`{
+  width: 400,
+  height: 200,
+  transform:[{filter:{"timeUnit":"year", field:"year", "lte":2000}},
+             {filter:{"timeUnit":"year", field:"year", "gte":1960}}],
+  mark: "bar",
+  encoding: {
+    x: {
+       field: "year",
+       type: "temporal"//,
+       //timeUnit:"year"
+    },
+    y: {
+       aggregate:"count",
+       type: "quantitative",
+       axis:{title:"Number of Corgis Born"}
+    } // , 
+     // color: colorBy3 
+  }
+}` /]
+
+Neat!  Of course, the goal is to make these interactive plots. So let's get to it!
+
+// Color by:
+
+//  [button onClick:`colorBy3 = {}` ]None[/button]
+
+// [button onClick:`colorBy3 = {field: 'sex', type: 'nominal'}` ]Sex of Corgi Born[/button]
+
+
+// We can, much like with ipywidgets, make little interactive sliders
+
+// lets make a little slider to play with our year plot
+
+// We can actually make this range a variable! 
+
+### Interactive plotting with Vega-lite
+
+Just like we did with ipywidgets in our Jupyter notebooks, we can include sliders and toggles to 
+make our plots interactive.  We in fact did this above when we made the ability to change colors 
+based on different aspects of our datasets.
+
+Let's add two new variables to our webpage to control the range over which we are plotting our data:
+
+```
+[var name:"yearStart" value:1960 /]
+[var name:"yearEnd" value:2000 /]
+```
+
+[var name:"yearStart" value:1960 /]
+[var name:"yearEnd" value:1970 /]
+
+Now our "transform" operation will look a little different:
+
+```
+  transform:[{filter:{"timeUnit":"year", field:"year", "lte":yearEnd}},
+             {filter:{"timeUnit":"year", field:"year", "gte":yearStart}}],
+```
+
+Finally, let's combine all of these concepts (colors, sliders, binning) into one MEGA-histogram with all kinds of 
+interactions:
+
+[var name:"colorBy3" value:`{}` /] 
+
+[IdyllVegaLite data:corgs spec:`{
+  width: 400,
+  height: 400,
+  transform:[{filter:{"timeUnit":"year", field:"year", "lte":yearEnd}},
+             {filter:{"timeUnit":"year", field:"year", "gte":yearStart}}],
+  mark: "bar",
+  encoding: {
+    x: {
+       field: "year",
+       type: "temporal"
+    },
+    y: {
+       aggregate:"count",
+       type: "quantitative",
+       axis:{title:"Number of Corgis Born"}
+    }, 
+    color: colorBy3
+  }
+}` /]
+
+Color by:
+ [button onClick:`colorBy3 = {}` ]None[/button]
+ [button onClick:`colorBy3 = {field: 'sex', type: 'nominal'}` ]Sex of Corgi Born[/button]
+ [button onClick:`colorBy3 = {field: 'countries', type: 'nominal', scale:{"scheme":"category20"}}` ]Country[/button]
+
+[section] // format the sliders into their own section */
+Lowest Year: 1925 [Range min:1925 max:yearEnd value:yearStart /] 2020
+
+Highest Year: 1925 [Range min:yearStart max:2020 value:yearEnd /] 2020
+[/section]
+
+We can also print out in text the values of our sliders - the current
+maxiumum year of our plot is [dynamic min:1925 max:yearEnd step:1 value:yearStart /].
+You'll note you can also drag around this value and it will update the plot.
+
+//  ** Other cool viz goes here ** */
+
+
+# Extra stuff
+
+A bunch of stuff that we may or may not get to.
+
+### Fancier scrolling overlay
+
+We can do even more complex stepping following tutorials like the [stacking scrollers tutorial](https://idyll.pub/post/stack-scroll-0c3da7fb8e45f3ecb720bcf8/).  Here, we can actually change an element on our page in line with the scrolling of the user's mouse.
+
+// we store a set of images in a variable that is a JS array
+
+// NOTE: the ` --> this is specific to Idyll style
+
+[var name:"imageLoc" 
+  value:`["https://i.pinimg.com/originals/d5/fa/0b/d5fa0b05e00505717d21c532b043f586.jpg","https://66.media.tumblr.com/ce3a52328ebb8c89e1a5cd7649468216/tumblr_inline_pmof1giIRI1ud0rrx_540.jpg", "https://i.imgur.com/3d1etBA.jpg"]` /]
+
+
+[var name:"myScroller" value:0 /]
+
+[Scroller currentStep:myScroller]
+	[Graphic]
+		[Float position:"right"] // build up: float right!
+		    // here we are "slicing" our array using the JS "slice" routine to grab array names
+			[img src:`imageLoc.slice(myScroller, myScroller+1)` style:`{height:300}` /] // making all the same height
+		[/Float]
+	[/Graphic]
+	
+   [Step style:`{width:"50%"}`] // in style we can also specify how large to make our scroller text
+	   This is a derpy corgi.
+   [/Step]
+   
+   [Step style:`{width:"50%"}`]
+	   This is a derpy corgi #2.
+   [/Step]
+
+   [Step style:`{width:"50%"}`]
+	   This our final derpy dog.
+   [/Step]
+
+[/Scroller]
