@@ -21,7 +21,7 @@ Today we'll cover a brief intro of [Idyll](https://idyll-lang.org/) and web deve
  
 ### Idyll Files & Example pages
 
-We'll be building toward [this index.idyll file right here](corg/prepIdyll/index.idyll).
+We'll be building toward [this index.idyll file right here](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/blob/master/week11/corg/prepIdyll/index.idyll).
 
 
 Further examples include:
