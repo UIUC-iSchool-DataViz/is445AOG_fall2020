@@ -15,11 +15,11 @@ We talk a little bit about publishing and carry on with Idyll.
 
  1. We'll be building toward a webpage like [this](https://jnaiman.github.io/) today using [Idyll](https://idyll-lang.org/)'s built-in components.
  1. Last week, we got to [this index.idyll file right here](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/blob/master/week11/corg/prepIdyll/index.idyll) and we'll start from there this week.
- 1. Full Markdown code for this week and next week [available right here](https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week14/corg/index.idyll).
+ 1. Full Markdown code for this week [available right here](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/blob/master/week12/corg/prepIdyll/index.idyll).
  1. We'll also build a few histogram components like:
-    * starting with [this one](https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week14/corg/histogram-custom-d3-component.js)
-    * then [this one](https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week14/corg/histogram-button-custom-d3-component.js)
-    * and finally [this one](https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week14/corg/histogram-button-slider-custom-d3-component.js)
+    * starting with [this one](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/blob/master/week12/corg/prepIdyll/histogram-custom-d3-component.js)
+    * then [this one](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/blob/master/week12/corg/prepIdyll/histogram-button-custom-d3-component.js)
+    * and finally [this one](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/blob/master/week12/corg/prepIdyll/histogram-button-slider-custom-d3-component.js)
 	
 <!-- Where we got to in class this week: -->
 <!--   * [This index.idyll](index.idyll) file -->
