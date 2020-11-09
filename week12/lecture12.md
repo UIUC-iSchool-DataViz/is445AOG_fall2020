@@ -1,5 +1,5 @@
 ---
-title: Lecture 14
+title: Lecture 12
 layout: lecture
 include_vega: true
 visible_lec: true
@@ -13,39 +13,28 @@ visible_n: true
 <div style="height: 6.0em;"></div>
 
 ## Jill P. Naiman
-## Spring 2020
-## Lecture 14
-
-
----
-
-## Warm-Up Activity
-
- 1. What is the visualization trying to show?
- 1. What are its methods?
- 1. What are the strengths / weaknesses?
-
-http://scienceofhiv.org/
+## Fall 2020
+## Lecture 12
 
 ---
 
 ## Last Week
 
-<img src="../week13/images/this_week.png">
+<img src="../week10/images/this_week2.png">
 
 notes:
-last week we talked about sci viz with yt
+so far, we've been covering a bit of javascript and vega-lite as some new viz engines and using them in Idyll
 
 ---
 
 ## This Week
 
-<img src="images/this_week.png">
+<img src="images/this_week_week12.png">
 
 notes:
-this week we'll touch VERY briefly on volume rendering in Python
+this week we'll discuss more general methods of publishing, and we'll talk about how to validate how "well" our visualizations are doing, as well as start touching on some d3.js within Idyll
 
-There are MUCH more in the notes than we are going to get through, so if this stuff interests you feel free to check it out further!
+we'll also talk about 3D computer graphics in general and on the web
 
 ---
 

@@ -17,7 +17,7 @@ Today we'll cover a brief intro of [Idyll](https://idyll-lang.org/) and web deve
  * We'll finish up with this notebook: <a href="https://alpha.iodide.io/notebooks/6217/">Prep Iodide Notebook</a>
 <!-- * <a href="https://alpha.iodide.io/notebooks/6219/">In Class Iodide Notebook</a> -->
  
- Feel free to check out [Spring 2020's notebook that uses police shooting data for visualization](https://alpha.iodide.io/notebooks/4399/) if you are interestedin other mappable datasets.  
+ Feel free to check out [Spring 2020's notebook that uses police shooting data for visualization](https://alpha.iodide.io/notebooks/4399/) if you are interested in other mappable datasets.  
  
 ### Idyll Files & Example pages
 
