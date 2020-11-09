@@ -48,6 +48,3 @@ This dataset is from the [Cardigan Archives](http://cardiped.net/) and [scraped 
  1. <a href="https://idyll-lang.org/docs"> Idyll Docs</a>
 
  
-Also, here is a slightly more in-depth explanation of path/ray tracing which we'll talk about more in Week 15:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/frLwRLS_ZR0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

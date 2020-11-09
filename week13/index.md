@@ -44,3 +44,8 @@ A few more things in Idyll and d3.js.
  1. [Grouped bar chart](https://observablehq.com/@d3/grouped-bar-chart)
  1. [Animated side-bar chart](https://observablehq.com/@d3/bar-chart-race)
  1. [Histogram, binning of data](https://www.d3-graph-gallery.com/graph/histogram_basic.html)
+
+
+Also, here is a slightly more in-depth explanation of path/ray tracing which we'll talk about more in Week 15:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/frLwRLS_ZR0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
