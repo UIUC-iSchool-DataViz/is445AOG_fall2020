@@ -1,0 +1,237 @@
+[meta title:"IS445 Data Viz Idyll Page" description:"Short description of your project" /]
+
+[Header
+  fullWidth:true
+  title:"IS445 Data Viz Idyll, Week 11-12"
+  subtitle:"An awesome page for awesome folks!"
+  author:"Jill Naiman"
+  authorLink:"https://uiuc-ischool-dataviz.github.io/is445AOG_fall2020"
+  date:`(new Date()).toDateString()`
+  background:"#222222"
+  color:"#ffffff"
+   /]
+
+
+// This is me writing a comment.
+
+# Introduction
+
+We'll be looking at vega-lite but also some of Idyll's [built in components](https://idyll-lang.org/docs/components). We'll also get to some d3.js (in a few weeks).
+
+## Images
+
+![image 1](https://i.redd.it/5f0snjdbzr121.jpg)
+
+This is a rather large corgi.  We can use HTML-like links and use HTML-like stylings to 
+make this a little more sensible.
+
+[img src:"https://i.redd.it/5f0snjdbzr121.jpg" style:`{height:'300px'}` /]
+
+[div className:"myDiv"]
+[p]
+  This is a paragraph.
+[/p]
+[/div]
+
+We'll use the [Float](https://idyll-lang.org/docs/component/float) built-in to do some side-by-side images.
+
+[Float position:"left"]
+
+ [img 
+    src:"https://uiuc-ischool-dataviz.github.io/spring2019online/week04/data/littleCorgiInHat.png" 
+	style:`{height:'300px'}`
+ /]
+
+[/Float]
+
+[Float position:"right"]
+
+ [img 
+    src:'https://uiuc-ischool-dataviz.github.io/spring2019online/week10/corg/IMG_2809.jpg' 
+	style:`{height:'300px'}`
+ /]
+ 
+[/Float]
+
+## Scrolling Overlays
+
+We'll make use of the [Scroller](https://idyll-lang.org/docs/component/scroller) built in to have an image with facts scrolling past.
+
+[Scroller currentStep:scrollerIndex]
+  [Graphic style:`{padding: 50}`]
+	[img 
+	  src:'https://uiuc-ischool-dataviz.github.io/spring2019online/week10/corg/IMG_2814.jpg'
+    /]
+  [/Graphic]
+
+  [Step]## Welsh corgis are a small type of herding dog that originated in Wales, UK.[/Step]
+  [Step]## "Corgi" is Welsh for "dwarf dog." [/Step]
+  [Step]## Corgi-Dachshund mixes are called "dorgis."[/Step]
+
+
+[/Scroller]
+
+## Data
+
+We'll actually host our data in our Idyll page's default directory structure.
+
+// This next line will be uploading data into our Idyll page:
+[data name:"corgisTime" source:"corgs_per_country_over_time_columns_2020.csv" /]
+// note: here we've "named" our dataset as corgisTime
+
+Check out our data real quick using a Table:
+
+[Table data:corgisTime /]
+
+We'll see how far we can get with the [Chart built-in](https://idyll-lang.org/docs/component/chart):
+
+[Chart type:"bar" data:`corgisTime` domain:`null` range:`null` x:"Years" y:"United States" /]
+
+[Chart type:"time" data:`corgisTime` domain:`null` range:`null` x:"Years" y:"United States" /]
+
+Motivation to move to something like vega-lite for our plots (something we can find out by 
+checking out the developer chat -- [Idyll Gitter](https://gitter.im/idyll-lang/Lobby)).
+
+## Plotting our data (using vega-lite)
+
+First I'll try doing a line plot with vega-lite (it will break, we will not panic!).
+
+We'll be doing a combo of Idyll built-in kinds of calls and vega-lite specs.
+
+[IdyllVegaLite data:corgisTime spec:`{
+  width:400,
+  height:200,
+  mark:"bar",
+  encoding: {
+    x: {field:"Years", type:"temporal", axis:{title:"Year", format:"%Y"}},
+	y: {field:"United States", type:"quantitative"}
+  }
+}`  /]
+
+Let's use the json formatted data to work with vega-lite.
+
+// reading in the json dataset
+[data name:"corgis" source:"corgiData_countries_subset_2020.json" /]
+
+// table, but only of 10 entries this time
+[Table data:`corgis.slice(0,10)` /]
+// just an excuse to use JS ".slice" command :)
+
+We'll continue using vega-lite and making a scatter plot:
+
+[IdyllVegaLite data:corgis spec:`{
+  width:400,
+  height:200,
+  mark:"circle",
+  encoding: {
+    x: {field:"countries", type:"nominal"},
+	y: {field:"year", type:"temporal"}
+  }
+}`  /]
+
+We're going to add another built-in a [button](https://idyll-lang.org/docs/component/button) to update our graph.  The plan is to create an Idyll variable to change the color of our points, and update the value of the variable with a button.
+
+// step 1: add the color-by variable
+[var name:"colorBy" value:`{}` /]
+
+// step 2: make the vega-lite plot & I'll color by the "colorBy" variable
+
+[IdyllVegaLite data:corgis spec:`{
+  width:400,
+  height:200,
+  mark:"circle",
+  encoding: {
+    x: {field:"countries", type:"nominal"},
+	y: {field:"year", type:"temporal"},
+	color: colorBy // {field:"sex", type:"nominal"}
+  }
+}`  /]
+
+// step 3: add a button to tie the variable to a button press (using the built-in button)
+Color by:
+ [button onClick:`colorBy = {}`]None[/button]
+ [button onClick:`colorBy = {field:"sex", type:"nominal"}`]Sex of Corgi[/button]
+ 
+### Binning & Aggregating Data -- histograms
+
+FYI this histogram is made with a subset of the data (so this why we see less 
+corgis listed than in the column/csv file).
+
+// step 1: add a color-by variable
+[var name:"colorBy2" value:`{}` /]
+
+// step 2: add the variable in to the vega-lite plot (color: colorBy2)
+
+[IdyllVegaLite data:corgis spec:`{
+  width:600,
+  height:200,
+  mark:"bar",
+  encoding: {
+    x: {field:"year", type:"temporal"},
+	// y: {field:"year", type:"temporal"},
+	y: {aggregate:"count", type:"quantitative", title:"Number of Corgis Born"},
+	color: colorBy2
+  }
+}`  /]
+
+// step 3: add a button and tie the variable to a button press
+
+// using the built in buttons (in Idyll)
+
+Color by:
+ [button onClick: `colorBy2 = {}`]None[/button]
+ [button onClick: `colorBy2 = {field:"sex", type:"nominal"}`]Sex of Corgi[/button]
+ [button onClick: `colorBy2 = {field:"countries", type:"nominal"}`]Country[/button]
+ 
+ 
+We can also do some interactive filtering using vega-lite and built-ins.  We've 
+used buttons before to do changes in colors interactively, now we'll use some 
+[range sliders](https://idyll-lang.org/docs/component/range).
+
+// Added a variable to control the color
+[var name:"colorBy3" value:`{}` /]
+
+// add a variable to control the min & max year
+[var name:"yearStart" value:1970 /]
+[var name:"yearEnd" value:2015 /]
+
+[IdyllVegaLite data:corgis spec:`{
+  width:600,
+  height:200,
+  transform:[{filter:{"timeUnit":"year", field:"year", "lte":yearEnd}}, 
+             {filter:{"timeUnit":"year", field:"year", "gte":yearStart}}],
+  mark:"bar",
+  encoding: {
+    x: {field:"year", type:"temporal"},
+	y: {aggregate:"count", type:"quantitative", title:"Number of Corgis Born"},
+	color: colorBy3
+  }
+}`  /]
+
+Color by:
+ [button onClick: `colorBy3 = {}`]None[/button]
+ [button onClick: `colorBy3 = {field:"sex", type:"nominal"}`]Sex of Corgi[/button]
+ [button onClick: `colorBy3 = {field:"countries", type:"nominal"}`]Country[/button]
+ 
+ 
+// [Range value:myVar min:0 max:100 /]
+
+Lowest Year:  1925 [Range min:1925 max:2020 value:yearStart /] 2020
+
+## D3.js in Idyll
+
+There is support for d3.js in Idyll -- custom components.
+
+Here is the "default" d3.js custom component.
+
+[var name:"state" value:0 /]
+[CustomD3Component className:"d3-component" state:state /]
+[button onClick:`state++`]
+  Click Me.
+[/button]
+
+We want to make our own, using our corgi data (corgis per county over time).
+
+Google something like "time bar chart d3 v4" and start from an example that is already there, [this one right here](https://bl.ocks.org/vikkya/75bda04cd0c00e49cbda6cfee8d97aba).
+
+[HistogramCustomD3Component className:"d3-component"  /]

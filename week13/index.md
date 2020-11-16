@@ -5,12 +5,25 @@ visible_lec: true
 visible_n: true
 ---
 
-# Week 13 - A few more Idyll+d3 things 
+# Week 13 - A few more Idyll+d3 things, Starting SciViz 
 
 A few more things in Idyll and d3.js.
 
 
 ## Downloads & Links
+
+### Idyll Files & Example pages
+
+ 1. We'll be building toward a webpage like [this](https://jnaiman.github.io/) today using [Idyll](https://idyll-lang.org/)'s built-in components.
+ 1. Last week, we got to [this index.idyll file right here](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/blob/master/week11/corg/prepIdyll/index.idyll) and we'll start from there this week.
+ 1. Full Markdown code for this week [available right here](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/blob/master/week12/corg/inClass/index.idyll).
+ 1. We'll also build a few histogram components like:
+    * starting with [this one](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/blob/master/week12/corg/prepIdyll/histogram-custom-d3-component.js)
+    * then [this one](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/blob/master/week12/corg/prepIdyll/histogram-button-custom-d3-component.js)
+    * and finally [this one](https://github.com/UIUC-iSchool-DataViz/is445AOG_fall2020/blob/master/week12/corg/prepIdyll/histogram-button-slider-custom-d3-component.js)
+	
+
+
 
 ### Data
 
