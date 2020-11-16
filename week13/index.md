@@ -41,6 +41,8 @@ This dataset is from the [Cardigan Archives](http://cardiped.net/) and [scraped 
 
  1. Download and unzip [this set of files here (galaxyFiles.zip, 77M)](galaxyFiles.zip)
  1. Make note of where this unzips -- this is where `solverlibs.py` gets unpacked.
+ 
+We'll be using the <a href="http://yt-project.org/data/IsolatedGalaxy.tar.gz" download>Isolated Galaxy dataset (292 Mb)</a> dataset for sci viz next week.
 
 
 ## Optional reading list
