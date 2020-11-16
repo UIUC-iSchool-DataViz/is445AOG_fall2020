@@ -30,11 +30,17 @@ Further examples include:
 
 ### Data
 
+#### Corgis
  1. <a href="corg/corgs_per_country_over_time_columns_2020.csv" download>Corgis per country over time (corgs_per_country_over_time_columns_2020.csv)</a>
  1. <a href="corg/corgiData_countries_subset_2020.json" download>Subset of full Corgi database (corgiData_countries_subset_2020.json)</a>
      * Full dataset available [here](corg/corgiData_countries_full_2020.json)
 	 
 This dataset is from the [Cardigan Archives](http://cardiped.net/) and [scraped using Beautiful Soup in Python](https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week12/corg/grabCorgData_subpages.py) and [further processed in Python](https://github.com/UIUC-iSchool-DataViz/spring2020/blob/master/week12/corg/calc_corgData.ipynb) into this form.
+
+#### Galaxy data (if time)
+
+ 1. Download and unzip [this set of files here (galaxyFiles.zip, 77M)](galaxyFiles.zip)
+ 1. Make note of where this unzips -- this is where `solverlibs.py` gets unpacked.
 
 
 ## Optional reading list
