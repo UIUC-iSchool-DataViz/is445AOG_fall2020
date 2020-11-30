@@ -11,8 +11,17 @@ We talked a little bit about publishing, networks, and scientific viz.
 
 # Resources
 
- * We'll be using the <a href="http://yt-project.org/data/IsolatedGalaxy.tar.gz" download>Isolated Galaxy dataset (292 Mb)</a> dataset for sci viz today
- * We'll also be using <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week05/data/single_dicom.h5" download>this brain scan data (72Mb)</a>
+## Data and Python Libs
+
+ 1. Download and unzip [this set of files here (galaxyFiles.zip, 77M)](galaxyFiles.zip)
+ 2. Make note of where this unzips -- this is where `solverlibs.py` gets unpacked.
+
+ 3. We'll also be using the <a href="http://yt-project.org/data/IsolatedGalaxy.tar.gz" download>Isolated Galaxy dataset (292 Mb)</a> dataset for sci viz today
+ 4. We'll also also be using <a href="https://uiuc-ischool-dataviz.github.io/spring2019online/week05/data/single_dicom.h5" download>this brain scan data (72Mb)</a>
+
+
+
+ 
 
 ## Optional reading list
 
