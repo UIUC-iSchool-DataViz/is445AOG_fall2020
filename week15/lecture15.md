@@ -17,58 +17,31 @@ visible_n: true
 
 ---
 
-## Warm-Up Activity Part 1
+## Updates on Part 2 Grading
 
- 1. What is the visualization trying to show?
- 1. What are its methods?
- 1. What are the strengths / weaknesses?
-
-https://xkcd.com/2135/
+See Moodle Announcement.
 
 ---
 
-## Warm-Up Activity Part 2
+## Last time/This time
 
- 1. What is the visualization trying to show?
- 1. What are its methods?
- 1. What are the strengths / weaknesses?
- 1. Would you know how to make something like this?
-
-http://biologylabs.utah.edu/farmer/index_dinosaur.html
-
----
-
-## Bureaucracy: Survey
-
-About 50/50 so far
-
----
-
-## Critque Prompt:
-
- 1. Summarize the visualization (1-2 sentences)
-	* barchart? line plot? interactivity?
- 1. What is the message or idea that the visualization is trying to get across? (1 sentence)
- 1. Where does the data come from (1 or multiple sources?) (1-2 sentences)
- 1. What aspects of the visualization did you like and why (2-3 sentences)
- 1. What are some suggestions you have for improvements? (1-2 sentences)
-
----
-
-## Last week
-
-<img src='../week11/images/this_week.png'>
-
----
-
-## This week
-
-<img src='images/this_week.png'>
-
-Scientific Viz!
+<img src='../week13/images/this_week_week13.png'>
 
 notes: 
-we'll circle back to Python to do some sci-viz, as motivated by last week's guest lecture!
+
+Just as a reminder of all of the things we've covered up an until this point!  Last time we mentioned this "yt" package but didn't really get into it.
+
+we'll circle back to Python to do some sci-viz & use yt, as motivated by this week's guest lecture!
+
+---
+
+## Guest Lecture!
+
+AVL's Kalina Borkiewicz
+
+https://publish.illinois.edu/kalina/about/
+
+---
 
 ---
 
@@ -328,7 +301,7 @@ This is a test AVL worked on with an SPH "smooth particle hydrodynamics" dataset
 
 This is a way to turn particles into surfaces or polygons.
 
-We'll play with surfaces later
+We won't get to play as much with surfaces ourselves, BUT if you were able to install PyGEL3D there are some examples in the prep notebook
 
 ---
 
