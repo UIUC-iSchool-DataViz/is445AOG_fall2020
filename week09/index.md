@@ -16,6 +16,8 @@ visible_n: true
 
 Feel free to check out [Spring 2020's notebook that uses police shooting data for visualization](https://alpha.iodide.io/notebooks/4351/) if you are interestedin other mappable datasets.  
 
+Also, for Python, only a subset of libraries are supported. See ongoing list [here](https://github.com/iodide-project/pyodide/tree/master/packages).
+
 ## Optional reading list
 
  1. <a href="https://alpha.iodide.io/">Iodide Docs</a> - in particular: <a href="https://iodide-project.github.io/docs/key_concepts/">key concepts</a> & <a href="https://iodide-project.github.io/docs/iomd/">IOMD format</a> 
