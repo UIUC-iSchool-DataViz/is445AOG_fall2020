@@ -40,19 +40,27 @@ we'll focus on networks in the lecture portion
 
 ## Notes on Final, Part 3
 
-Two elements:
- 1. 
+Due dates:
+ 1. First draft of Part 3 -- due today, will get feedback from Diptendra & I
+ 1. Post your link in the Moodle forum to get feedback from classmates
+ 1. Provide feedback for 3 randomly assigned classmates -- due Dec 18th
+ 1. Final chance to resubmit your Part 3 -- due Dec 19th (original Part 3 submission link)
+ 
+notes:
+go to pages!!
+
 
 ---
 
 ## This week
 
+ 1. Where to go from here
  1. Networked & Hierarchical Data
  1. Word Clouds
 
 
 notes:
-we'll talk more about these things next week for the final project!
+first I'm gonna start with some resource of where to go from here
 
 ---
 
@@ -60,7 +68,46 @@ we'll talk more about these things next week for the final project!
 <br>
 <br>
 
-# Topic 1: Networked & Hierarchical Data
+# TOPIC 1: Where to go from here
+
+notes:
+different sub-fields of dataviz will lead you down different pathways
+
+---
+
+## Python
+
+ * See whats in dev on the [bqplot gitter lobby](https://gitter.im/bloomberg/bqplot)
+ * More about volume rendering with [ipyvolume](https://ipyvolume.readthedocs.io/en/latest/)
+ * More about sciviz dev with [yt slack](https://yt-project.slack.com/join/shared_invite/enQtMzQ4Nzk1Mjk0ODY4LWNmOTFiNTM4N2ExZWYyY2YwZDUxN2Q1MTgwNDdjZGExMWM0Y2VlNzUzNGExZTZhMWRlNjU3ZjFmZmU3MjdkNDg)
+
+notes:
+these are notes
+
+---
+
+## Javascript
+
+ * [Beginning Javascript course](https://www.codecademy.com/learn/introduction-to-javascript)
+ * See what's in dev on the [Idyll gitter lobby](https://gitter.im/idyll-lang/Lobby) - including updates to vega-lite!
+
+---
+
+## Courses
+
+ * [Advanced Data Visualization, iSchool](https://ischool.illinois.edu/degrees-programs/courses/is590adv)
+ * [Museum Informatics](https://ischool.illinois.edu/degrees-programs/courses/is426)
+ * [Data Science Storytelling](https://ischool.illinois.edu/degrees-programs/courses/is590dst)
+ * [More on sciviz and graphics](https://jnaiman.github.io/csci-p-14110_su2020/) (Not UIUC, includes intro to programming)
+
+
+---
+
+<br>
+<br>
+<br>
+
+# Topic 2: Networked & Hierarchical Data
 
 ---
 
@@ -327,131 +374,20 @@ There are lots of ways to combine types of network visualizations like this.
 
 ---
 
+<br>
+<br>
+<br>
+
+# Topic 3: Text visualization & Wordclouds
+
+---
+
 ## Today's Python: Networks & Word clouds
 
 <img src="https://getthematic.com/wp-content/uploads/2018/03/Harris-Word-Cloud-e1522406279125.png" width="600px">
 
 notes:
-today we will mainly focus on network viz, but I want to show a bit about a word cloud viz package you might want to play around with and a bit about how to upload text and mainpulate it!
-
----
-
-<br>
-<br>
-<br>
-
-# Topic 3: Intro to Final Project
-
-
----
-
-## Final Project
-
-There are three components, turned in the last three weeks of class.
-
-You will have three components:
-
-1. Viz for Self (Due April 13)
-1. Viz for Peers (Due April 20)
-1. Viz for Others (Due April 27)
-
----
-
-## Final Project: Part 1
-
-Submit in a Jupyter notebook.
-
- * Identify a dataset to explore.
-   * This will be iterative!  You probably won't get one you like on the first
-     try.
-   * Check out sources like [data.world](https://data.world/),
-     [data.illinois.gov](https://data.illinois.gov/),
-     [data.gov](https://data.gov/),
-     [developer.marvel.com](https://developer.marvel.com/),
-     [IDB](https://databank.illinois.edu/), etc.
-   * or the dataset doc that [lives right here](https://docs.google.com/document/d/15UJinT5XokAHXd9fQAYD8f6d3vEkR6kJMq8kswmkOhY/edit?usp=sharing)
- * Explore the dataset in a Jupyter notebook.  Make sure you include things that did and did not work.
- * Summarize the characteristics of the dataset in words: what does it
-   represent, what are the fields/columns/rows, what data types are they, etc
-
----
-
-## Final Project: Part 1 (cont)
-
-Your datasets need to be submitted as well.  To do this, include this
-information in your Jupyter notebook:
-
- * What is the "name" of the dataset?
- * Where did you obtain it?
- * Where can we obtain it?  (i.e., URL)
- * What is the license of the dataset?  What are we allowed to do with it?
- * How big is it in file size and in items?
- * Make a simple plot showing a relationship of interest.  You can use matplotlib or pandas (or other). Don't worry about colors, labels or anything else of that nature!
-
----
-
-## Final Project: Part 1 (cont, cont)
-
-Per usual, there will be a class google doc for this assignment.
-
-You can share raw data sets and sources, ask questions about reading/modifying the dataset and post code to do so **that isn't working**.
-
-Please do not share processed or cleaned datasets.
-
----
-
-## Final Project: Part 2
-
-Submit in a Jupyter notebook.  
-
- * Using your dataset, generate visualizations that explore the data in a
-   guided way.
- * Your first component was focused on exploring the data in an unguided way.
-   This component is about visualizing the data in a guided way.
- * Construct visualizations that explore each aspect you identified, with
-   discussion and descriptions.
- * If you can identify improvements to the visualizations that come from
-   interactivity, implement that.
-
----
-
-## Final Project: Part 2 (cont)
-
- * The visualizations should utilize visual language relevant for "Viz for
-   Peers."
-    * Each and every plot should contain all relevant information: appropriate
-      units, labeling, etc
-    * Annotate and narrate particular pieces of interest (if there are any)
-    * Use standard visual representations and augment these if necessary
-
----
-
-## Final Project: Part 3
-
-You will submit this as your final project in week 14 and get some feedback.
-
-### In flux:
-
-For week 15, everbody will share their viz for a few minutes in class
-(tech willing).  This doesn't have to be a formal presentation, just a quick screen-share and a few
-comments about what you have been working on.
-
----
-
-## Final Project: Part 3 (cont)
-
-You may submit one or more of the following items: Idyll webpage repository, narrative Jupyter notebook.
-
-This component will include a "for others" visualization that is deeply
-narrative with appropriate interactive (or static) content and, ideally, sharable on a
-website.
-
-Some possible ways to approach this:
-
- * Infographic
- * Idyll
- * Jupyter notebook
- * Raw HTML
+We'll be focusing a lot on ways of representing text occurances in Python with histograms and wordclouds and then if we have time we'll circle back to networks
 
 ---
 
